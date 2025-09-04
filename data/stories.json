@@ -3,7 +3,7 @@
     {
       "id": "fast-rabbit",
       "emoji": "🐇",
-      "cover": "",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/refs/heads/main/images/%D9%82%D8%B5%D8%A9%20%D8%A7%D9%84%D8%A3%D8%B1%D9%86%D8%A8%20%D8%A7%D9%84%D8%B3%D8%B1%D9%8A%D8%B9.webp",
       "images": ["", "", ""],
       "title": { "ar": "قصة الأرنب السريع", "en": "The Fast Rabbit" },
       "desc":  { "ar": "الثبات يهزم السرعة.", "en": "Consistency beats speed." },
