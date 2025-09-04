@@ -1,64 +1,70 @@
 {
-  "stories": [
-    {
-      "id": "fast-rabbit",
-      "emoji": "🐇",
-      "cover": "",
-      "title": { 
-        "ar": "قصة الأرنب السريع", 
-        "en": "The Fast Rabbit" 
-      },
-      "desc": { 
-        "ar": "لا تستخفّ بأحد؛ الثبات يهزم السرعة.", 
-        "en": "Never underestimate others; consistency beats speed." 
-      },
-      "age": "5-8",
-      "duration_min": 3,
-      "tags": ["animals", "moral"],
-      "body": {
-        "ar": [
-          "في يومٍ من الأيام، عاش أرنبٌ سريع في الغابة وكان يفخرُ دائمًا بسرعته.",
-          "تحدّته سلحفاة هادئة في سباق، فضحك الأرنب ووافق فورًا.",
-          "انطلق الأرنب بسرعةٍ كبيرة، ثم قرر أن يستريح قليلًا تحت شجرة.",
-          "واصلت السلحفاة المشي بثبات دون توقف حتى اقتربت من خط النهاية.",
-          "استيقظ الأرنب متأخرًا، فركض بكل قوته، لكن السلحفاة وصلت أولًا.",
-          "<strong>العبرة:</strong> الاستمرار والجدية أهم من السرعة."
-        ],
-        "en": [
-          "Once upon a time, a fast rabbit lived in the forest and always boasted about his speed.",
-          "A calm turtle challenged him to a race, and the rabbit laughed and quickly agreed.",
-          "The rabbit sprinted ahead, then decided to rest under a tree.",
-          "The turtle kept walking steadily without stopping and got close to the finish line.",
-          "The rabbit woke up late and ran as fast as he could, but the turtle arrived first.",
-          "<strong>Moral:</strong> Consistency and effort matter more than speed."
-        ]
-      }
-    },
-    {
-      "id": "little-star",
-      "emoji": "🌟",
-      "cover": "",
-      "title": {
-        "ar": "النجمة الصغيرة",
-        "en": "The Little Star"
-      },
-      "desc": {
-        "ar": "تعليم ولعب بسيطة",
-        "en": "Simple learning and play"
-      },
-      "age": "5-8",
-      "duration_min": 2,
-      "tags": ["learning", "fun"],
-      "body": {
-        "ar": [
-          "نص عربي قصير 1",
-          "نص عربي قصير 2"
-        ],
-        "en": [
-          "Short English text 1",
-          "Short English text 2"
-        ]
-      }
-    }
-  ]
+    "stories": [
+        {
+            "id": "fast-rabbit",
+            "emoji": "🐇",
+            "cover": "",
+            "title": {
+                "ar": "قصة الأرنب السريع",
+                "en": "The Fast Rabbit"
+            },
+            "desc": {
+                "ar": "لا تستخفّ بأحد؛ الثبات يهزم السرعة.",
+                "en": "Never underestimate others; consistency beats speed."
+            },
+            "age": "5-8",
+            "duration_min": 3,
+            "tags": [
+                "animals",
+                "moral"
+            ],
+            "body": {
+                "ar": [
+                    "في يومٍ من الأيام، عاش أرنبٌ سريع في الغابة وكان يفخرُ دائمًا بسرعته.",
+                    "تحدّته سلحفاة هادئة في سباق، فضحك الأرنب ووافق فورًا.",
+                    "انطلق الأرنب بسرعةٍ كبيرة، ثم قرر أن يستريح قليلًا تحت شجرة.",
+                    "واصلت السلحفاة المشي بثبات دون توقف حتى اقتربت من خط النهاية.",
+                    "استيقظ الأرنب متأخرًا، فركض بكل قوته، لكن السلحفاة وصلت أولًا.",
+                    "<strong>العبرة:</strong> الاستمرار والجدية أهم من السرعة."
+                ],
+                "en": [
+                    "Once upon a time, a fast rabbit lived in the forest and always boasted about his speed.",
+                    "A calm turtle challenged him to a race, and the rabbit laughed and quickly agreed.",
+                    "The rabbit sprinted ahead, then decided to rest under a tree.",
+                    "The turtle kept walking steadily without stopping and got close to the finish line.",
+                    "The rabbit woke up late and ran as fast as he could, but the turtle arrived first.",
+                    "<strong>Moral:</strong> Consistency and effort matter more than speed."
+                ]
+            }
+        },
+        {
+            "id": "little-star",
+            "emoji": "🌟",
+            "cover": "",
+            "title": {
+                "ar": "النجمة الصغيرة",
+                "en": "The Little Star"
+            },
+            "desc": {
+                "ar": "تعليم ولعب بسيطة",
+                "en": "Simple learning and play"
+            },
+            "age": "5-8",
+            "duration_min": 2,
+            "tags": [
+                "learning",
+                "fun"
+            ],
+            "body": {
+                "ar": [
+                    "نص عربي قصير 1",
+                    "نص عربي قصير 2"
+                ],
+                "en": [
+                    "Short English text 1",
+                    "Short English text 2"
+                ]
+            }
+        }
+    ]
 }
