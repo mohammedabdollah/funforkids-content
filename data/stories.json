@@ -18,95 +18,111 @@
           "A very short default version for visitors who don't pick a level."
         ]
       },
-      "levels": {
-        "L1": {
-          "label_ar": "👶 المستوى 1 (٣–٥)",
-          "label_en": "Level 1 (3–5)",
-          "age": "3–5",
-          "duration_min": 5,
-          "body": {
-            "ar": [
-              "كان هناك أرنب سريع جدًا. [[img:0 alt=\\\"الأرنب يجري\\\" caption=\\\"انطلاقة\\\"]]",
-              "قال الأرنب: أنا الأسرع!",
-              "السلحفاة بطيئة، لكنها لا تتوقف.",
-              "بدأ السباق. الأرنب يركض… ثم يستريح قليلًا. [[img:1 alt=\\\"الأرنب يستريح\\\" caption=\\\"غفوة قصيرة\\\"]]",
-              "السلحفاة تمشي بهدوء… بهدوء… حتى وصلت أولًا! [[img:2 alt=\\\"خط النهاية\\\" caption=\\\"الفوز بالصبر\\\"]]"
-            ],
-            "en": [
-              "There was a very fast rabbit. [[img:0 alt=\\\"Rabbit running\\\" caption=\\\"Start\\\"]]",
-              "The rabbit said: I am the fastest!",
-              "The turtle is slow, but she never stops.",
-              "The race began. The rabbit ran… then took a short rest. [[img:1 alt=\\\"Rabbit resting\\\" caption=\\\"Short nap\\\"]]",
-              "The turtle kept walking… and reached first! [[img:2 alt=\\\"Finish line\\\" caption=\\\"Winning with patience\\\"]]"
-            ]
-          }
-        },
-        "L2": {
-          "label_ar": "🧒 المستوى 2 (٦–٨)",
-          "label_en": "Level 2 (6–8)",
-          "age": "6–8",
-          "duration_min": 9,
-          "body": {
-            "ar": [
-              "في صباحٍ مشمس، تجمّعت الحيوانات لمشاهدة سباق بين الأرنب السريع والسلحفاة الهادئة. [[img:0 alt=\\\"جمهور الغابة\\\" caption=\\\"الجميع يشجّع\\\"]]",
-              "ضحك الأرنب: \"سأصل خلال دقائق!\" ردّت السلحفاة بابتسامة: \"سأمشي بثبات.\"",
-              "انطلق الأرنب بقوة، وتجاوز التلال والأشجار، ثم قال: \"راحة صغيرة لا تضر.\" [[img:1 alt=\\\"الأرنب يستريح تحت شجرة\\\" caption=\\\"راحة مغرية\\\"]]",
-              "بينما واصلت السلحفاة طريقها خطوة خطوة. ومع اقتراب النهاية، كانت الحيوانات تَعدُّ الثواني…",
-              "قفز الأرنب متأخرًا، لكن السلحفاة كانت قد عبرت الخط أولًا. [[img:2 alt=\\\"السلحفاة عند النهاية\\\" caption=\\\"الاجتهاد يفوز\\\"]]"
-            ],
-            "en": [
-              "On a sunny morning, the animals gathered to watch a race between the fast rabbit and the calm turtle. [[img:0 alt=\\\"Forest crowd\\\" caption=\\\"Cheering\\\"]]",
-              "The rabbit laughed: “I'll finish in minutes!” The turtle smiled: “I'll move steadily.”",
-              "The rabbit sped over hills and trees, then said: “A short rest won't hurt.” [[img:1 alt=\\\"Resting under a tree\\\" caption=\\\"Tempting rest\\\"]]",
-              "Meanwhile, the turtle kept going step by step. Near the finish, animals counted seconds…",
-              "The rabbit jumped up too late; the turtle had already crossed first. [[img:2 alt=\\\"Turtle at finish\\\" caption=\\\"Effort wins\\\"]]"
-            ]
-          }
-        },
-        "L3": {
-          "label_ar": "👦👧 المستوى 3 (٩–١٢)",
-          "label_en": "Level 3 (9–12)",
-          "age": "9–12",
-          "duration_min": 15,
-          "body": {
-            "ar": [
-              "كان الأرنب يسمع التصفيق فيتخيّل الفوز قبل أن يبدأ؛ خطر له: \"أنا الأفضل، ما حاجتي للجد؟\"",
-              "سمعت السلحفاة همسه وقالت بحكمة: \"من سار على الدرب وصل.\" [[img:0 alt=\\\"بداية السباق\\\" caption=\\\"بداية هادئة\\\"]]",
-              "في الطريق، تحدّث الأرنب إلى نفسه: \"لن يسبقني أحد.\" تمدّد تحت ظل الشجرة بينما الزمن يمرّ. [[img:1 alt=\\\"ظل الشجرة\\\" caption=\\\"ثوانٍ تساوي الكثير\\\"]]",
-              "استمرّت السلحفاة بإيقاع ثابت، تستمع لأنفاسها وتعدّ خطواتها، والجمهور يراقب باحترام.",
-              "عند النهاية، ارتبك الأرنب واندفع، لكنه تعلّم درسًا حين رأى السلحفاة ترفع رأسها بابتسامة. [[img:2 alt=\\\"خط النهاية\\\" caption=\\\"المثابرة تغلب الغرور\\\"]]"
-            ],
-            "en": [
-              "Hearing the applause, the rabbit imagined victory before starting: “I'm the best, why bother?”",
-              "The turtle heard him and replied wisely: “Step by step, we arrive.” [[img:0 alt=\\\"Race start\\\" caption=\\\"Calm start\\\"]]",
-              "On the way, the rabbit thought, “No one will beat me.” He lay under a tree while time slipped by. [[img:1 alt=\\\"Tree shade\\\" caption=\\\"Seconds matter\\\"]]",
-              "The turtle kept a steady rhythm, counting breaths and steps, as the crowd watched with respect.",
-              "At the finish line, the rabbit rushed, but learned when he saw the turtle smiling first. [[img:2 alt=\\\"Finish line\\\" caption=\\\"Perseverance beats pride\\\"]]"
-            ]
-          }
-        },
-        "L4": {
-          "label_ar": "🧑 المستوى 4 (١٣+)",
-          "label_en": "Level 4 (13+)",
-          "age": "13+",
-          "duration_min": 20,
-          "body": {
-            "ar": [
-              "السباق لم يكن طريقًا ترابيًا فحسب، بل استعارة للحياة: السرعة توهمك بالنجاة، والصبر يمنحك البصيرة.",
-              "كان الأرنب يطارد صورته في عيون الجمهور؛ كان يريد التصفيق أكثر من الوصول. [[img:0 alt=\\\"الجمهور رمز المجتمع\\\" caption=\\\"مرآة النوايا\\\"]]",
-              "أما السلحفاة فكانت تُصغي لخطواتها: وعدت نفسها بالثبات، وثبّتت وعدها بالفعل. [[img:1 alt=\\\"خطوات ثابتة\\\" caption=\\\"زمن داخلي\\\"]]",
-              "وعندما عبرت النهاية، لم تُهزم سرعة الأرنب ببطء السلحفاة، بل بهدوءها؛ فالزمن يعمل لصالح من يعرف وجهته. [[img:2 alt=\\\"نهاية رمزية\\\" caption=\\\"المعنى قبل التصفيق\\\"]]"
-            ],
-            "en": [
-              "The race was more than a dusty path; it was a metaphor for life: speed flatters, patience reveals.",
-              "The rabbit chased his reflection in the crowd’s eyes—seeking applause more than arrival. [[img:0 alt=\\\"Crowd as society\\\" caption=\\\"Mirror of intent\\\"]]",
-              "The turtle listened to her steps: she promised herself steadiness, and honored it in action. [[img:1 alt=\\\"Steady steps\\\" caption=\\\"Inner time\\\"]]",
-              "At the finish, the rabbit wasn’t defeated by slowness but by composure; time serves the one who knows the way. [[img:2 alt=\\\"Symbolic ending\\\" caption=\\\"Meaning over applause\\\"]]"
-            ]
-          }
-        }
-      }
-    },
+   "levels": {
+  "L1": {
+    "label_ar": "👶 المستوى 1 (٣–٥)",
+    "label_en": "Level 1 (3–5)",
+    "age": "3–5",
+    "duration_min": 5,
+    "body": {
+      "ar": [
+        "كان هناك أرنب سريع جدًا. [[img:0 alt=\"الأرنب يجري\" caption=\"انطلاقة\"]]",
+        "قال الأرنب: أنا الأسرع!",
+        "السلحفاة بطيئة… لكنها لا تتوقف.",
+        "بدأ السباق. الأرنب يركض بسرعة!",
+        "الأرنب يستريح قليلًا تحت الشجرة. [[img:1 alt=\"غفوة\" caption=\"استراحة\"]]",
+        "السلحفاة تمشي… تمشي… وتصل أولًا! [[img:2 alt=\"النهاية\" caption=\"الفوز بالصبر\"]]"
+      ],
+      "en": [
+        "There was a very fast rabbit. [[img:0 alt=\"Rabbit running\" caption=\"Start\"]]",
+        "The rabbit said: I am the fastest!",
+        "The turtle is slow… but she never stops.",
+        "The race began. The rabbit ran fast!",
+        "The rabbit took a short nap under a tree. [[img:1 alt=\"Nap\" caption=\"A rest\"]]",
+        "The turtle kept walking… and reached first! [[img:2 alt=\"Finish\" caption=\"Patience wins\"]]"
+      ]
+    }
+  },
+  "L2": {
+    "label_ar": "🧒 المستوى 2 (٦–٨)",
+    "label_en": "Level 2 (6–8)",
+    "age": "6–8",
+    "duration_min": 9,
+    "body": {
+      "ar": [
+        "صباحٌ مشمس في الغابة؛ تجمّعت الحيوانات حول مسار ترابي يتلوّى بين الأشجار. [[img:0 alt=\"جمهور الغابة\" caption=\"تشجيع\"]]",
+        "ضحك الأرنب: \"سأصل في دقائق!\" ابتسمت السلحفاة: \"سأمشي بثبات.\"",
+        "انطلق الأرنب كالسهم فوق التلال الصغيرة، ثم قال: \"راحة قصيرة لا تضر.\" [[img:1 alt=\"استراحة تحت الشجرة\" caption=\"إغراء الراحة\"]]",
+        "كانت السلحفاة تعدّ خطواتها: واحدة… اثنتان… لا تتوقف.",
+        "اقتربت من اللافتة التي تشير إلى خط النهاية، وبدأت الحيوانات تعدّ الثواني.",
+        "قفز الأرنب من نومه وأسرع، لكن السلحفاة كانت قد لمست الشريط أولًا. [[img:2 alt=\"خط النهاية\" caption=\"الاجتهاد يفوز\"]]",
+        "تعلّم الأرنب أن السرعة بلا التزام ليست كافية، وأن الجِدّ يصنع الفارق."
+      ],
+      "en": [
+        "A sunny morning in the forest; animals gathered along a winding dirt path. [[img:0 alt=\"Forest crowd\" caption=\"Cheering\"]]",
+        "The rabbit laughed, “I'll finish in minutes!” The turtle smiled, “I'll move steadily.”",
+        "The rabbit shot over little hills, then thought, “A short rest won't hurt.” [[img:1 alt=\"Rest under tree\" caption=\"Temptation\"]]",
+        "The turtle counted her steps: one… two… never stopping.",
+        "She neared the sign for the finish line as the crowd began counting seconds.",
+        "The rabbit leaped up too late; the turtle touched the ribbon first. [[img:2 alt=\"Finish line\" caption=\"Effort wins\"]]",
+        "He learned that speed without commitment isn't enough; steady work makes the difference."
+      ]
+    }
+  },
+  "L3": {
+    "label_ar": "👦👧 المستوى 3 (٩–١٢)",
+    "label_en": "Level 3 (9–12)",
+    "age": "9–12",
+    "duration_min": 15,
+    "body": {
+      "ar": [
+        "سمع الأرنب تصفيق الحاضرين فابتسم: \"لا حاجة لبذل جهد كبير… أنا الأفضل.\"",
+        "مرّت السلحفاة بجانبه وقالت بهدوء: \"من سار على الدرب وصل.\" [[img:0 alt=\"بداية السباق\" caption=\"كلمات ثابتة\"]]",
+        "تفكّر الأرنب: \"سأسبقها مهما حدث\"، ثم تمدّد تحت ظل الشجرة؛ بدا الوقت قصيرًا في خياله.",
+        "كانت السلحفاة تشعر بثقل خطواتها، لكنها تعدّ أنفاسها وتضبط إيقاعها: خطوة… نفس… ثبات.",
+        "همس بعض الحيوانات: \"هل ينام حقًا؟\" وضحك آخرون، بينما ظلّت هي على وعدها.",
+        "فتح الأرنب عينيه متوترًا: \"يا إلهي!\" انطلق بكل ما أوتي من سرعة. [[img:1 alt=\"ظل الشجرة\" caption=\"ثوانٍ ثمينة\"]]",
+        "عند الشريط الأحمر ارتجفت أقدامه، فرأى السلحفاة ترفع رأسها بابتسامة هادئة. [[img:2 alt=\"نهاية السباق\" caption=\"مفارقة لطيفة\"]]",
+        "فهم أن الغرور يُثقِل الخطى، وأن المثابرة تُسابق الزمن."
+      ],
+      "en": [
+        "The rabbit heard the applause and thought, “No need to try hard… I'm the best.”",
+        "The turtle passed by and said calmly, “Step by step, we arrive.” [[img:0 alt=\"Race start\" caption=\"Steady words\"]]",
+        "He stretched under the tree; in his mind, time felt short and safe.",
+        "The turtle felt the weight of her steps, but counted breaths and kept rhythm: step… breath… steady.",
+        "Some animals whispered, “Is he sleeping?” Others laughed, while she kept her promise.",
+        "The rabbit jolted awake: “Oh no!” and dashed with all his might. [[img:1 alt=\"Tree shade\" caption=\"Precious seconds\"]]",
+        "At the red ribbon his feet trembled as he saw the turtle smiling first. [[img:2 alt=\"Finish\" caption=\"A gentle twist\"]]",
+        "He realized that pride slows the feet while perseverance races time."
+      ]
+    }
+  },
+  "L4": {
+    "label_ar": "🧑 المستوى 4 (١٣+)",
+    "label_en": "Level 4 (13+)",
+    "age": "13+",
+    "duration_min": 20,
+    "body": {
+      "ar": [
+        "لم يكن السباق طريقًا قصيرًا بين شجرتين، بل مجازًا للحياة: العجلة تلمع، والصبر يكشف الطريق.",
+        "كان الأرنب يطارد صورته في عيون الجمهور؛ أراد التصفيق أكثر من الوصول. [[img:0 alt=\"الحشد\" caption=\"مرآة النوايا\"]]",
+        "أما السلحفاة فكانت تنصت إلى إيقاع خطواتها، تُنصت لزمن داخلي أبطأ لكنه أصدق.",
+        "الاستراحة عند الأرنب لم تكن نومًا فقط، بل انخداعًا بظلال السرعة. [[img:1 alt=\"ظل الشجرة\" caption=\"خدعة الزمن\"]]",
+        "وحين عبرت السلحفاة الخط، لم يُهزم الأرنب ببُطئها، بل بهدوئها؛ فالمعرفة تسند الصبر.",
+        "تعلّم أن الطريق ليس للخفّة وحدها، بل لِمن يلتزم بالوعد ويعرف وجهته. [[img:2 alt=\"نهاية رمزية\" caption=\"المعنى قبل التصفيق\"]]"
+      ],
+      "en": [
+        "The race was not a short path between two trees, but a metaphor for life: haste glittered, patience revealed.",
+        "The rabbit chased his reflection in the crowd's eyes—seeking applause more than arrival. [[img:0 alt=\"The crowd\" caption=\"Mirror of intent\"]]",
+        "The turtle listened to the rhythm of her steps, to an inner time—slower, yet truer.",
+        "The rabbit’s rest was not mere sleep, but a seduction by the shade of speed. [[img:1 alt=\"Tree shade\" caption=\"The trick of time\"]]",
+        "When the turtle crossed the line, the rabbit wasn’t beaten by slowness but by composure; knowledge supports patience.",
+        "He learned the path belongs not only to light feet, but to those who keep promises and know their direction. [[img:2 alt=\"Symbolic end\" caption=\"Meaning over applause\"]]"
+      ]
+    }
+  }
+}
+ },
     {
       "id": "little-star",
       "emoji": "🌟",
