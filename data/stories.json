@@ -4,8 +4,14 @@
       "id": "fast-rabbit",
       "emoji": "🐇",
       "cover": "",
-      "title": {"ar": "قصة الأرنب السريع", "en": "The Fast Rabbit"},
-      "desc":  {"ar": "لا تستخفّ بأحد؛ الثبات يهزم السرعة.", "en": "Never underestimate others; consistency beats speed."},
+      "title": {
+        "ar": "قصة الأرنب السريع",
+        "en": "The Fast Rabbit"
+      },
+      "desc": {
+        "ar": "لا تستخفّ بأحد؛ الثبات يهزم السرعة.",
+        "en": "Never underestimate others; consistency beats speed."
+      },
       "age": "5-8",
       "duration_min": 3,
       "tags": ["animals", "moral"],
@@ -19,21 +25,32 @@
           "The rabbit sprinted then decided to rest, while the turtle kept moving steadily and reached first."
         ]
       }
+    },
+    {
+      "id": "little-star",
+      "emoji": "🌟",
+      "cover": "",
+      "title": {
+        "ar": "النجمة الصغيرة",
+        "en": "The Little Star"
+      },
+      "desc": {
+        "ar": "تعليم ولعب بسيطة",
+        "en": "Simple learning and play"
+      },
+      "age": "5-8",
+      "duration_min": 2,
+      "tags": ["learning", "fun"],
+      "body": {
+        "ar": [
+          "نص عربي قصير 1",
+          "نص عربي قصير 2"
+        ],
+        "en": [
+          "Short English text 1",
+          "Short English text 2"
+        ]
+      }
     }
   ]
-}
-,
-{
-  "id": "little-star",
-  "emoji": "🌟",
-  "cover": "",
-  "title": {"ar": "النجمة الصغيرة", "en": "The Little Star"},
-  "desc":  {"ar": "تعليم ولعب بسيطة", "en": "Simple learning and play"},
-  "age": "5-8",
-  "duration_min": 2,
-  "tags": ["learning", "fun"],
-  "body": {
-    "ar": ["نص عربي قصير 1", "نص عربي قصير 2"],
-    "en": ["Short English text 1", "Short English text 2"]
-  }
 }
