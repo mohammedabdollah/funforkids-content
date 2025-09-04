@@ -122,4 +122,55 @@
     "images": [
       "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/img1.webp",
       "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/img2.webp",
-      "https://raw.githubusercontent.com/moham
+      "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/img3.webp"
+    ],
+    "title": { "ar": "مغامرة في الغابة", "en": "Adventure in the Forest" },
+    "desc":  { "ar": "اكتشافٌ ممتعٌ بخطواتٍ آمنة.", "en": "A fun discovery with safe steps." },
+    "age": "6-10",
+    "duration_min": 4,
+    "tags": ["adventure","nature"],
+    "body": {
+      "ar": [
+        "دخل طفلٌ الغابة مع والده لاكتشاف النباتات.",
+        "تعلّم كيف يتبع المسار [[img:0 alt=\"اتباع المسار\" caption=\"أمان أولًا\"]] دون أن يضيع.",
+        "شاهدا طيورًا ملونة [[img:1 alt=\"طيور ملونة\" caption=\"متعة الاكتشاف\"]] ترفرف قريبًا.",
+        "وجمعا أوراقًا مختلفة [[img:2 alt=\"أوراق الشجر\" caption=\"دفتر الطبيعة\"]] لدفتر ملاحظات الطبيعة."
+      ],
+      "en": [
+        "A child entered the forest with his father to discover plants.",
+        "He learned to follow the trail [[img:0 alt=\"Following the trail\" caption=\"Safety first\"]] without getting lost.",
+        "They saw colorful birds [[img:1 alt=\"Colorful birds\" caption=\"Joy of discovery\"]] flying nearby.",
+        "They collected different leaves [[img:2 alt=\"Leaves\" caption=\"Nature journal\"]] for a nature journal."
+      ]
+    }
+  },
+  {
+    "id": "curious-kitten",
+    "emoji": "🐱",
+    "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/cover.webp",
+    "images": [
+      "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/img1.webp",
+      "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/img2.webp",
+      "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/img3.webp"
+    ],
+    "title": { "ar": "الهِرّة الفضولية", "en": "The Curious Kitten" },
+    "desc":  { "ar": "الفضول يساعدنا على التعلّم.", "en": "Curiosity helps us learn." },
+    "age": "5-8",
+    "duration_min": 3,
+    "tags": ["learning","home"],
+    "body": {
+      "ar": [
+        "كانت هرّة صغيرة تسأل عن كل شيء في البيت.",
+        "لاحظت ضوء الشمس [[img:0 alt=\"ضوء الشمس\" caption=\"ألوان وظلال\"]] يدخل من النافذة.",
+        "تتبعت الظلال على الجدار [[img:1 alt=\"ظلال على الجدار\" caption=\"لعبة الأشكال\"]] وهي تتغيّر.",
+        "ثم شاهدت المطر [[img:2 alt=\"قطرات المطر\" caption=\"أصوات لطيفة\"]] وسمعت صوته بهدوء."
+      ],
+      "en": [
+        "A little kitten asked about everything at home.",
+        "She noticed sunlight [[img:0 alt=\"Sunlight\" caption=\"Colors and shadows\"]] entering through the window.",
+        "She followed the shadows on the wall [[img:1 alt=\"Shadows on the wall\" caption=\"Shape game\"]] as they changed.",
+        "Then she watched the rain [[img:2 alt=\"Raindrops\" caption=\"Calm sounds\"]] and listened quietly."
+      ]
+    }
+  }
+]
