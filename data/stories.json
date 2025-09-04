@@ -3,13 +3,21 @@
     {
       "id": "fast-rabbit",
       "emoji": "🐇",
-      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/refs/heads/main/images/%D9%82%D8%B5%D8%A9%20%D8%A7%D9%84%D8%A3%D8%B1%D9%86%D8%A8%20%D8%A7%D9%84%D8%B3%D8%B1%D9%8A%D8%B9.webp",
-      "images": ["", "", ""],
-      "title": { "ar": "الأرنب السريع", "en": "The Fast Rabbit" },
-      "desc":  { "ar": "الثبات يهزم السرعة.", "en": "Consistency beats speed." },
-      "age": "3-13+",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/cover.webp",
+      "title": {
+        "ar": "الأرنب السريع",
+        "en": "The Fast Rabbit"
+      },
+      "desc": {
+        "ar": "الثبات يهزم السرعة.",
+        "en": "Consistency beats speed."
+      },
+      "age": "3–13+",
       "duration_min": 3,
-      "tags": ["animals","moral"],
+      "tags": [
+        "animals",
+        "moral"
+      ],
       "body": {
         "ar": [
           "نسخة افتراضية قصيرة جدًا لزوار لا يختارون مستوى."
@@ -18,334 +26,1308 @@
           "A very short default version for visitors who don't pick a level."
         ]
       },
-   "levels": {
-  "L1": {
-    "label_ar": "👶 المستوى 1 (٣–٥)",
-    "label_en": "Level 1 (3–5)",
-    "age": "3–5",
-    "duration_min": 5,
-    "body": {
-      "ar": [
-        "كان هناك أرنب سريع جدًا. [[img:0 alt=\"الأرنب يجري\" caption=\"انطلاقة\"]]",
-        "قال الأرنب: أنا الأسرع!",
-        "السلحفاة بطيئة… لكنها لا تتوقف.",
-        "بدأ السباق. الأرنب يركض بسرعة!",
-        "الأرنب يستريح قليلًا تحت الشجرة. [[img:1 alt=\"غفوة\" caption=\"استراحة\"]]",
-        "السلحفاة تمشي… تمشي… وتصل أولًا! [[img:2 alt=\"النهاية\" caption=\"الفوز بالصبر\"]]"
-      ],
-      "en": [
-        "There was a very fast rabbit. [[img:0 alt=\"Rabbit running\" caption=\"Start\"]]",
-        "The rabbit said: I am the fastest!",
-        "The turtle is slow… but she never stops.",
-        "The race began. The rabbit ran fast!",
-        "The rabbit took a short nap under a tree. [[img:1 alt=\"Nap\" caption=\"A rest\"]]",
-        "The turtle kept walking… and reached first! [[img:2 alt=\"Finish\" caption=\"Patience wins\"]]"
-      ]
-    }
-  },
-  "L2": {
-    "label_ar": "🧒 المستوى 2 (٦–٨)",
-    "label_en": "Level 2 (6–8)",
-    "age": "6–8",
-    "duration_min": 9,
-    "body": {
-      "ar": [
-        "صباحٌ مشمس في الغابة؛ تجمّعت الحيوانات حول مسار ترابي يتلوّى بين الأشجار. [[img:0 alt=\"جمهور الغابة\" caption=\"تشجيع\"]]",
-        "ضحك الأرنب: \"سأصل في دقائق!\" ابتسمت السلحفاة: \"سأمشي بثبات.\"",
-        "انطلق الأرنب كالسهم فوق التلال الصغيرة، ثم قال: \"راحة قصيرة لا تضر.\" [[img:1 alt=\"استراحة تحت الشجرة\" caption=\"إغراء الراحة\"]]",
-        "كانت السلحفاة تعدّ خطواتها: واحدة… اثنتان… لا تتوقف.",
-        "اقتربت من اللافتة التي تشير إلى خط النهاية، وبدأت الحيوانات تعدّ الثواني.",
-        "قفز الأرنب من نومه وأسرع، لكن السلحفاة كانت قد لمست الشريط أولًا. [[img:2 alt=\"خط النهاية\" caption=\"الاجتهاد يفوز\"]]",
-        "تعلّم الأرنب أن السرعة بلا التزام ليست كافية، وأن الجِدّ يصنع الفارق."
-      ],
-      "en": [
-        "A sunny morning in the forest; animals gathered along a winding dirt path. [[img:0 alt=\"Forest crowd\" caption=\"Cheering\"]]",
-        "The rabbit laughed, “I'll finish in minutes!” The turtle smiled, “I'll move steadily.”",
-        "The rabbit shot over little hills, then thought, “A short rest won't hurt.” [[img:1 alt=\"Rest under tree\" caption=\"Temptation\"]]",
-        "The turtle counted her steps: one… two… never stopping.",
-        "She neared the sign for the finish line as the crowd began counting seconds.",
-        "The rabbit leaped up too late; the turtle touched the ribbon first. [[img:2 alt=\"Finish line\" caption=\"Effort wins\"]]",
-        "He learned that speed without commitment isn't enough; steady work makes the difference."
-      ]
-    }
-  },
-  "L3": {
-    "label_ar": "👦👧 المستوى 3 (٩–١٢)",
-    "label_en": "Level 3 (9–12)",
-    "age": "9–12",
-    "duration_min": 15,
-    "body": {
-      "ar": [
-        "سمع الأرنب تصفيق الحاضرين فابتسم: \"لا حاجة لبذل جهد كبير… أنا الأفضل.\"",
-        "مرّت السلحفاة بجانبه وقالت بهدوء: \"من سار على الدرب وصل.\" [[img:0 alt=\"بداية السباق\" caption=\"كلمات ثابتة\"]]",
-        "تفكّر الأرنب: \"سأسبقها مهما حدث\"، ثم تمدّد تحت ظل الشجرة؛ بدا الوقت قصيرًا في خياله.",
-        "كانت السلحفاة تشعر بثقل خطواتها، لكنها تعدّ أنفاسها وتضبط إيقاعها: خطوة… نفس… ثبات.",
-        "همس بعض الحيوانات: \"هل ينام حقًا؟\" وضحك آخرون، بينما ظلّت هي على وعدها.",
-        "فتح الأرنب عينيه متوترًا: \"يا إلهي!\" انطلق بكل ما أوتي من سرعة. [[img:1 alt=\"ظل الشجرة\" caption=\"ثوانٍ ثمينة\"]]",
-        "عند الشريط الأحمر ارتجفت أقدامه، فرأى السلحفاة ترفع رأسها بابتسامة هادئة. [[img:2 alt=\"نهاية السباق\" caption=\"مفارقة لطيفة\"]]",
-        "فهم أن الغرور يُثقِل الخطى، وأن المثابرة تُسابق الزمن."
-      ],
-      "en": [
-        "The rabbit heard the applause and thought, “No need to try hard… I'm the best.”",
-        "The turtle passed by and said calmly, “Step by step, we arrive.” [[img:0 alt=\"Race start\" caption=\"Steady words\"]]",
-        "He stretched under the tree; in his mind, time felt short and safe.",
-        "The turtle felt the weight of her steps, but counted breaths and kept rhythm: step… breath… steady.",
-        "Some animals whispered, “Is he sleeping?” Others laughed, while she kept her promise.",
-        "The rabbit jolted awake: “Oh no!” and dashed with all his might. [[img:1 alt=\"Tree shade\" caption=\"Precious seconds\"]]",
-        "At the red ribbon his feet trembled as he saw the turtle smiling first. [[img:2 alt=\"Finish\" caption=\"A gentle twist\"]]",
-        "He realized that pride slows the feet while perseverance races time."
-      ]
-    }
-  },
-  "L4": {
-    "label_ar": "🧑 المستوى 4 (١٣+)",
-    "label_en": "Level 4 (13+)",
-    "age": "13+",
-    "duration_min": 20,
-    "body": {
-      "ar": [
-        "لم يكن السباق طريقًا قصيرًا بين شجرتين، بل مجازًا للحياة: العجلة تلمع، والصبر يكشف الطريق.",
-        "كان الأرنب يطارد صورته في عيون الجمهور؛ أراد التصفيق أكثر من الوصول. [[img:0 alt=\"الحشد\" caption=\"مرآة النوايا\"]]",
-        "أما السلحفاة فكانت تنصت إلى إيقاع خطواتها، تُنصت لزمن داخلي أبطأ لكنه أصدق.",
-        "الاستراحة عند الأرنب لم تكن نومًا فقط، بل انخداعًا بظلال السرعة. [[img:1 alt=\"ظل الشجرة\" caption=\"خدعة الزمن\"]]",
-        "وحين عبرت السلحفاة الخط، لم يُهزم الأرنب ببُطئها، بل بهدوئها؛ فالمعرفة تسند الصبر.",
-        "تعلّم أن الطريق ليس للخفّة وحدها، بل لِمن يلتزم بالوعد ويعرف وجهته. [[img:2 alt=\"نهاية رمزية\" caption=\"المعنى قبل التصفيق\"]]"
-      ],
-      "en": [
-        "The race was not a short path between two trees, but a metaphor for life: haste glittered, patience revealed.",
-        "The rabbit chased his reflection in the crowd's eyes—seeking applause more than arrival. [[img:0 alt=\"The crowd\" caption=\"Mirror of intent\"]]",
-        "The turtle listened to the rhythm of her steps, to an inner time—slower, yet truer.",
-        "The rabbit’s rest was not mere sleep, but a seduction by the shade of speed. [[img:1 alt=\"Tree shade\" caption=\"The trick of time\"]]",
-        "When the turtle crossed the line, the rabbit wasn’t beaten by slowness but by composure; knowledge supports patience.",
-        "He learned the path belongs not only to light feet, but to those who keep promises and know their direction. [[img:2 alt=\"Symbolic end\" caption=\"Meaning over applause\"]]"
-      ]
-    }
-  }
-}
- },
+      "levels": {
+        "L1": {
+          "label_ar": "👶 المستوى 1 (٣–٥)",
+          "label_en": "Level 1 (3–5)",
+          "age": "3–5",
+          "duration_min": 5,
+          "body": {
+            "ar": [
+              "كان هناك أرنب سريع جدًا. [[img:0 alt=\"انطلاقة الأرنب\" caption=\"البداية\"]]",
+              "قال الأرنب: أنا الأسرع!",
+              "السلحفاة بطيئة… لكنها لا تتوقف.",
+              "بدأ السباق، والأرنب يركض بسرعة!",
+              "السلحفاة تمشي بصبر حتى وصلت أولًا. [[img:1 alt=\"السلحفاة تفوز\" caption=\"خط النهاية\"]]"
+            ],
+            "en": [
+              "There was a very fast rabbit. [[img:0 alt=\"Rabbit start\" caption=\"Start\"]]",
+              "The rabbit said: I am the fastest!",
+              "The turtle is slow… but she never stops.",
+              "The race began; the rabbit ran fast!",
+              "The turtle kept walking and arrived first. [[img:1 alt=\"Turtle wins\" caption=\"Finish\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/L1/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/L1/img1.webp"
+          ]
+        },
+        "L2": {
+          "label_ar": "🧒 المستوى 2 (٦–٨)",
+          "label_en": "Level 2 (6–8)",
+          "age": "6–8",
+          "duration_min": 9,
+          "body": {
+            "ar": [
+              "صباحٌ مشمس؛ تجمّعت الحيوانات حول المسار. [[img:0 alt=\"جمهور الغابة\" caption=\"تشجيع\"]]",
+              "ضحك الأرنب: «سأنهيه في دقائق!» ابتسمت السلحفاة: «سأمشي بثبات.»",
+              "انطلق الأرنب كالسهم ثم أغرته الشجرة فاستراح قليلًا. [[img:1 alt=\"استراحة تحت الشجرة\" caption=\"راحة مغرية\"]]",
+              "السلحفاة تعدّ خطواتها: واحدة… اثنتان… بلا توقف.",
+              "قفز الأرنب متأخرًا، لكن السلحفاة لمست الشريط أولًا. [[img:2 alt=\"الشريط الأحمر\" caption=\"الاجتهاد يفوز\"]]"
+            ],
+            "en": [
+              "A sunny morning; animals gathered by the path. [[img:0 alt=\"Forest crowd\" caption=\"Cheering\"]]",
+              "The rabbit laughed, “Minutes only!” The turtle smiled, “I will move steadily.”",
+              "The rabbit dashed, then a tree tempted him to rest. [[img:1 alt=\"Rest under tree\" caption=\"Temptation\"]]",
+              "The turtle counted her steps without stopping.",
+              "The rabbit leaped too late; the turtle touched the ribbon first. [[img:2 alt=\"Finish ribbon\" caption=\"Effort wins\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/L2/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/L2/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/L2/img2.webp"
+          ]
+        },
+        "L3": {
+          "label_ar": "👦👧 المستوى 3 (٩–١٢)",
+          "label_en": "Level 3 (9–12)",
+          "age": "9–12",
+          "duration_min": 15,
+          "body": {
+            "ar": [
+              "ابتسم الأرنب للجمهور وهو يتخيّل الفوز قبل البداية. قالت السلحفاة بهدوء: «من سار على الدرب وصل.» [[img:0 alt=\"بداية هادئة\" caption=\"كلمات ثابتة\"]]",
+              "تمدّد الأرنب تحت الظلّ وهو يبرّر لنفسه: «لن تلحق بي.» [[img:1 alt=\"ظل الشجرة\" caption=\"ثوانٍ ثمينة\"]]",
+              "حافظت السلحفاة على إيقاعها: خطوة… نفس… خطوة، لا تقطع وعدها.",
+              "قرب النهاية، كان الجمهور يعدّ، والسلحفاة تقترب بثبات. [[img:2 alt=\"قرب النهاية\" caption=\"عدّ تنازلي\"]]",
+              "اندفع الأرنب متأخرًا، فابتسمت السلحفاة عند الشريط وعلّمتْه درسًا لطيفًا. [[img:3 alt=\"مصافحة\" caption=\"درس مثابرة\"]]"
+            ],
+            "en": [
+              "The rabbit smiled at the crowd, imagining victory. The turtle said calmly, “Step by step, we arrive.” [[img:0 alt=\"Calm start\" caption=\"Steady words\"]]",
+              "He stretched under the shade, telling himself, “She won't catch me.” [[img:1 alt=\"Tree shade\" caption=\"Precious seconds\"]]",
+              "The turtle kept rhythm: step… breath… step—never breaking her promise.",
+              "Near the end the crowd counted down; the turtle moved steadily. [[img:2 alt=\"Near finish\" caption=\"Countdown\"]]",
+              "The rabbit rushed too late; the turtle smiled at the ribbon and taught a gentle lesson. [[img:3 alt=\"Handshake\" caption=\"Perseverance\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/L3/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/L3/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/L3/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/L3/img3.webp"
+          ]
+        },
+        "L4": {
+          "label_ar": "🧑 المستوى 4 (١٣+)",
+          "label_en": "Level 4 (13+)",
+          "age": "13+",
+          "duration_min": 20,
+          "body": {
+            "ar": [
+              "السباق مجازٌ للحياة: السرعة تُلمّع، والصبر يكشف الطريق. [[img:0 alt=\"الحشد كمجتمع\" caption=\"مرآة النوايا\"]]",
+              "لاحق الأرنب صورته في أعين الجمهور؛ أراد التصفيق أكثر من الوصول.",
+              "السلحفاة تصغي لزمنٍ داخليٍّ أبطأ لكنه أصدق. [[img:1 alt=\"ظل الاستعارة\" caption=\"خدعة الزمن\"]]",
+              "قرب النهاية يذوبُ الجمهور في سؤال: هل تغيّر أحد؟ [[img:2 alt=\"اقتراب السلحفاة\" caption=\"اتزان الوتيرة\"]]",
+              "لم يُهزم الأرنب ببُطئها، بل بهدوئها؛ فالمعنى يسند الصبر. [[img:3 alt=\"نهاية رمزية\" caption=\"المعنى قبل التصفيق\"]]",
+              "عاد في الغد بلا جمهور، يبحث عن نفسه لا عن التصفيق. [[img:4 alt=\"تأمل فردي\" caption=\"العودة بلا جمهور\"]]"
+            ],
+            "en": [
+              "The race is a metaphor: speed polishes, patience reveals. [[img:0 alt=\"Crowd as society\" caption=\"Mirror of intent\"]]",
+              "The rabbit chased his reflection in the crowd; he wanted applause more than arrival.",
+              "The turtle listened to an inner time—slower yet truer. [[img:1 alt=\"Shade metaphor\" caption=\"Trick of time\"]]",
+              "Near the end the crowd melted into a question: did anyone change? [[img:2 alt=\"Approach\" caption=\"Composed pace\"]]",
+              "He wasn’t beaten by slowness but by composure; meaning supports patience. [[img:3 alt=\"Symbolic end\" caption=\"Meaning over applause\"]]",
+              "Next day he returned without a crowd—to find himself, not claps. [[img:4 alt=\"Solo reflection\" caption=\"Return alone\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/L4/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/L4/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/L4/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/L4/img3.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/fast-rabbit/L4/img4.webp"
+          ]
+        }
+      }
+    },
     {
       "id": "little-star",
       "emoji": "🌟",
-      "cover": "",
-      "images": ["", "", ""],
-      "title": { "ar": "النجمة الصغيرة", "en": "The Little Star" },
-      "desc":  { "ar": "كل ضوء صغير يصنع فرقًا كبيرًا.", "en": "Every small light makes a big difference." },
-      "age": "5-8",
-      "duration_min": 2,
-      "tags": ["space","kindness"],
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/cover.webp",
+      "title": {
+        "ar": "النجمة الصغيرة",
+        "en": "The Little Star"
+      },
+      "desc": {
+        "ar": "كل ضوء صغير يصنع فرقًا كبيرًا.",
+        "en": "Every small light makes a big difference."
+      },
+      "age": "3–13+",
+      "duration_min": 3,
+      "tags": [
+        "space",
+        "kindness"
+      ],
       "body": {
         "ar": [
-          "في السماء البعيدة شعرت نجمة صغيرة بالخجل من ضوئها.",
-          "لكنها [[img:0 alt=\\\"نجمة لامعة\\\" caption=\\\"بصيص أمل\\\"]] قررت أن تضيء قدر ما تستطيع.",
-          "اجتمعت النجوم حولها [[img:1 alt=\\\"مجموعة نجوم\\\" caption=\\\"قوة الفريق\\\"]] وازدادت السماء جمالًا.",
-          "فهمت النجمة أن [[img:2 alt=\\\"سماء مضيئة\\\" caption=\\\"الضوء يتضاعف\\\"]] الضوء الصغير يصبح كبيرًا مع الآخرين."
+          "نسخة افتراضية قصيرة."
         ],
         "en": [
-          "High in the sky, a little star felt shy about her light.",
-          "But she [[img:0 alt=\\\"Shining star\\\" caption=\\\"A spark of hope\\\"]] decided to shine as much as she could.",
-          "Other stars gathered around [[img:1 alt=\\\"Star cluster\\\" caption=\\\"Team power\\\"]] and the sky became prettier.",
-          "She learned that [[img:2 alt=\\\"Bright sky\\\" caption=\\\"Light multiplies\\\"]] a small light grows with others."
+          "A very short default version."
         ]
+      },
+      "levels": {
+        "L1": {
+          "label_ar": "👶 المستوى 1 (٣–٥)",
+          "label_en": "Level 1 (3–5)",
+          "age": "3–5",
+          "duration_min": 5,
+          "body": {
+            "ar": [
+              "نجمة صغيرة خجولة من ضوئها. [[img:0 alt=\"نجمة تلمع\" caption=\"بصيص ضوء\"]]",
+              "قررت أن تلمع قليلًا… ثم أكثر قليلًا، حتى أضاءت السماء مع صديقاتها. [[img:1 alt=\"سماء مضيئة\" caption=\"معًا نكبر\"]]"
+            ],
+            "en": [
+              "A little star felt shy about her light. [[img:0 alt=\"Shining star\" caption=\"A small sparkle\"]]",
+              "She decided to shine a little… then more, until the sky glowed with her friends. [[img:1 alt=\"Bright sky\" caption=\"Together we grow\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L1/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L1/img1.webp"
+          ]
+        },
+        "L2": {
+          "label_ar": "🧒 المستوى 2 (٦–٨)",
+          "label_en": "Level 2 (6–8)",
+          "age": "6–8",
+          "duration_min": 9,
+          "body": {
+            "ar": [
+              "في ليلٍ صافٍ، نظرت النجمة الصغيرة إلى السماء الواسعة. [[img:0 alt=\"مجموعة نجوم\" caption=\"أصدقاء بعيدون\"]]",
+              "قالت: «سأضيء قدر ما أستطيع.» فازداد بريقها وسمعَت همساتِ النجوم تشجّعها.",
+              "اجتمعت النجومُ حولها، وصار الليلُ لوحةً جميلة. [[img:1 alt=\"تجمّع النجوم\" caption=\"قوة الفريق\"]]",
+              "عرفت أن الضوء الصغير يكبر عندما نشاركُه. [[img:2 alt=\"سماء لامعة\" caption=\"نور يتضاعف\"]]"
+            ],
+            "en": [
+              "On a clear night, the little star looked at the wide sky. [[img:0 alt=\"Star cluster\" caption=\"Distant friends\"]]",
+              "“I'll shine as much as I can,” she said, and her glow gently grew.",
+              "Other stars gathered around, turning night into a painting. [[img:1 alt=\"Gathering\" caption=\"Team power\"]]",
+              "She learned small light grows when shared. [[img:2 alt=\"Luminous sky\" caption=\"Light multiplies\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L2/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L2/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L2/img2.webp"
+          ]
+        },
+        "L3": {
+          "label_ar": "👦👧 المستوى 3 (٩–١٢)",
+          "label_en": "Level 3 (9–12)",
+          "age": "9–12",
+          "duration_min": 15,
+          "body": {
+            "ar": [
+              "كانت النجمةُ تسمعُ قلبها الخافت يقول: «لا تخافي من القلّة، فالقليل يبدأ كثيرًا.» [[img:0 alt=\"بداية خافتة\" caption=\"صوت داخلي\"]]",
+              "كلما لمعتْ قليلًا، لمحَ الأطفالُ أمنيةً في السماء، فابتسمتْ.",
+              "اقتربت النجومُ الهادئة، وأعطتها إيقاعًا يشبه التنفّس: لمعان… هدوء… لمعان. [[img:1 alt=\"إيقاع الضوء\" caption=\"تنفّس السماء\"]]",
+              "تعلّمت أن الثباتَ يضاعفُ النور، وأن المشاركةَ تغيّرُ المشهد. [[img:2 alt=\"نجوم متعاونة\" caption=\"نور جماعي\"]]",
+              "في الفجر، لم تكن الأقوى، لكنها كانت الأكثر أثرًا. [[img:3 alt=\"فجر هادئ\" caption=\"أثر لطيف\"]]"
+            ],
+            "en": [
+              "She heard her faint heart: “Do not fear being small; much begins small.” [[img:0 alt=\"Soft start\" caption=\"Inner voice\"]]",
+              "With each gentle shine, children spotted a wish and smiled.",
+              "Quiet stars drew near, giving her a breathing rhythm: glow… rest… glow. [[img:1 alt=\"Light rhythm\" caption=\"Sky breathing\"]]",
+              "She learned steadiness multiplies light, and sharing changes the scene. [[img:2 alt=\"Cooperative stars\" caption=\"Collective light\"]]",
+              "At dawn she wasn’t the strongest, but she was the most felt. [[img:3 alt=\"Calm dawn\" caption=\"Gentle impact\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L3/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L3/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L3/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L3/img3.webp"
+          ]
+        },
+        "L4": {
+          "label_ar": "🧑 المستوى 4 (١٣+)",
+          "label_en": "Level 4 (13+)",
+          "age": "13+",
+          "duration_min": 20,
+          "body": {
+            "ar": [
+              "كانت السماء كتابًا مفتوحًا، وكل نجمة كلمة تحتمل المعنى. [[img:0 alt=\"سماء رمزية\" caption=\"كتاب واسع\"]]",
+              "خجلُ الضوء ليس نقصًا؛ إنّه سؤال: لمن أُضيء؟",
+              "حين تقاسمت النجومُ أنفاسها، صار الظلامُ مساحةً للمعنى لا للخوف. [[img:1 alt=\"تنفّس الضوء\" caption=\"تقاسم\"]]",
+              "لم تكن الصغيرةُ تسعى لسطوعٍ صاخب، بل لضياءٍ يهدّي الطريق. [[img:2 alt=\"درب مضيء\" caption=\"هداية\"]]",
+              "وعند الفجر، فهمت أنّ المشاركةَ تُبددُ العتمة أكثر من صرخةِ ضوءٍ وحيد. [[img:3 alt=\"فجر رمزي\" caption=\"نور يتقاسم\"]]",
+              "ابتسمت للسماء، كمن يكتبُ جملةً كاملةً بعد صبرٍ طويل. [[img:4 alt=\"ابتسامة نجمة\" caption=\"اكتمال\"]]"
+            ],
+            "en": [
+              "The sky was an open book; every star a word seeking meaning. [[img:0 alt=\"Symbolic sky\" caption=\"Wide book\"]]",
+              "Shy light isn’t lack; it asks: for whom do I shine?",
+              "When stars shared their breath, darkness became room for meaning, not fear. [[img:1 alt=\"Shared breath\" caption=\"Sharing\"]]",
+              "She sought not loud brightness, but a glow that guides. [[img:2 alt=\"Lit path\" caption=\"Guidance\"]]",
+              "At dawn she learned sharing scatters gloom more than a lone shout of light. [[img:3 alt=\"Symbolic dawn\" caption=\"Shared light\"]]",
+              "She smiled at the sky, as one who finishes a patient sentence. [[img:4 alt=\"Star smile\" caption=\"Completion\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L4/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L4/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L4/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L4/img3.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L4/img4.webp"
+          ]
+        }
       }
     },
     {
       "id": "brave-little-fish",
       "emoji": "🐟",
-      "cover": "",
-      "images": ["", "", ""],
-      "title": { "ar": "السمكة الصغيرة الشجاعة", "en": "The Brave Little Fish" },
-      "desc":  { "ar": "الشجاعة تبدأ بخطوة صغيرة.", "en": "Courage begins with a small step." },
-      "age": "5-9",
-      "duration_min": 4,
-      "tags": ["sea","courage"],
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/cover.webp",
+      "title": {
+        "ar": "السمكة الصغيرة الشجاعة",
+        "en": "The Brave Little Fish"
+      },
+      "desc": {
+        "ar": "الشجاعة تبدأ بخطوة صغيرة.",
+        "en": "Courage begins with a small step."
+      },
+      "age": "3–13+",
+      "duration_min": 3,
+      "tags": [
+        "sea",
+        "courage"
+      ],
       "body": {
         "ar": [
-          "كانت السمكة الصغيرة تخاف التيار.",
-          "تدرّبت قرب الصخور [[img:0 alt=\\\"تدرّب قرب الصخور\\\" caption=\\\"خطوات آمنة\\\"]] يومًا بعد يوم.",
-          "صارت أقوى وسبحت مع القطيع [[img:1 alt=\\\"السباحة مع القطيع\\\" caption=\\\"ثقة أكبر\\\"]] بثقة.",
-          "وأخيرًا عبرت النهر [[img:2 alt=\\\"عبور النهر\\\" caption=\\\"نجاح\\\"]] وهي تبتسم."
+          "نسخة افتراضية قصيرة."
         ],
         "en": [
-          "The little fish was afraid of the current.",
-          "She practiced near the rocks [[img:0 alt=\\\"Practice by rocks\\\" caption=\\\"Safe steps\\\"]] day by day.",
-          "She grew stronger and swam with the school [[img:1 alt=\\\"Swimming with school\\\" caption=\\\"More confidence\\\"]] with trust.",
-          "At last she crossed the river [[img:2 alt=\\\"Crossing the river\\\" caption=\\\"Success\\\"]] with a smile."
+          "A very short default version."
         ]
+      },
+      "levels": {
+        "L1": {
+          "label_ar": "👶 المستوى 1 (٣–٥)",
+          "label_en": "Level 1 (3–5)",
+          "age": "3–5",
+          "duration_min": 5,
+          "body": {
+            "ar": [
+              "خافت السمكة الصغيرة من التيار. [[img:0 alt=\"قرب الصخور\" caption=\"مكان آمن\"]]",
+              "تدرّبت قليلًا… ثم عبرت مع القطيع وهي تبتسم. [[img:1 alt=\"عبور بسيط\" caption=\"خطوة شجاعة\"]]"
+            ],
+            "en": [
+              "The little fish feared the current. [[img:0 alt=\"By the rocks\" caption=\"Safe place\"]]",
+              "She practiced a bit… then crossed with the school, smiling. [[img:1 alt=\"Simple crossing\" caption=\"Brave step\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/L1/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/L1/img1.webp"
+          ]
+        },
+        "L2": {
+          "label_ar": "🧒 المستوى 2 (٦–٨)",
+          "label_en": "Level 2 (6–8)",
+          "age": "6–8",
+          "duration_min": 9,
+          "body": {
+            "ar": [
+              "في خليجٍ هادئ، كانت سمكةٌ صغيرة تختبئ قرب الصخور. [[img:0 alt=\"خليج هادئ\" caption=\"بداية\"]]",
+              "قالت الأم: «جرّبي السباحة القصيرة، ثم عودي.»",
+              "سبحت خطوةً صغيرةً، ثم أكبر قليلًا، حتى شعرت بالماء يحملها. [[img:1 alt=\"تجربة السباحة\" caption=\"قوة لطيفة\"]]",
+              "عندما عاد القطيعُ، سبحت معهم بثقة حتى عبروا المضيق. [[img:2 alt=\"عبور المضيق\" caption=\"معًا أقوى\"]]"
+            ],
+            "en": [
+              "In a calm bay, a small fish hid near the rocks. [[img:0 alt=\"Calm bay\" caption=\"Start\"]]",
+              "Mother said, “Try a short swim, then return.”",
+              "She swam a small step, then a bigger one, feeling water lift her. [[img:1 alt=\"Trying swim\" caption=\"Gentle strength\"]]",
+              "When the school returned, she crossed the strait with them. [[img:2 alt=\"Crossing strait\" caption=\"Stronger together\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/L2/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/L2/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/L2/img2.webp"
+          ]
+        },
+        "L3": {
+          "label_ar": "👦👧 المستوى 3 (٩–١٢)",
+          "label_en": "Level 3 (9–12)",
+          "age": "9–12",
+          "duration_min": 15,
+          "body": {
+            "ar": [
+              "كانت تخافُ من صوت التيار أكثر من التيار نفسه. [[img:0 alt=\"صوت الماء\" caption=\"خوف مبالغ\"]]",
+              "تعلمت أن تقيسَ الخوف بخطوةٍ واقعية: خمس زعزعات ثم راحة.",
+              "مع كل محاولة كانت تكتشف أن الماء لا يريد إسقاطها، بل حملها. [[img:1 alt=\"حمل الماء\" caption=\"ثقة تدريجية\"]]",
+              "عند مصبِّ النهر، اختارت أن تسبح مع القطيع لا قباله. [[img:2 alt=\"مصَبّ\" caption=\"قرار حكيم\"]]",
+              "وصلت الضفةَ الأخرى، فاكتشفت أن الشجاعةَ عادةٌ تتقوّى بالتكرار. [[img:3 alt=\"الضفة\" caption=\"نتيجة التدريب\"]]"
+            ],
+            "en": [
+              "She feared the sound of the current more than the current itself. [[img:0 alt=\"Water sound\" caption=\"Exaggerated fear\"]]",
+              "She learned to weight fear with a real step: five wiggles, then rest.",
+              "With each trial she found water didn’t push her down—it carried her. [[img:1 alt=\"Water carries\" caption=\"Growing trust\"]]",
+              "At the river mouth she chose to swim with the school, not against it. [[img:2 alt=\"River mouth\" caption=\"Wise choice\"]]",
+              "She reached the other bank; courage became a habit strengthened by repetition. [[img:3 alt=\"Other bank\" caption=\"Practice pays\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/L3/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/L3/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/L3/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/L3/img3.webp"
+          ]
+        },
+        "L4": {
+          "label_ar": "🧑 المستوى 4 (١٣+)",
+          "label_en": "Level 4 (13+)",
+          "age": "13+",
+          "duration_min": 20,
+          "body": {
+            "ar": [
+              "كان الماءُ مرآة مخيفة حين وقفت وحدها، وصديقًا لطيفًا حين مشت معه. [[img:0 alt=\"مرآة الماء\" caption=\"صورتان\"]]",
+              "لم تتغيّر قوّتها فجأةً؛ الذي تغيّر هو تفسيرُها للخوف. [[img:1 alt=\"تفسير جديد\" caption=\"فهم\"]]",
+              "في التيار، تعلّمت أن القيادة ليست قفزًا أمام القطيع، بل صبرًا بينهم. [[img:2 alt=\"بين القطيع\" caption=\"قيادة هادئة\"]]",
+              "عبرت المجرى وهي تعرف أن الشجاعة ليست غياب الخوف، بل ضبطه.",
+              "في اليوم التالي، علّمت صغارًا أن يبدأوا بخمس زعزعات… ثم راحة. [[img:3 alt=\"تعليم\" caption=\"نقل الخبرة\"]]",
+              "وهكذا صار الماء كتابًا تُقرأ صفحاته بالحركة. [[img:4 alt=\"كتاب الماء\" caption=\"معنى جديد\"]]"
+            ],
+            "en": [
+              "Water was a scary mirror alone, a gentle friend together. [[img:0 alt=\"Water mirror\" caption=\"Two images\"]]",
+              "Her strength didn’t change at once; her meaning of fear did. [[img:1 alt=\"New meaning\" caption=\"Understanding\"]]",
+              "In the current she learned leadership is not jumping ahead, but patience among. [[img:2 alt=\"Among school\" caption=\"Quiet leadership\"]]",
+              "She crossed knowing courage isn’t the absence of fear but its regulation.",
+              "Next day she taught little ones: start with five wiggles… then rest. [[img:3 alt=\"Teaching\" caption=\"Passing on\"]]",
+              "Thus water became a book read by movement. [[img:4 alt=\"Water book\" caption=\"New meaning\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/L4/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/L4/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/L4/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/L4/img3.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/brave-little-fish/L4/img4.webp"
+          ]
+        }
       }
     },
     {
       "id": "kind-giant",
       "emoji": "🗻",
-      "cover": "",
-      "images": ["", "", ""],
-      "title": { "ar": "العملاق الطيّب", "en": "The Kind Giant" },
-      "desc":  { "ar": "القوة الحقيقية في اللطف.", "en": "True strength is kindness." },
-      "age": "6-10",
-      "duration_min": 5,
-      "tags": ["friendship","kindness"],
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/cover.webp",
+      "title": {
+        "ar": "العملاق الطيّب",
+        "en": "The Kind Giant"
+      },
+      "desc": {
+        "ar": "القوة الحقيقية في اللطف.",
+        "en": "True strength is kindness."
+      },
+      "age": "3–13+",
+      "duration_min": 3,
+      "tags": [
+        "friendship",
+        "kindness"
+      ],
       "body": {
         "ar": [
-          "كان عملاق طيب يعيش في الجبل يصلح الجسور.",
-          "وعندما [[img:0 alt=\\\"جسر مكسور\\\" caption=\\\"مساعدة القرى\\\"]] انكسر جسر، حمل الحجارة بخفة.",
-          "شكرته القرى [[img:1 alt=\\\"شكر القرويين\\\" caption=\\\"امتنان\\\"]] وبنوا معه الجسر.",
-          "وحين مرض يومًا [[img:2 alt=\\\"رعاية العملاق\\\" caption=\\\"رد الجميل\\\"]] جاءوا يرعونه بمحبة."
+          "نسخة افتراضية قصيرة."
         ],
         "en": [
-          "A kind giant lived in the mountain fixing bridges.",
-          "When [[img:0 alt=\\\"Broken bridge\\\" caption=\\\"Helping villages\\\"]] a bridge broke, he carried stones with ease.",
-          "Villagers thanked him [[img:1 alt=\\\"Villagers thanking\\\" caption=\\\"Gratitude\\\"]] and rebuilt together.",
-          "When he fell ill one day [[img:2 alt=\\\"Caring for the giant\\\" caption=\\\"Giving back\\\"]] they came to care for him."
+          "A very short default version."
         ]
+      },
+      "levels": {
+        "L1": {
+          "label_ar": "👶 المستوى 1 (٣–٥)",
+          "label_en": "Level 1 (3–5)",
+          "age": "3–5",
+          "duration_min": 5,
+          "body": {
+            "ar": [
+              "عملاق طيّب يصلح الجسر المكسور. [[img:0 alt=\"جسر مكسور\" caption=\"مساعدة\"]]",
+              "شكرتْه القرية، وبنوا معه الجسر الجديد. [[img:1 alt=\"جسر جديد\" caption=\"معًا\"]]"
+            ],
+            "en": [
+              "A kind giant fixed the broken bridge. [[img:0 alt=\"Broken bridge\" caption=\"Helping\"]]",
+              "Villagers thanked him and rebuilt together. [[img:1 alt=\"New bridge\" caption=\"Together\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/L1/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/L1/img1.webp"
+          ]
+        },
+        "L2": {
+          "label_ar": "🧒 المستوى 2 (٦–٨)",
+          "label_en": "Level 2 (6–8)",
+          "age": "6–8",
+          "duration_min": 9,
+          "body": {
+            "ar": [
+              "عندما جرف السيلُ الجسرَ، حمل العملاقُ الحجارةَ كأنّها تفّاح. [[img:0 alt=\"حمل الحجارة\" caption=\"قوة لطيفة\"]]",
+              "ناداه الأطفالُ: «شكراً يا عملاق!»",
+              "وضع الأساسَ متينًا، ثم شكّل القوسَ بالحذر. [[img:1 alt=\"تشكيل القوس\" caption=\"إتقان\"]]",
+              "جاء أهل القرية يساعدون، فصار العملُ أسرع وأجمل. [[img:2 alt=\"عمل جماعي\" caption=\"يد واحدة\"]]"
+            ],
+            "en": [
+              "When the flood swept the bridge, the giant lifted stones like apples. [[img:0 alt=\"Lifting stones\" caption=\"Gentle strength\"]]",
+              "Children called: “Thank you, giant!”",
+              "He set a firm base, then shaped the arch with care. [[img:1 alt=\"Shaping arch\" caption=\"Craft\"]]",
+              "Villagers joined, making work faster and prettier. [[img:2 alt=\"Teamwork\" caption=\"One hand\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/L2/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/L2/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/L2/img2.webp"
+          ]
+        },
+        "L3": {
+          "label_ar": "👦👧 المستوى 3 (٩–١٢)",
+          "label_en": "Level 3 (9–12)",
+          "age": "9–12",
+          "duration_min": 15,
+          "body": {
+            "ar": [
+              "لم تكن قوته في الحجم، بل في الصبر على التفاصيل. [[img:0 alt=\"تفاصيل البناء\" caption=\"صبر\"]]",
+              "حين مرضَ يومًا، حمل أهل القرية طعامهم نحوه، ورمّموا معه ما تبقّى. [[img:1 alt=\"رعاية\" caption=\"رد الجميل\"]]",
+              "ابتسم: «القوةُ التي لا تُعين، ليست قوة.»",
+              "صار الجسرُ مدرسةً صغيرة: يعلّمهم التعاون كلما عبروا. [[img:2 alt=\"جسر حي\" caption=\"درس يومي\"]]"
+            ],
+            "en": [
+              "His strength wasn’t size but patience with details. [[img:0 alt=\"Build details\" caption=\"Patience\"]]",
+              "When he fell ill, villagers brought food and fixed the rest. [[img:1 alt=\"Care\" caption=\"Giving back\"]]",
+              "He smiled: “Strength that doesn’t help isn’t strength.”",
+              "The bridge became a small school of cooperation. [[img:2 alt=\"Living bridge\" caption=\"Daily lesson\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/L3/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/L3/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/L3/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/L3/img3.webp"
+          ]
+        },
+        "L4": {
+          "label_ar": "🧑 المستوى 4 (١٣+)",
+          "label_en": "Level 4 (13+)",
+          "age": "13+",
+          "duration_min": 20,
+          "body": {
+            "ar": [
+              "الجسرُ ليس حجرًا فوق حجر؛ إنّه وعدٌ يُحملُ على الأكتاف. [[img:0 alt=\"وعد الجسر\" caption=\"معنى\"]]",
+              "اللطفُ قوّةٌ تضعُ المعنى في المادة، فتغدو الحجارةُ قلوبًا.",
+              "حين انكسر الجسرُ مرّةً ثانية، لم ينكسر أهلُه؛ لأنّهم تعلّموا كيف يقيمونه. [[img:1 alt=\"تعلّم جماعي\" caption=\"صمود\"]]",
+              "صار العملاقُ أصغر قليلًا في عيونهم، وأقرب كثيرًا إلى قلوبهم.",
+              "والقوةُ الحقيقية هي التي تُبقي الطريقَ بيننا ممكنًا. [[img:2 alt=\"طريق مفتوح\" caption=\"اتصال\"]]",
+              "كلُّ عبورٍ على الجسر كان شكرًا جديدًا. [[img:3 alt=\"عبور\" caption=\"امتنان\"]]",
+              "وهكذا صار اللطفُ هندسةً للمعنى قبل أن يكون بناءً. [[img:4 alt=\"هندسة المعنى\" caption=\"خاتمة\"]]"
+            ],
+            "en": [
+              "A bridge isn’t stone on stone; it’s a promise carried on shoulders. [[img:0 alt=\"Bridge promise\" caption=\"Meaning\"]]",
+              "Kindness is strength that puts meaning into matter; stones become hearts.",
+              "When it broke again, the people didn’t; they knew how to raise it. [[img:1 alt=\"Collective learning\" caption=\"Resilience\"]]",
+              "The giant looked smaller to their eyes, closer to their hearts.",
+              "True strength keeps the road between us possible. [[img:2 alt=\"Open road\" caption=\"Connection\"]]",
+              "Every crossing was a new thank-you. [[img:3 alt=\"Crossing\" caption=\"Gratitude\"]]",
+              "Thus kindness became engineering of meaning before structure. [[img:4 alt=\"Meaning craft\" caption=\"Closure\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/L4/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/L4/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/L4/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/L4/img3.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/L4/img4.webp"
+          ]
+        }
       }
     },
     {
       "id": "forest-adventure",
       "emoji": "🌳",
-      "cover": "",
-      "images": ["", "", ""],
-      "title": { "ar": "مغامرة في الغابة", "en": "Adventure in the Forest" },
-      "desc":  { "ar": "اكتشافٌ ممتعٌ بخطواتٍ آمنة.", "en": "A fun discovery with safe steps." },
-      "age": "6-10",
-      "duration_min": 4,
-      "tags": ["adventure","nature"],
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/cover.webp",
+      "title": {
+        "ar": "مغامرة في الغابة",
+        "en": "Adventure in the Forest"
+      },
+      "desc": {
+        "ar": "اكتشافٌ ممتعٌ بخطواتٍ آمنة.",
+        "en": "A fun discovery with safe steps."
+      },
+      "age": "3–13+",
+      "duration_min": 3,
+      "tags": [
+        "adventure",
+        "nature"
+      ],
       "body": {
         "ar": [
-          "دخل طفلٌ الغابة مع والده لاكتشاف النباتات.",
-          "تعلّم كيف يتبع المسار [[img:0 alt=\\\"اتباع المسار\\\" caption=\\\"أمان أولًا\\\"]] دون أن يضيع.",
-          "شاهدا طيورًا ملونة [[img:1 alt=\\\"طيور ملونة\\\" caption=\\\"متعة الاكتشاف\\\"]] ترفرف قريبًا.",
-          "وجمعا أوراقًا مختلفة [[img:2 alt=\\\"أوراق الشجر\\\" caption=\\\"دفتر الطبيعة\\\"]] لدفتر ملاحظات الطبيعة."
+          "نسخة افتراضية قصيرة."
         ],
         "en": [
-          "A child entered the forest with his father to discover plants.",
-          "He learned to follow the trail [[img:0 alt=\\\"Following the trail\\\" caption=\\\"Safety first\\\"]] without getting lost.",
-          "They saw colorful birds [[img:1 alt=\\\"Colorful birds\\\" caption=\\\"Joy of discovery\\\"]] flying nearby.",
-          "They collected different leaves [[img:2 alt=\\\"Leaves\\\" caption=\\\"Nature journal\\\"]] for a nature journal."
+          "A very short default version."
         ]
+      },
+      "levels": {
+        "L1": {
+          "label_ar": "👶 المستوى 1 (٣–٥)",
+          "label_en": "Level 1 (3–5)",
+          "age": "3–5",
+          "duration_min": 5,
+          "body": {
+            "ar": [
+              "دخل طفلٌ مع والده الغابة. [[img:0 alt=\"دخول الغابة\" caption=\"بداية\"]]",
+              "تبع المسارَ بأمان، وشاهد طيورًا ملوّنة. [[img:1 alt=\"طيور ملونة\" caption=\"فرح\"]]"
+            ],
+            "en": [
+              "A child entered the forest with his father. [[img:0 alt=\"Entering forest\" caption=\"Start\"]]",
+              "He followed the trail safely and saw colorful birds. [[img:1 alt=\"Colorful birds\" caption=\"Joy\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/L1/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/L1/img1.webp"
+          ]
+        },
+        "L2": {
+          "label_ar": "🧒 المستوى 2 (٦–٨)",
+          "label_en": "Level 2 (6–8)",
+          "age": "6–8",
+          "duration_min": 9,
+          "body": {
+            "ar": [
+              "أمسك الطفلُ بخريطةٍ صغيرة ومسارٍ عليه أسهم. [[img:0 alt=\"خريطة\" caption=\"دليل\"]]",
+              "كان الأبُ يعلّمه: «اتبع العلامات، ولا تخرج عن الطريق.»",
+              "سمعا ماءً خفيفًا؛ وجدَا جدولًا صغيرًا وقفزا فوقه. [[img:1 alt=\"جدول ماء\" caption=\"قفزة\"]]",
+              "جمعا أوراقًا مختلفة لدفتر الطبيعة. [[img:2 alt=\"أوراق\" caption=\"ملاحظة\"]]"
+            ],
+            "en": [
+              "The child held a small map with arrows. [[img:0 alt=\"Map\" caption=\"Guide\"]]",
+              "Dad taught: “Follow marks; don’t leave the trail.”",
+              "They heard water; a little stream to hop over. [[img:1 alt=\"Stream\" caption=\"Hop\"]]",
+              "They collected different leaves for a nature journal. [[img:2 alt=\"Leaves\" caption=\"Note\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/L2/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/L2/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/L2/img2.webp"
+          ]
+        },
+        "L3": {
+          "label_ar": "👦👧 المستوى 3 (٩–١٢)",
+          "label_en": "Level 3 (9–12)",
+          "age": "9–12",
+          "duration_min": 15,
+          "body": {
+            "ar": [
+              "سأل الطفل: «ولماذا لا نمشي من هنا؟» قال الأب: «الطريقُ الآمن أجمل على المدى الطويل.» [[img:0 alt=\"نصيحة\" caption=\"أمان\"]]",
+              "تعلّم قراءة آثار الأقدام وملاحظة اتجاه الريح.",
+              "حين تعب، قسّم الطريق إلى مقاطع قصيرة مع استراحاتٍ محسوبة. [[img:1 alt=\"تقسيم المسار\" caption=\"تنظيم\"]]",
+              "في دفتره كتب: «التزم بالعلامات… تصل.» ثم رسم خريطةً صغيرة. [[img:2 alt=\"دفتر\" caption=\"درس\"]]"
+            ],
+            "en": [
+              "“Why not walk there?” he asked. “Safe paths are prettier in the long run,” Dad said. [[img:0 alt=\"Advice\" caption=\"Safety\"]]",
+              "He learned to read tracks and watch wind direction.",
+              "When tired, he split the path into short sections with planned rests. [[img:1 alt=\"Split path\" caption=\"Organize\"]]",
+              "In his journal: “Follow markers… arrive,” and drew a tiny map. [[img:2 alt=\"Journal\" caption=\"Lesson\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/L3/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/L3/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/L3/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/L3/img3.webp"
+          ]
+        },
+        "L4": {
+          "label_ar": "🧑 المستوى 4 (١٣+)",
+          "label_en": "Level 4 (13+)",
+          "age": "13+",
+          "duration_min": 20,
+          "body": {
+            "ar": [
+              "اكتشف أن الخريطة ليست الورق وحده، بل عادة النظر قبل الخطوة. [[img:0 alt=\"عادة النظر\" caption=\"معنى\"]]",
+              "الطريقُ الذي يحفظك يجعلكُ حرًا: أمانٌ أولًا ليكبر الاكتشاف.",
+              "صار يسمع أصوات الغابة كجوقةٍ متّزنة لا كضجيج. [[img:1 alt=\"جوقة الغابة\" caption=\"إنصات\"]]",
+              "في المساء، فهم أن الرحلة الجيدة لا تختصر المسافة، بل تُحسن المعنى. [[img:2 alt=\"غروب\" caption=\"خلاصة\"]]",
+              "وكتب: «العلامةُ الأولى: أن أعرف لماذا أمشي.» [[img:3 alt=\"سطر أخير\" caption=\"قصد\"]]",
+              "ثم أغمض عينيه وهو يفكر في رحلة الغد. [[img:4 alt=\"راحة\" caption=\"موعد جديد\"]]"
+            ],
+            "en": [
+              "He learned the map isn’t paper only, but the habit of looking before a step. [[img:0 alt=\"Habit of looking\" caption=\"Meaning\"]]",
+              "The path that keeps you safe sets you free: safety first, then discovery grows.",
+              "Forest sounds became a choir, not noise. [[img:1 alt=\"Forest choir\" caption=\"Listening\"]]",
+              "Evening taught him: good trips don’t shorten distance; they refine meaning. [[img:2 alt=\"Sunset\" caption=\"Takeaway\"]]",
+              "He wrote: “First marker: know why I walk.” [[img:3 alt=\"Last line\" caption=\"Intention\"]]",
+              "He closed his eyes, planning tomorrow. [[img:4 alt=\"Rest\" caption=\"New date\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/L4/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/L4/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/L4/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/L4/img3.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/L4/img4.webp"
+          ]
+        }
       }
     },
     {
       "id": "curious-kitten",
       "emoji": "🐱",
-      "cover": "",
-      "images": ["", "", ""],
-      "title": { "ar": "الهِرّة الفضولية", "en": "The Curious Kitten" },
-      "desc":  { "ar": "الفضول يساعدنا على التعلّم.", "en": "Curiosity helps us learn." },
-      "age": "5-8",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/cover.webp",
+      "title": {
+        "ar": "الهِرّة الفضولية",
+        "en": "The Curious Kitten"
+      },
+      "desc": {
+        "ar": "الفضول يساعدنا على التعلّم.",
+        "en": "Curiosity helps us learn."
+      },
+      "age": "3–13+",
       "duration_min": 3,
-      "tags": ["learning","home"],
+      "tags": [
+        "learning",
+        "home"
+      ],
       "body": {
         "ar": [
-          "كانت هرّة صغيرة تسأل عن كل شيء في البيت.",
-          "لاحظت ضوء الشمس [[img:0 alt=\\\"ضوء الشمس\\\" caption=\\\"ألوان وظلال\\\"]] يدخل من النافذة.",
-          "تتبعت الظلال على الجدار [[img:1 alt=\\\"ظلال على الجدار\\\" caption=\\\"لعبة الأشكال\\\"]] وهي تتغيّر.",
-          "ثم شاهدت المطر [[img:2 alt=\\\"قطرات المطر\\\" caption=\\\"أصوات لطيفة\\\"]] وسمعت صوته بهدوء."
+          "نسخة افتراضية قصيرة."
         ],
         "en": [
-          "A little kitten asked about everything at home.",
-          "She noticed sunlight [[img:0 alt=\\\"Sunlight\\\" caption=\\\"Colors and shadows\\\"]] entering through the window.",
-          "She followed the shadows on the wall [[img:1 alt=\\\"Shadows on the wall\\\" caption=\\\"Shape game\\\"]] as they changed.",
-          "Then she watched the rain [[img:2 alt=\\\"Raindrops\\\" caption=\\\"Calm sounds\\\"]] and listened quietly."
+          "A very short default version."
         ]
+      },
+      "levels": {
+        "L1": {
+          "label_ar": "👶 المستوى 1 (٣–٥)",
+          "label_en": "Level 1 (3–5)",
+          "age": "3–5",
+          "duration_min": 5,
+          "body": {
+            "ar": [
+              "سألت هرّة صغيرة عن كل شيء في البيت. [[img:0 alt=\"ضوء الشمس\" caption=\"ألوان\"]]",
+              "تتبّعت الظلال على الجدار وهي تتغيّر. [[img:1 alt=\"ظلال\" caption=\"لعبة\"]]"
+            ],
+            "en": [
+              "A little kitten asked about everything at home. [[img:0 alt=\"Sunlight\" caption=\"Colors\"]]",
+              "She followed the shadows on the wall as they changed. [[img:1 alt=\"Shadows\" caption=\"Game\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/L1/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/L1/img1.webp"
+          ]
+        },
+        "L2": {
+          "label_ar": "🧒 المستوى 2 (٦–٨)",
+          "label_en": "Level 2 (6–8)",
+          "age": "6–8",
+          "duration_min": 9,
+          "body": {
+            "ar": [
+              "دخل شعاعُ شمسٍ من النافذة، فرأت الهِرّةُ غبارًا يرقص. [[img:0 alt=\"شعاع\" caption=\"رقص الضوء\"]]",
+              "سألت: «لماذا يتحرّك؟» أجاب الأب: «الضوءُ صديقُ الأشياء.»",
+              "صنعت أشكالًا بيديها على الجدار، فصارت ظلالًا مضحكة. [[img:1 alt=\"أشكال\" caption=\"مرح\"]]",
+              "حين أمطرت، وضعت وعاءً قرب النافذة تسمع صوت القطرات. [[img:2 alt=\"مطر\" caption=\"أنغام هادئة\"]]"
+            ],
+            "en": [
+              "A sunbeam entered; dust danced in the air. [[img:0 alt=\"Sunbeam\" caption=\"Light dance\"]]",
+              "“Why does it move?” she asked. “Light is a friend of things,” Dad replied.",
+              "She made shapes with her hands; funny shadows appeared. [[img:1 alt=\"Shapes\" caption=\"Fun\"]]",
+              "When rain came, she placed a bowl to listen to drops. [[img:2 alt=\"Rain\" caption=\"Calm tunes\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/L2/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/L2/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/L2/img2.webp"
+          ]
+        },
+        "L3": {
+          "label_ar": "👦👧 المستوى 3 (٩–١٢)",
+          "label_en": "Level 3 (9–12)",
+          "age": "9–12",
+          "duration_min": 15,
+          "body": {
+            "ar": [
+              "اكتشفت أن السؤالَ قنديلٌ صغير يقودها. [[img:0 alt=\"قنديل\" caption=\"هداية\"]]",
+              "سجّلت ملاحظاتٍ في دفتر: «الشمس تغيّر الألوان… والمطر يغيّر الأصوات.»",
+              "صنعت تجربةً بسيطة: مرآة صغيرة تعكس الضوء على ورقة. [[img:1 alt=\"تجربة\" caption=\"اكتشاف\"]]",
+              "ابتسمت وهي ترى الغرفةَ تتحوّل مسرحًا للمعرفة اليومية. [[img:2 alt=\"مسرح صغير\" caption=\"بهجة التعلم\"]]"
+            ],
+            "en": [
+              "She found questions are little lanterns guiding her. [[img:0 alt=\"Lantern\" caption=\"Guidance\"]]",
+              "She wrote: “Sun changes colors… rain changes sounds.”",
+              "She made a tiny experiment: a mirror reflecting light onto paper. [[img:1 alt=\"Experiment\" caption=\"Discovery\"]]",
+              "Her room became a small stage for daily learning. [[img:2 alt=\"Small stage\" caption=\"Joy of learning\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/L3/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/L3/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/L3/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/L3/img3.webp"
+          ]
+        },
+        "L4": {
+          "label_ar": "🧑 المستوى 4 (١٣+)",
+          "label_en": "Level 4 (13+)",
+          "age": "13+",
+          "duration_min": 20,
+          "body": {
+            "ar": [
+              "البيتُ كتابٌ مفتوح حين ننظر بحبّ. [[img:0 alt=\"كتاب البيت\" caption=\"قراءة جديدة\"]]",
+              "الأسئلةُ لا تكسر الأشياء؛ إنّها تفتحها على المعنى.",
+              "تعلمت الهِرّةُ أن الفضول وعدٌ بالتحسن كل يوم. [[img:1 alt=\"وعد الفضول\" caption=\"تحسّن\"]]",
+              "وفي ليلةٍ ممطرة، كتبت: «التعلمُ ليس غرفةً؛ إنّه طريق.» [[img:2 alt=\"ليلة مطيرة\" caption=\"طريق\"]]",
+              "ثم نامت وهي تبتسم للحلم القادم. [[img:3 alt=\"نوم هادئ\" caption=\"حلم\"]]",
+              "صارت تحبّ الصباح لأنه سؤالٌ جديد. [[img:4 alt=\"صباح\" caption=\"بداية\"]]"
+            ],
+            "en": [
+              "Home is an open book when looked at with love. [[img:0 alt=\"Home book\" caption=\"New reading\"]]",
+              "Questions don’t break things; they open them to meaning.",
+              "She learned curiosity is a promise to improve daily. [[img:1 alt=\"Curiosity promise\" caption=\"Improve\"]]",
+              "On a rainy night she wrote: “Learning isn’t a room; it is a path.” [[img:2 alt=\"Rainy night\" caption=\"Path\"]]",
+              "She slept smiling at the next dream. [[img:3 alt=\"Calm sleep\" caption=\"Dream\"]]",
+              "She loved morning; it was a new question. [[img:4 alt=\"Morning\" caption=\"Start\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/L4/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/L4/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/L4/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/L4/img3.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/curious-kitten/L4/img4.webp"
+          ]
+        }
       }
     },
     {
       "id": "desert-journey",
       "emoji": "🐪",
-      "cover": "",
-      "images": ["", "", ""],
-      "title": { "ar": "رحلة في الصحراء", "en": "Journey in the Desert" },
-      "desc":  { "ar": "الصبر دليل المسافر.", "en": "Patience guides the traveler." },
-      "age": "6-10",
-      "duration_min": 4,
-      "tags": ["desert","travel"],
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/cover.webp",
+      "title": {
+        "ar": "رحلة في الصحراء",
+        "en": "Journey in the Desert"
+      },
+      "desc": {
+        "ar": "الصبر دليل المسافر.",
+        "en": "Patience guides the traveler."
+      },
+      "age": "3–13+",
+      "duration_min": 3,
+      "tags": [
+        "desert",
+        "travel"
+      ],
       "body": {
         "ar": [
-          "سار طفل مع عائلته في الصحراء فوق جمل هادئ.",
-          "تعلم كيف يحافظ على الماء [[img:0 alt=\\\"قِربة ماء\\\" caption=\\\"لا تهدر الماء\\\"]] طوال اليوم.",
-          "تأمل الكثبان الذهبية [[img:1 alt=\\\"كثبان رملية\\\" caption=\\\"جمال الصحراء\\\"]] والسماء الواسعة.",
-          "وفي المساء جلسوا حول نار صغيرة [[img:2 alt=\\\"جلسة مسائية\\\" caption=\\\"دفء العائلة\\\"]] يحكون القصص."
+          "نسخة افتراضية قصيرة."
         ],
         "en": [
-          "A child traveled with his family in the desert on a calm camel.",
-          "He learned to save water [[img:0 alt=\\\"Water skin\\\" caption=\\\"Do not waste water\\\"]] all day long.",
-          "He admired the golden dunes [[img:1 alt=\\\"Sand dunes\\\" caption=\\\"Desert beauty\\\"]] and the wide sky.",
-          "In the evening they sat around a small fire [[img:2 alt=\\\"Evening gathering\\\" caption=\\\"Family warmth\\\"]] telling stories."
+          "A very short default version."
         ]
+      },
+      "levels": {
+        "L1": {
+          "label_ar": "👶 المستوى 1 (٣–٥)",
+          "label_en": "Level 1 (3–5)",
+          "age": "3–5",
+          "duration_min": 5,
+          "body": {
+            "ar": [
+              "ركب طفلٌ جملاً هادئًا في الصحراء. [[img:0 alt=\"جمل\" caption=\"بداية\"]]",
+              "حافظ على الماء وتابع مع عائلته حتى حلول المساء. [[img:1 alt=\"قِربة ماء\" caption=\"حكمة\"]]"
+            ],
+            "en": [
+              "A child rode a calm camel. [[img:0 alt=\"Camel\" caption=\"Start\"]]",
+              "He saved water and traveled with family till evening. [[img:1 alt=\"Waterskin\" caption=\"Wisdom\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/L1/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/L1/img1.webp"
+          ]
+        },
+        "L2": {
+          "label_ar": "🧒 المستوى 2 (٦–٨)",
+          "label_en": "Level 2 (6–8)",
+          "age": "6–8",
+          "duration_min": 9,
+          "body": {
+            "ar": [
+              "كانت الرمال ذهبيةً تمتدّ بعيدًا. [[img:0 alt=\"كثبان\" caption=\"اتساع\"]]",
+              "تعلم أن يقسم الماء بين الساعات، وألا يجهد الجمل.",
+              "توقفوا لاستراحة ظلّ قصيرة قرب نخلة. [[img:1 alt=\"ظل نخلة\" caption=\"استراحة\"]]",
+              "وفي المساء، جلسوا حول نارٍ صغيرة يحكون القصص. [[img:2 alt=\"جلسة\" caption=\"دفء\"]]"
+            ],
+            "en": [
+              "Golden dunes stretched far. [[img:0 alt=\"Dunes\" caption=\"Vastness\"]]",
+              "He learned to split water across hours and not tire the camel.",
+              "They paused for a short shade under a palm. [[img:1 alt=\"Palm shade\" caption=\"Rest\"]]",
+              "At night they gathered by a small fire telling stories. [[img:2 alt=\"Campfire\" caption=\"Warmth\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/L2/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/L2/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/L2/img2.webp"
+          ]
+        },
+        "L3": {
+          "label_ar": "👦👧 المستوى 3 (٩–١٢)",
+          "label_en": "Level 3 (9–12)",
+          "age": "9–12",
+          "duration_min": 15,
+          "body": {
+            "ar": [
+              "أدرك أن الطريق في الصحراء يُقاسُ بالظلّ لا بالخطوات. [[img:0 alt=\"قياس الظل\" caption=\"مقياس جديد\"]]",
+              "حين تهبّ الريح، يوجّه مَسيره حسب النجوم.",
+              "كتب في دفتـره: «الماءُ قرارٌ، والسرعةُ قرار.» [[img:1 alt=\"دفتر\" caption=\"تخطيط\"]]",
+              "عند الواحة تعلّم أن الراحة جزء من الرحلة لا خروجًا عنها. [[img:2 alt=\"واحة\" caption=\"توازن\"]]"
+            ],
+            "en": [
+              "He learned desert paths are measured by shade, not steps. [[img:0 alt=\"Shade ruler\" caption=\"New metric\"]]",
+              "When wind blows, he adjusts using stars.",
+              "He wrote: “Water is a decision; speed is a decision.” [[img:1 alt=\"Notebook\" caption=\"Planning\"]]",
+              "At the oasis he learned rest is part of travel, not exit. [[img:2 alt=\"Oasis\" caption=\"Balance\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/L3/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/L3/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/L3/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/L3/img3.webp"
+          ]
+        },
+        "L4": {
+          "label_ar": "🧑 المستوى 4 (١٣+)",
+          "label_en": "Level 4 (13+)",
+          "age": "13+",
+          "duration_min": 20,
+          "body": {
+            "ar": [
+              "الصحراءُ معلمةُ الصبر: لا تعطيك كل شيء دفعة واحدة. [[img:0 alt=\"معلمة الصبر\" caption=\"درس\"]]",
+              "من يتصادق مع المسافة، يَصل. [[img:1 alt=\"صداقة المسافة\" caption=\"سعة صدر\"]]",
+              "عند الفجر، بدا الأفقُ كرسمٍ يتكوّن ببطء.",
+              "صار يعرف أن الحكاية ليست أين تذهب، بل كيف تصير في الطريق.",
+              "وفي قلبه نارٌ صغيرة لا تنطفئ. [[img:2 alt=\"نار داخلية\" caption=\"عزم\"]]",
+              "هكذا علّمته الصحراء أن الصبر دليلُ المسافر. [[img:3 alt=\"خاتمة\" caption=\"دليل\"]]",
+              "وفي كل رحلةٍ جديدة، يشعل معنى جديدًا. [[img:4 alt=\"معنى جديد\" caption=\"امتداد\"]]"
+            ],
+            "en": [
+              "The desert teaches patience; it gives not all at once. [[img:0 alt=\"Teacher of patience\" caption=\"Lesson\"]]",
+              "Becoming friends with distance leads to arrival. [[img:1 alt=\"Friend distance\" caption=\"Breadth\"]]",
+              "At dawn the horizon formed slowly like a drawing.",
+              "He learned the tale is not where you go, but how you become en route.",
+              "A small inner fire stayed lit. [[img:2 alt=\"Inner fire\" caption=\"Resolve\"]]",
+              "Thus the desert taught patience as a traveler’s guide. [[img:3 alt=\"Closure\" caption=\"Guide\"]]",
+              "Each new journey lights a new meaning. [[img:4 alt=\"New meaning\" caption=\"Extension\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/L4/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/L4/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/L4/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/L4/img3.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/L4/img4.webp"
+          ]
+        }
       }
     },
     {
       "id": "rainy-day",
       "emoji": "🌧️",
-      "cover": "",
-      "images": ["", "", ""],
-      "title": { "ar": "يوم ممطر", "en": "A Rainy Day" },
-      "desc":  { "ar": "المرح موجود حتى في المطر.", "en": "Fun exists even in the rain." },
-      "age": "4-7",
-      "duration_min": 2,
-      "tags": ["weather","family"],
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/cover.webp",
+      "title": {
+        "ar": "يوم ممطر",
+        "en": "A Rainy Day"
+      },
+      "desc": {
+        "ar": "المرح موجود حتى في المطر.",
+        "en": "Fun exists even in the rain."
+      },
+      "age": "3–13+",
+      "duration_min": 3,
+      "tags": [
+        "weather",
+        "family"
+      ],
       "body": {
         "ar": [
-          "استيقظ الأطفال على صوت المطر الجميل.",
-          "لبسوا المعاطف المطيرة [[img:0 alt=\\\"معطف مطري\\\" caption=\\\"استعداد\\\"]] وخرجوا للفناء.",
-          "قفزوا فوق البرك الصغيرة [[img:1 alt=\\\"قفز فوق بركة\\\" caption=\\\"ضحكات\\\"]] بلا خوف.",
-          "ثم عادوا لشرب الشاي الساخن [[img:2 alt=\\\"شاي ساخن\\\" caption=\\\"دفء البيت\\\"]] مع الأسرة."
+          "نسخة افتراضية قصيرة."
         ],
         "en": [
-          "The kids woke up to the lovely sound of rain.",
-          "They wore their raincoats [[img:0 alt=\\\"Raincoat\\\" caption=\\\"Ready\\\"]] and went outside.",
-          "They jumped over small puddles [[img:1 alt=\\\"Jumping puddle\\\" caption=\\\"Giggles\\\"]] without fear.",
-          "Then they returned to drink hot tea [[img:2 alt=\\\"Hot tea\\\" caption=\\\"Home warmth\\\"]] with the family."
+          "A very short default version."
         ]
+      },
+      "levels": {
+        "L1": {
+          "label_ar": "👶 المستوى 1 (٣–٥)",
+          "label_en": "Level 1 (3–5)",
+          "age": "3–5",
+          "duration_min": 5,
+          "body": {
+            "ar": [
+              "استيقظ الأطفال على صوت المطر الجميل. [[img:0 alt=\"مطر\" caption=\"بداية\"]]",
+              "قفزوا فوق البرك ثم شربوا شايًا ساخنًا. [[img:1 alt=\"شاي ساخن\" caption=\"دفء\"]]"
+            ],
+            "en": [
+              "Kids woke to the lovely sound of rain. [[img:0 alt=\"Rain\" caption=\"Start\"]]",
+              "They jumped over puddles, then drank hot tea. [[img:1 alt=\"Hot tea\" caption=\"Warmth\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/L1/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/L1/img1.webp"
+          ]
+        },
+        "L2": {
+          "label_ar": "🧒 المستوى 2 (٦–٨)",
+          "label_en": "Level 2 (6–8)",
+          "age": "6–8",
+          "duration_min": 9,
+          "body": {
+            "ar": [
+              "لبسوا المعاطف وأحذية المطر. [[img:0 alt=\"معاطف\" caption=\"استعداد\"]]",
+              "في الحديقة، قفزوا فوق البرك الصغيرة وضحكوا.",
+              "تسابقوا في جمع قطرات على ورقة كبيرة. [[img:1 alt=\"قطرات\" caption=\"تجربة\"]]",
+              "ثم عادوا للبيت يجففون الملابس قرب المدفأة. [[img:2 alt=\"دفء البيت\" caption=\"عودة\"]]"
+            ],
+            "en": [
+              "They wore raincoats and boots. [[img:0 alt=\"Raincoats\" caption=\"Ready\"]]",
+              "In the yard they hopped over little puddles, laughing.",
+              "They “raced” collecting drops on a big sheet. [[img:1 alt=\"Drops\" caption=\"Experiment\"]]",
+              "Back home they dried clothes by the heater. [[img:2 alt=\"Home warmth\" caption=\"Return\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/L2/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/L2/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/L2/img2.webp"
+          ]
+        },
+        "L3": {
+          "label_ar": "👦👧 المستوى 3 (٩–١٢)",
+          "label_en": "Level 3 (9–12)",
+          "age": "9–12",
+          "duration_min": 15,
+          "body": {
+            "ar": [
+              "تعلّموا أن الأصواتَ تتغيّر في المطر: السقفُ يغني، والزجاجُ يدقّ. [[img:0 alt=\"أصوات المطر\" caption=\"تناغم\"]]",
+              "صنعوا قوارب ورقية وراقبوا سباقها.",
+              "كتبت الأخت في دفترها: «المطرُ مدرسةُ صوتٍ ولعب.» [[img:1 alt=\"دفتر\" caption=\"تسمية اليوم\"]]",
+              "وفي المساء، استمعوا لهدوء ما بعد العاصفة. [[img:2 alt=\"هدوء\" caption=\"ختام\"]]"
+            ],
+            "en": [
+              "They learned sounds change in rain: roof sings, glass taps. [[img:0 alt=\"Rain sounds\" caption=\"Harmony\"]]",
+              "They made paper boats and watched them race.",
+              "Sister wrote: “Rain is a school of sound and play.” [[img:1 alt=\"Journal\" caption=\"Name the day\"]]",
+              "In the evening they heard the calm after storm. [[img:2 alt=\"Calm\" caption=\"Close\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/L3/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/L3/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/L3/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/L3/img3.webp"
+          ]
+        },
+        "L4": {
+          "label_ar": "🧑 المستوى 4 (١٣+)",
+          "label_en": "Level 4 (13+)",
+          "age": "13+",
+          "duration_min": 20,
+          "body": {
+            "ar": [
+              "أدركوا أن المطر لا يفسد اليوم؛ إنّه يبدّل توقيعه فقط. [[img:0 alt=\"توقيع المطر\" caption=\"فهم\"]]",
+              "اللعبُ قد يكون قفزةً في بركةٍ أو قفزةً في معنى.",
+              "تعلموا أن الدفء ليس حرارة المدفأة وحدها، بل اجتماعُ القلوب. [[img:1 alt=\"اجتماع\" caption=\"دفء آخر\"]]",
+              "سمّوا اليوم: «ضِحكاتٌ تحت الغيوم». [[img:2 alt=\"اسم اليوم\" caption=\"ذاكرة\"]]",
+              "وفي الغد، حملوا الشمس داخلهم حتى لو تأخرت. [[img:3 alt=\"شمس داخلية\" caption=\"استمرار\"]]",
+              "فالمطرُ يكتب قصّةً حين نقرأه معًا. [[img:4 alt=\"قصة المطر\" caption=\"خاتمة\"]]"
+            ],
+            "en": [
+              "They found rain doesn’t spoil a day; it changes its signature. [[img:0 alt=\"Rain signature\" caption=\"Insight\"]]",
+              "Play can be a puddle jump or a jump in meaning.",
+              "Warmth isn’t only heater heat but hearts together. [[img:1 alt=\"Gathering\" caption=\"Another warmth\"]]",
+              "They named the day: “Giggles under clouds.” [[img:2 alt=\"Day name\" caption=\"Memory\"]]",
+              "Tomorrow they carried sun inside even if late. [[img:3 alt=\"Inner sun\" caption=\"Carry on\"]]",
+              "Rain writes a story—when read together. [[img:4 alt=\"Rain story\" caption=\"Closure\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/L4/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/L4/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/L4/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/L4/img3.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/L4/img4.webp"
+          ]
+        }
       }
     },
     {
       "id": "mountain-friends",
       "emoji": "⛰️",
-      "cover": "",
-      "images": ["", "", ""],
-      "title": { "ar": "أصدقاء الجبل", "en": "Friends of the Mountain" },
-      "desc":  { "ar": "الصداقة تُعلي الهمم.", "en": "Friendship lifts our spirits." },
-      "age": "6-10",
-      "duration_min": 4,
-      "tags": ["friendship","nature"],
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/cover.webp",
+      "title": {
+        "ar": "أصدقاء الجبل",
+        "en": "Friends of the Mountain"
+      },
+      "desc": {
+        "ar": "الصداقة تُعلي الهمم.",
+        "en": "Friendship lifts our spirits."
+      },
+      "age": "3–13+",
+      "duration_min": 3,
+      "tags": [
+        "friendship",
+        "nature"
+      ],
       "body": {
         "ar": [
-          "تسلّق صديقان تلة عالية في صباح لطيف.",
-          "ساعد أحدهما الآخر [[img:0 alt=\\\"مساعدة في التسلق\\\" caption=\\\"يد العون\\\"]] عند الممر الصعب.",
-          "توقفا يراقبان النسر [[img:1 alt=\\\"نسر محلق\\\" caption=\\\"مشهد مهيب\\\"]] يحوم فوق القمم.",
-          "وفي القمة التقطا صورة للذكرى [[img:2 alt=\\\"صورة في القمة\\\" caption=\\\"لحظة فخر\\\"]] وابتسما."
+          "نسخة افتراضية قصيرة."
         ],
         "en": [
-          "Two friends climbed a high hill on a gentle morning.",
-          "One helped the other [[img:0 alt=\\\"Helping hand\\\" caption=\\\"Support\\\"]] on the tough path.",
-          "They paused to watch an eagle [[img:1 alt=\\\"Soaring eagle\\\" caption=\\\"Majestic view\\\"]] circle above the peaks.",
-          "At the top they took a photo [[img:2 alt=\\\"Summit photo\\\" caption=\\\"Proud moment\\\"]] and smiled."
+          "A very short default version."
         ]
+      },
+      "levels": {
+        "L1": {
+          "label_ar": "👶 المستوى 1 (٣–٥)",
+          "label_en": "Level 1 (3–5)",
+          "age": "3–5",
+          "duration_min": 5,
+          "body": {
+            "ar": [
+              "تسلّق صديقان تلّةً عالية. [[img:0 alt=\"تسلّق\" caption=\"بداية\"]]",
+              "تعاونا عند الممرّ الصعب، ثم ابتسما في القمة. [[img:1 alt=\"قمة\" caption=\"معًا\"]]"
+            ],
+            "en": [
+              "Two friends climbed a high hill. [[img:0 alt=\"Climb\" caption=\"Start\"]]",
+              "They helped at a tough pass, then smiled at the top. [[img:1 alt=\"Summit\" caption=\"Together\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/L1/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/L1/img1.webp"
+          ]
+        },
+        "L2": {
+          "label_ar": "🧒 المستوى 2 (٦–٨)",
+          "label_en": "Level 2 (6–8)",
+          "age": "6–8",
+          "duration_min": 9,
+          "body": {
+            "ar": [
+              "حمل أحدهما حقيبة الماء، والآخر خريطة الممرّ. [[img:0 alt=\"معدات\" caption=\"تقسيم\"]]",
+              "عند الممرّ الضيّق، مدّ الأول يده للثاني وسنده.",
+              "استراحا دقيقةً يتأملان الوادي الأخضر. [[img:1 alt=\"الوادي\" caption=\"منظر\"]]",
+              "وفي القمة، التقطا صورةً للذكرى. [[img:2 alt=\"صورة\" caption=\"ذكرى\"]]"
+            ],
+            "en": [
+              "One carried water; the other carried the map. [[img:0 alt=\"Gear\" caption=\"Split\"]]",
+              "At a narrow path, the first offered a hand.",
+              "They rested a minute, gazing at the green valley. [[img:1 alt=\"Valley\" caption=\"View\"]]",
+              "At the top they took a photo. [[img:2 alt=\"Photo\" caption=\"Memory\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/L2/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/L2/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/L2/img2.webp"
+          ]
+        },
+        "L3": {
+          "label_ar": "👦👧 المستوى 3 (٩–١٢)",
+          "label_en": "Level 3 (9–12)",
+          "age": "9–12",
+          "duration_min": 15,
+          "body": {
+            "ar": [
+              "قال الأول: «القمة ليست نقطةً على الورق؛ إنّها ما نتشاركه في الطريق.» [[img:0 alt=\"قول\" caption=\"معنى\"]]",
+              "حين تعثر الثاني بحجرٍ صغير، علّمه الأول كيف يوازن الخطوة.",
+              "كتبَا درس اليوم: «ساعدْ أوّلًا، ثم تقدّم.» [[img:1 alt=\"دفتر\" caption=\"درس\"]]",
+              "وعند الغروب، صارت الصداقةُ أعلى من الجبل. [[img:2 alt=\"غروب\" caption=\"قيمة\"]]"
+            ],
+            "en": [
+              "“The summit isn’t a dot on paper; it’s what we share along the way,” said the first. [[img:0 alt=\"Quote\" caption=\"Meaning\"]]",
+              "When the second stumbled, the first taught balance.",
+              "They wrote: “Help first, then advance.” [[img:1 alt=\"Notebook\" caption=\"Lesson\"]]",
+              "At sunset, friendship stood taller than the mountain. [[img:2 alt=\"Sunset\" caption=\"Value\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/L3/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/L3/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/L3/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/L3/img3.webp"
+          ]
+        },
+        "L4": {
+          "label_ar": "🧑 المستوى 4 (١٣+)",
+          "label_en": "Level 4 (13+)",
+          "age": "13+",
+          "duration_min": 20,
+          "body": {
+            "ar": [
+              "الاِرتفاعُ الحقيقي ليس علوّ الأرض، بل علوّ المعنى. [[img:0 alt=\"علو المعنى\" caption=\"حكمة\"]]",
+              "القمةُ التي لا تسعُ اثنين ليست قمة.",
+              "حين وصلَا، عرفا أنّ الطريقَ صَنَعَهما أكثر مما وصلا إليه. [[img:1 alt=\"صناعة الطريق\" caption=\"تكوين\"]]",
+              "وفي كل منعطف، كان سؤال: «كيف نصعد معًا؟»",
+              "وهبطا وهما يعرفان أن الصداقةَ مقياسُ الارتفاع. [[img:2 alt=\"هبوط\" caption=\"قياس جديد\"]]",
+              "كتبَا: «نصعدُ حين نُمسك الأيدي.» [[img:3 alt=\"سطر\" caption=\"خلاصة\"]]",
+              "ثم وعدا الجبلَ بزيارةٍ أخرى. [[img:4 alt=\"وعد\" caption=\"استمرار\"]]"
+            ],
+            "en": [
+              "True height isn’t ground, but meaning. [[img:0 alt=\"Height of meaning\" caption=\"Wisdom\"]]",
+              "A summit that fits one isn’t a summit.",
+              "On arrival they knew the road made them more than the point reached. [[img:1 alt=\"Road makes\" caption=\"Becoming\"]]",
+              "At each turn they asked: “How to ascend together?”",
+              "They descended knowing friendship measures altitude. [[img:2 alt=\"Descent\" caption=\"New measure\"]]",
+              "They wrote: “We rise when hands hold.” [[img:3 alt=\"Line\" caption=\"Takeaway\"]]",
+              "They promised the mountain a return. [[img:4 alt=\"Promise\" caption=\"Continuity\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/L4/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/L4/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/L4/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/L4/img3.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/L4/img4.webp"
+          ]
+        }
       }
     },
     {
       "id": "robot-helper",
       "emoji": "🤖",
-      "cover": "",
-      "images": ["", "", ""],
-      "title": { "ar": "الروبوت المُساعِد", "en": "The Helpful Robot" },
-      "desc":  { "ar": "التقنية لخدمة الناس.", "en": "Technology serves people." },
-      "age": "6-9",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/cover.webp",
+      "title": {
+        "ar": "الروبوت المُساعِد",
+        "en": "The Helpful Robot"
+      },
+      "desc": {
+        "ar": "التقنية لخدمة الناس.",
+        "en": "Technology serves people."
+      },
+      "age": "3–13+",
       "duration_min": 3,
-      "tags": ["technology","help"],
+      "tags": [
+        "technology",
+        "help"
+      ],
       "body": {
         "ar": [
-          "صنع طفل روبوتًا صغيرًا في المدرسة.",
-          "علّمه كيف يرتّب الكتب [[img:0 alt=\\\"ترتيب كتب\\\" caption=\\\"تنظيم\\\"]] في المكتبة.",
-          "ساعد الروبوت الجدة [[img:1 alt=\\\"مساعدة الجدة\\\" caption=\\\"لطف\\\"]] في حمل السلة.",
-          "وفي النهاية عرض الطفل مشروعه [[img:2 alt=\\\"عرض مشروع\\\" caption=\\\"ابتكار\\\"]] أمام زملائه."
+          "نسخة افتراضية قصيرة."
         ],
         "en": [
-          "A child built a small robot at school.",
-          "He taught it to arrange books [[img:0 alt=\\\"Arranging books\\\" caption=\\\"Tidiness\\\"]] in the library.",
-          "The robot helped grandma [[img:1 alt=\\\"Helping grandma\\\" caption=\\\"Kindness\\\"]] carry the basket.",
-          "Finally, the child presented his project [[img:2 alt=\\\"Project demo\\\" caption=\\\"Innovation\\\"]] to his classmates."
+          "A very short default version."
         ]
+      },
+      "levels": {
+        "L1": {
+          "label_ar": "👶 المستوى 1 (٣–٥)",
+          "label_en": "Level 1 (3–5)",
+          "age": "3–5",
+          "duration_min": 5,
+          "body": {
+            "ar": [
+              "بنى طفلٌ روبوتًا صغيرًا. [[img:0 alt=\"روبوت\" caption=\"بداية\"]]",
+              "علّمه ترتيب الكتب في المكتبة. [[img:1 alt=\"ترتيب\" caption=\"نظام\"]]"
+            ],
+            "en": [
+              "A child built a small robot. [[img:0 alt=\"Robot\" caption=\"Start\"]]",
+              "He taught it to arrange books in the library. [[img:1 alt=\"Arrange\" caption=\"Order\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/L1/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/L1/img1.webp"
+          ]
+        },
+        "L2": {
+          "label_ar": "🧒 المستوى 2 (٦–٨)",
+          "label_en": "Level 2 (6–8)",
+          "age": "6–8",
+          "duration_min": 9,
+          "body": {
+            "ar": [
+              "ثبّت الطفلُ عجلاتٍ خفيفة وحساسًا للأرفف. [[img:0 alt=\"مكونات\" caption=\"تركيب\"]]",
+              "اختبره على صفٍّ من الكتب المتناثرة.",
+              "نجح الروبوتُ في فرز الأحجام والألوان. [[img:1 alt=\"فرز\" caption=\"ذكاء بسيط\"]]",
+              "ثم ساعد الجدةَ في حمل السلة إلى المطبخ. [[img:2 alt=\"مساعدة\" caption=\"لطف\"]]"
+            ],
+            "en": [
+              "He fixed small wheels and a shelf sensor. [[img:0 alt=\"Parts\" caption=\"Build\"]]",
+              "He tested it on a messy row of books.",
+              "The robot sorted sizes and colors. [[img:1 alt=\"Sorting\" caption=\"Simple AI\"]]",
+              "Then it helped grandma carry the basket. [[img:2 alt=\"Help\" caption=\"Kindness\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/L2/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/L2/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/L2/img2.webp"
+          ]
+        },
+        "L3": {
+          "label_ar": "👦👧 المستوى 3 (٩–١٢)",
+          "label_en": "Level 3 (9–12)",
+          "age": "9–12",
+          "duration_min": 15,
+          "body": {
+            "ar": [
+              "تعلّم الطفل أن «الذكاء» يبدأ بمهامّ صغيرة وواضحة. [[img:0 alt=\"مبدأ\" caption=\"خطوة خطوة\"]]",
+              "سجّل الملاحظات: متى يخطئ؟ كيف يصحّح؟",
+              "أضاف زرّ «إيقاف آمن» ليحمي الجميع عند الحاجة. [[img:1 alt=\"إيقاف آمن\" caption=\"حماية\"]]",
+              "وفي عرض المدرسة، شرح أن التقنيةَ خادمةٌ لا سيّدة. [[img:2 alt=\"عرض\" caption=\"رسالة\"]]"
+            ],
+            "en": [
+              "He learned “intelligence” begins with small clear tasks. [[img:0 alt=\"Principle\" caption=\"Stepwise\"]]",
+              "He logged mistakes and fixes.",
+              "He added a “safe stop” button to protect everyone. [[img:1 alt=\"Safe stop\" caption=\"Safety\"]]",
+              "At the school demo he explained: tech should serve, not rule. [[img:2 alt=\"Demo\" caption=\"Message\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/L3/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/L3/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/L3/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/L3/img3.webp"
+          ]
+        },
+        "L4": {
+          "label_ar": "🧑 المستوى 4 (١٣+)",
+          "label_en": "Level 4 (13+)",
+          "age": "13+",
+          "duration_min": 20,
+          "body": {
+            "ar": [
+              "التقنيةُ مرآةُ نوايانا: إن وضعنا الرحمة في التصميم، خرجتْ رحيمة. [[img:0 alt=\"مرآة\" caption=\"قصد\"]]",
+              "علّم روبوته أن يفسح الطريق وأن يعتذر عند التعثّر. [[img:1 alt=\"اعتذار\" caption=\"أدب الآلة\"]]",
+              "صار الروبوتُ درسًا في المسؤولية قبل أن يكون مشروعًا.",
+              "في امتحان الحياة، أهمّ سؤال: «من نخدم؟» [[img:2 alt=\"سؤال\" caption=\"غاية\"]]",
+              "كبر الطفلُ وعرف أن «المساعدة» أجمل أنواع الذكاء. [[img:3 alt=\"نضج\" caption=\"حكمة\"]]",
+              "وظلّ الروبوتُ صغيرًا، لكنه صار كبيرًا في أثره. [[img:4 alt=\"أثر\" caption=\"دوام\"]]"
+            ],
+            "en": [
+              "Technology mirrors intent: design with mercy, get merciful tech. [[img:0 alt=\"Mirror\" caption=\"Intention\"]]",
+              "He taught the robot to give way and say sorry when bumping. [[img:1 alt=\"Apology\" caption=\"Machine manners\"]]",
+              "It became a lesson in responsibility before a project.",
+              "Life’s exam asks: “Whom do we serve?” [[img:2 alt=\"Question\" caption=\"Purpose\"]]",
+              "The child grew up and knew “help” is the finest intelligence. [[img:3 alt=\"Maturity\" caption=\"Wisdom\"]]",
+              "The robot stayed small, but its impact grew. [[img:4 alt=\"Impact\" caption=\"Enduring\"]]"
+            ]
+          },
+          "images": [
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/L4/img0.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/L4/img1.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/L4/img2.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/L4/img3.webp",
+            "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/L4/img4.webp"
+          ]
+        }
       }
     }
   ]
