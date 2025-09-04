@@ -22,3 +22,18 @@
     }
   ]
 }
+,
+{
+  "id": "little-star",
+  "emoji": "🌟",
+  "cover": "",
+  "title": {"ar": "النجمة الصغيرة", "en": "The Little Star"},
+  "desc":  {"ar": "تعليم ولعب بسيطة", "en": "Simple learning and play"},
+  "age": "5-8",
+  "duration_min": 2,
+  "tags": ["learning", "fun"],
+  "body": {
+    "ar": ["نص عربي قصير 1", "نص عربي قصير 2"],
+    "en": ["Short English text 1", "Short English text 2"]
+  }
+}
