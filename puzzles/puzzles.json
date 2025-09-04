@@ -1,0 +1,59 @@
+{
+  "puzzles": [
+    {
+      "id": "puzzle-fox",
+      "emoji": "🦊",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/puzzles/fox/cover.webp",
+      "title": { "ar": "من يختبئ في الغابة؟", "en": "Who is hiding in the forest?" },
+      "desc": { "ar": "اكتشف الحيوان من خلال التلميحات.", "en": "Guess the animal using hints." },
+      "age": "5-8",
+      "tags": ["حيوانات","تخمين"],
+      "levels": {
+        "L1": {
+          "duration": 3,
+          "type": "question",
+          "text": { "ar": "ما الحيوان الذي له ذيل كثيف ويعيش في الغابة؟", "en": "Which animal has a bushy tail and lives in the forest?" },
+          "images": [],
+          "answer": { "ar": "الثعلب", "en": "Fox", "value": "fox" }
+        },
+        "L2": {
+          "duration": 4,
+          "type": "mcq",
+          "text": { "ar": "اختر الإجابة الصحيحة:", "en": "Choose the correct answer:" },
+          "options": ["ذئب","ثعلب","دب"],
+          "correctIndex": 1,
+          "images": [],
+          "answer": { "ar": "ثعلب", "en": "Fox", "value": "fox" }
+        },
+        "L3": {
+          "duration": 5,
+          "type": "match",
+          "text": { "ar": "طابق الرموز مع أسمائها:", "en": "Match icons with names:" },
+          "pairs": [{ "q": "🦊", "a": "ثعلب" }, { "q": "🐻", "a": "دب" }, { "q": "🐺", "a": "ذئب" }],
+          "answer": { "ar": "مطابقة كاملة", "en": "All matched" }
+        },
+        "L4": {
+          "duration": 6,
+          "type": "timed",
+          "timer": 30,
+          "text": { "ar": "أجب سريعًا: ما الحيوان؟", "en": "Answer quickly: which animal?" },
+          "answer": { "ar": "الثعلب", "en": "Fox", "value": "fox" }
+        },
+        "L5": {
+          "duration": 7,
+          "type": "mcq",
+          "text": { "ar": "Premium: اختر الصوت الذي يصدره الحيوان.", "en": "Premium: choose the animal sound." },
+          "options": ["مواء","عواء","نباح"],
+          "correctIndex": 1,
+          "answer": { "ar": "العواء", "en": "Howl" }
+        },
+        "L6": {
+          "duration": 8,
+          "type": "question",
+          "text": { "ar": "Premium: أين غالبًا يعيش؟ اكتب كلمة واحدة.", "en": "Premium: Where does it usually live? One word." },
+          "answer": { "ar": "الغابة", "en": "forest", "value": "forest" }
+        }
+      }
+    }
+  ]
+}
