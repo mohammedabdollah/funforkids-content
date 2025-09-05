@@ -10,73 +10,63 @@
       "pack": "animals",
       "difficulty": "L1",
       "svg": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/coloring/packs/animals/fox.svg",
-      "palette": ["#FF6B6B","#FFD93D","#6BCB77","#4D96FF","#9D4EDD"],
-      "stickers": ["🌸","⭐","🍀","🪄"]
+      "palette": ["#FF6B6B","#FFD93D","#6BCB77","#4D96FF","#9D4EDD"]
     },
     {
       "id": "col-shapes-pack",
       "emoji": "🔺",
       "theme": "purple",
       "title": { "ar": "أشكال مرِحة", "en": "Playful Shapes" },
-      "desc":  { "ar": "مثلث/دائرة/مربع", "en": "Triangle/Circle/Square" },
+      "desc":  { "ar": "Triangle/Circle/Square", "en": "Triangle/Circle/Square" },
       "age": "4-7",
       "pack": "shapes",
       "difficulty": "L1",
-      "svg": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/coloring/packs/shapes/shapes.svg",
-      "palette": ["#FF4BB3","#00C6FF","#3AE374","#FFB443","#8A63FF"],
-      "stickers": ["✨","💠","🔷"]
+      "svg": "",
+      "palette": ["#FF4BB3","#00C6FF","#3AE374","#FFB443","#8A63FF"]
     },
     {
       "id": "col-nature-flower",
       "emoji": "🌼",
       "theme": "green",
       "title": { "ar": "زهرة جميلة", "en": "Lovely Flower" },
-      "desc":  { "ar": "طبيعة بسيطة", "en": "Simple nature" },
       "age": "4-8",
       "pack": "nature",
       "difficulty": "L2",
-      "svg": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/coloring/packs/nature/flower.svg",
-      "palette": ["#FF6B6B","#FFD93D","#6BCB77","#9D4EDD","#4D96FF"],
-      "stickers": ["🐝","🌟","🍃"]
+      "svg": "",
+      "palette": ["#FF6B6B","#FFD93D","#6BCB77","#9D4EDD","#4D96FF"]
     },
     {
       "id": "col-vehicles-car",
       "emoji": "🚗",
       "theme": "orange",
       "title": { "ar": "سيارة صغيرة", "en": "Little Car" },
-      "desc":  { "ar": "مركبات", "en": "Vehicles" },
       "age": "5-9",
       "pack": "vehicles",
       "difficulty": "L2",
-      "svg": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/coloring/packs/vehicles/car.svg",
-      "palette": ["#ff4757","#3742fa","#2ed573","#ffa502","#70a1ff"],
-      "stickers": ["🚦","⭐","🛞"]
+      "svg": "",
+      "palette": ["#ff4757","#3742fa","#2ed573","#ffa502","#70a1ff"]
     },
     {
       "id": "col-letters-a",
       "emoji": "🔤",
       "theme": "blue",
       "title": { "ar": "حرف A", "en": "Letter A" },
-      "desc":  { "ar": "حروف بسيطة", "en": "Simple letters" },
       "age": "4-7",
       "pack": "letters",
       "difficulty": "L1",
-      "svg": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/coloring/packs/letters/a.svg",
-      "palette": ["#FF6B6B","#FFD93D","#6BCB77","#4D96FF","#9D4EDD"],
-      "stickers": ["🍎","⭐","✨"]
+      "svg": "",
+      "palette": ["#FF6B6B","#FFD93D","#6BCB77","#4D96FF","#9D4EDD"]
     },
     {
       "id": "col-numbers-123",
       "emoji": "🔢",
-      "theme": "teal",
+      "theme": "pink",
       "title": { "ar": "١ ٢ ٣", "en": "1 2 3" },
-      "desc":  { "ar": "أرقام سهلة", "en": "Easy numbers" },
       "age": "4-7",
       "pack": "numbers",
       "difficulty": "L1",
-      "svg": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/coloring/packs/numbers/123.svg",
-      "palette": ["#00C6FF","#3AE374","#FFB443","#FF4BB3","#8A63FF"],
-      "stickers": ["⭐","🎈","🎉"]
+      "svg": "",
+      "palette": ["#00C6FF","#3AE374","#FFB443","#FF4BB3","#8A63FF"]
     }
   ]
 }
