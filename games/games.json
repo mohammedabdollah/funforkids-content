@@ -1,5 +1,5 @@
 {
-  "cdnVersion": 2,
+  "cdnVersion": 5,
   "games": [
     {
       "id": "spin-match",
@@ -9,9 +9,11 @@
       "premium": false,
       "settings": { "tts": true, "confetti": true, "progress": true, "stars": true },
       "levels": [
-        { "id": "L1", "desc": { "ar": "سهل", "en": "Easy" }, "time": 35, "target": 8 },
+        { "id": "L1", "desc": { "ar": "سهل — شكل+كلمة", "en": "Easy — emoji+text" }, "time": 35, "target": 8 },
         { "id": "L2", "desc": { "ar": "تشتيت نصّي", "en": "Text decoys" }, "time": 35, "target": 10 },
-        { "id": "L3", "desc": { "ar": "وضع سرعة", "en": "Speed mode" }, "time": 30, "target": 12 }
+        { "id": "L3", "desc": { "ar": "سرعة — 4 اختيارات", "en": "Speed — 4 choices" }, "time": 30, "target": 12 },
+        { "id": "L4", "desc": { "ar": "كومبو 3 متتالية", "en": "Combo x3 in a row" }, "time": 30, "target": 8 },
+        { "id": "L5", "desc": { "ar": "فوضى — اختيارات متحركة", "en": "Chaos — moving options" }, "time": 25, "target": 12 }
       ]
     }
   ]
