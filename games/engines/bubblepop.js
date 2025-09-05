@@ -12,9 +12,9 @@ export async function start({ stage, game, levelId='L1' }) {
 
   // ألوان اللعبة (يمكن تقلل/تزود من JSON لاحقًا)
   const CFG = {
-    time:   level.time || 35,
-    target: level.target || 10,
-    colors: ['red','blue','green','purple','orange']
+      time:   level.time || 35,
+  target: level.target || 10,
+  colors: ['#47C83E', '#3BA9F5', '#B147F5', '#F54AC9'] 
   };
 
   // معايير التدفق (قابلة للتوسيع بالليفلات لاحقًا)
@@ -96,14 +96,16 @@ export async function start({ stage, game, levelId='L1' }) {
   }
 
   // ------ الهدف ------
-  function setTarget(){
-    targetColor = CFG.colors[Math.floor(Math.random()*CFG.colors.length)];
-    targetEl.innerHTML = `
-      <div class="tg">
-        <span class="dot" style="background:${targetColor}"></span>
-        ${t('اضغط الفُقاعات','Tap the bubbles')}: <b>${NAME[targetColor]}</b>
-      </div>`;
-  }
+ function setTarget(){
+  targetColor = CFG.colors[Math.floor(Math.random()*CFG.colors.length)];
+  targetEl.innerHTML = `
+    <div class="tg">
+      <span class="dot" style="background:${targetColor}"></span>
+      ${t('اضغط الفُقاعات','Tap the bubbles')}: <b>${NAME[targetColor] || targetColor}</b>
+    </div>`;
+
+  // ضيف على الأقل فقاعة هدف مباشرة بعد التغيير
+  addBubble(targetColor);
 
   // ------ عدّادات الشاشة ------
   function countTargetOnStage(){
