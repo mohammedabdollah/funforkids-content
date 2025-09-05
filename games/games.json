@@ -1,0 +1,20 @@
+{
+  "cdnVersion": 1,
+  "games": [
+    {
+      "id": "spin-match",
+      "title": { "ar": "عجلة المطابقة", "en": "Spin & Match" },
+      "type": "spinmatch",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/games/spin-match/cover.webp",
+      "premium": false,
+      "levels": [
+        {
+          "id": "L1",
+          "desc": { "ar": "ألوان × أشكال", "en": "Colors × Shapes" },
+          "time": 60,
+          "target": 8
+        }
+      ]
+    }
+  ]
+}
