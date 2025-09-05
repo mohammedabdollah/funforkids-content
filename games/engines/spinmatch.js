@@ -18,19 +18,19 @@ export async function start({ stage, game, levelId = 'L1' }) {
   const SYMBOLS = [
     { id:'red-circle',     em:'🔴', ar:'دائرة حمراء',     en:'Red circle' },
     { id:'blue-square',    em:'🟦', ar:'مربع أزرق',        en:'Blue square' },
-    { id:'green-triangle', em:'🔺', ar:'مثلث أخضر',        en:'Green triangle' },
+     { id:'green-triangle', em:'▲', ar:'مثلث أخضر', en:'Green triangle' },
     { id:'yellow-star',    em:'⭐',  ar:'نجمة صفراء',       en:'Yellow star' },
     { id:'purple-heart',   em:'💜', ar:'قلب بنفسجي',       en:'Purple heart' }
   ];
 
   // Level config (per ID)
   const CFG = {
-    L1: { choices:3, time: level.time||35, target: level.target||8,  decoyText:false, combo:false, chaos:false },
-    L2: { choices:3, time: level.time||35, target: level.target||10, decoyText:true,  combo:false, chaos:false }, // text decoy
-    L3: { choices:4, time: level.time||30, target: level.target||12, decoyText:true,  combo:false, chaos:false }, // 4 choices
-    L4: { choices:3, time: level.time||30, target: level.target||8,  decoyText:false, combo:true,  chaos:false }, // combo 3-in-a-row
-    L5: { choices:4, time: level.time||25, target: level.target||12, decoyText:true,  combo:false, chaos:true }   // moving options
-  }[level.id] || { choices:3, time:35, target:8, decoyText:false, combo:false, chaos:false };
+   L1: { choices:3, time: 40, target: 7,  decoyText:false, combo:false, chaos:false },
+  L2: { choices:3, time: 35, target: 9,  decoyText:true,  combo:false, chaos:false }, // أصعب شوية
+  L3: { choices:4, time: 30, target: 11, decoyText:true,  combo:false, chaos:false },
+  L4: { choices:3, time: 30, target: 7,  decoyText:false, combo:true,  chaos:false }, // كل 3 صحيحة متتالية = نقطة
+  L5: { choices:4, time: 30, target: 12, decoyText:true,  combo:false, chaos:true }
+}[level.id] || { choices:3, time:30, target:8, decoyText:false, combo:false, chaos:false };
 
   // -------- Layout --------
   stage.innerHTML = `
