@@ -91,24 +91,50 @@ export async function start({ stage, game, levelId='L1' }) {
   // timer
   timer = setInterval(()=>{ time--; updateHUD(); if(time<=5){ /* tick لو حبيت */ } if(time<=0) end(false); },1000);
 
-  function end(win){
-    clearInterval(timer);
-    const pct = Math.min(1, score/CFG.target);
-    const title = win ? t('ممتاز!','Excellent!') : (pct>=.5?t('محاولة جيدة!','Good try!'):t('حاول مجددًا','Try again'));
-    const stars = win?3:(pct>=.75?2:(pct>=.5?1:0));
-    const ov=document.createElement('div'); ov.className='result-overlay'; ov.innerHTML=`
-      <div class="result-card">
-        <h2>${title}</h2>
-        <p>${t('النقاط','Score')}: ${score} / ${CFG.target}</p>
-        <p style="font-size:22px;margin:8px 0">${'★'.repeat(stars)}${'☆'.repeat(3-stars)}</p>
-        <div class="row">
-          <button id="bp-retry">🔁 ${t('إعادة','Retry')}</button>
-          <a class="home" href="/p/games.html">🏠 ${t('القائمة','Catalog')}</a>
-        </div>
-      </div>`;
-    document.body.appendChild(ov);
-    ov.querySelector('#bp-retry').onclick=()=>location.reload();
-  }
+function end(win){
+  clearInterval(timer);
+  clearInterval(targetGuard); // لو كنت ضايف حارس الهدف
+
+  const pct = Math.min(1, score/CFG.target);
+  const title = win ? t('ممتاز!','Excellent!')
+                    : (pct>=.5?t('محاولة جيدة!','Good try!'):t('حاول مجددًا','Try again'));
+  const stars = win?3:(pct>=.75?2:(pct>=.5?1:0));
+
+  // حفظ التقدّم: افتح المستوى التالي عند الفوز
+  try {
+    if (win) {
+      const key = `ffk_progress_${game.id}`;           // ffk_progress_bubble-pop
+      const cur = (localStorage.getItem(key)||'L1');
+      const idx = (game.levels||[]).findIndex(l=>l.id===cur);
+      const curIdx = Math.max(idx, (game.levels||[]).findIndex(l=>l.id===levelId));
+      const next = game.levels?.[curIdx+1]?.id;
+      localStorage.setItem(key, next ? next : levelId); // يثبت أعلى ليفل وصِلت له
+    }
+  } catch {}
+
+  const hasNext = win && ( (game.levels||[]).findIndex(l=>l.id===levelId) < (game.levels||[]).length-1 );
+
+  const ov=document.createElement('div'); ov.className='result-overlay'; ov.innerHTML=`
+    <div class="result-card">
+      <h2>${title}</h2>
+      <p>${t('النقاط','Score')}: ${score} / ${CFG.target}</p>
+      <p style="font-size:22px;margin:8px 0">${'★'.repeat(stars)}${'☆'.repeat(3-stars)}</p>
+      <div class="row">
+        <button id="bp-retry">🔁 ${t('إعادة','Retry')}</button>
+        ${hasNext ? `<button id="bp-next">➡️ ${t('المستوى التالي','Next')}</button>` : ''}
+        <a class="home" href="/p/games.html">🏠 ${t('القائمة','Catalog')}</a>
+      </div>
+    </div>`;
+  document.body.appendChild(ov);
+
+  ov.querySelector('#bp-retry').onclick=()=>location.reload();
+  ov.querySelector('#bp-next')?.addEventListener('click', ()=>{
+    const idx = (game.levels||[]).findIndex(l=>l.id===levelId);
+    const next = game.levels?.[idx+1]?.id || 'L1';
+    const u = new URL(location.href); u.searchParams.set('lvl', next); location.href = u.toString();
+  });
+}
+
 
   // css
   const css=document.createElement('style'); css.textContent=`
