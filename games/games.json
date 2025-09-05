@@ -1,16 +1,19 @@
 {
+  "cdnVersion": 6,
   "games": [
     {
       "id": "spin-match",
       "title": { "ar": "عجلة المطابقة", "en": "Spin & Match" },
       "type": "spinmatch",
-      "cover": "",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%A8%D8%AF%D9%88%D9%86%20%D8%B9%D9%86%D9%88%D8%A7%D9%86%20%283%29.webp",
       "premium": false,
       "settings": { "tts": true, "confetti": true, "progress": true, "stars": true },
       "levels": [
-        { "id": "L1", "desc": { "ar": "مستوى سهل", "en": "Easy level" }, "time": 40, "target": 7 },
-        { "id": "L2", "desc": { "ar": "مستوى متوسط", "en": "Medium level" }, "time": 35, "target": 12 },
-        { "id": "L3", "desc": { "ar": "مستوى متقدم", "en": "Advanced level" }, "time": 30, "target": 15 }
+        { "id": "L1", "desc": { "ar": "سهل — شكل+كلمة", "en": "Easy — emoji+text" }, "time": 35, "target": 8 },
+        { "id": "L2", "desc": { "ar": "تشتيت نصّي", "en": "Text decoys" }, "time": 35, "target": 10 },
+        { "id": "L3", "desc": { "ar": "سرعة — 4 اختيارات", "en": "Speed — 4 choices" }, "time": 30, "target": 12 },
+        { "id": "L4", "desc": { "ar": "كومبو 3 متتالية", "en": "Combo x3 in a row" }, "time": 30, "target": 8 },
+        { "id": "L5", "desc": { "ar": "فوضى — اختيارات متحركة", "en": "Chaos — moving options" }, "time": 25, "target": 12 }
       ]
     },
     {
