@@ -1,4 +1,4 @@
-// Bubble Pop — Final v1.1 (waves + target guard + next level + pro colors)
+// Bubble Pop — Final v1.2 (waves + target guard + next level + pro colors + enhanced bubbles)
 export async function start({ stage, game, levelId='L1' }) {
   // ====== إعدادات عامة ======
   const S = Object.assign({ tts:true, confetti:true, progress:true, stars:true }, game?.settings||{});
@@ -86,7 +86,11 @@ export async function start({ stage, game, levelId='L1' }) {
     b.style.left = left+'%';
     b.style.width = b.style.height = size+'px';
     b.style.setProperty('--dur', dur+'s');
-    b.innerHTML = `<span class="core"></span>`;
+    b.innerHTML = `
+      <span class="core"></span>
+      <span class="glow"></span>
+      <span class="shadow"></span>
+    `;
 
     b.addEventListener('animationend', ()=> b.remove());
 
@@ -97,7 +101,7 @@ export async function start({ stage, game, levelId='L1' }) {
         score++; confetti(); speak(t('أحسنت!','Great!')); updateHUD();
         b.classList.add('pop'); setTimeout(()=>b.remove(),180);
         if(score>=CFG.target) return end(true);
-        if(score%3===0){ setTimeout(()=> setTarget(), 300); } // تأخير بسيط لتفادي لخبطة
+        if(score%3===0){ setTimeout(()=> setTarget(), 300); }
       }else{
         speak(t('حاول مجددًا','Try again'));
         b.classList.add('shake'); setTimeout(()=>b.classList.remove('shake'),250);
@@ -109,19 +113,17 @@ export async function start({ stage, game, levelId='L1' }) {
 
   // ====== موجات (waves) تضمن الهدف ======
   function spawnWave(n=CFG.wave){
-    // امسح أي فقاعات باقية قديمة فوق 80 عنصر
     const all = pf.querySelectorAll('.bub'); if(all.length>80) all.forEach(el=>el.remove());
 
-    // حضّر قائمة الألوان للموجة
     const list = [];
-    for(let i=0;i<CFG.minTargetPerWave;i++) list.push(targetColor); // نضمن الهدف
+    for(let i=0;i<CFG.minTargetPerWave;i++) list.push(targetColor);
     while(list.length<n){ list.push(randColor()); }
     list.sort(()=>Math.random()-0.5);
 
     list.forEach(col => addBubble(col));
   }
 
-  // حارس: لو اختفى الهدف على الشاشة لأي سبب، احقن واحدة
+  // حارس الهدف: يضمن وجود الهدف على الشاشة
   function ensureTargetPresent(){
     if(countTargetOnStage()===0) addBubble(targetColor);
   }
@@ -137,15 +139,12 @@ export async function start({ stage, game, levelId='L1' }) {
     const stars = win?3:(pct>=.75?2:(pct>=.5?1:0));
     speak(title);
 
-    // حفظ التقدم (افتح الليفل التالي)
-    try{
-      if(win){
-        const key = `ffk_progress_${game.id}`;
-        const idx = (game.levels||[]).findIndex(l=>l.id===levelId);
-        const next= game.levels?.[idx+1]?.id;
-        localStorage.setItem(key, next || levelId);
-      }
-    }catch{}
+    if(win){
+      const key = `ffk_progress_${game.id}`;
+      const idx = (game.levels||[]).findIndex(l=>l.id===levelId);
+      const next= game.levels?.[idx+1]?.id;
+      localStorage.setItem(key, next || levelId);
+    }
 
     const hasNext = win && ((game.levels||[]).findIndex(l=>l.id===levelId) < (game.levels||[]).length-1);
 
@@ -185,12 +184,32 @@ export async function start({ stage, game, levelId='L1' }) {
     #playfield{position:relative;height:360px;border-radius:16px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.05))}
     .bub{position:absolute;bottom:-60px;transform:translateX(-50%);border:0;background:transparent;cursor:pointer;transition:transform .15s}
     .bub .core{
-      display:block;width:100%;height:100%;border-radius:999px;opacity:.95;
+      display:block;width:100%;height:100%;border-radius:50%;opacity:.95;
       background:
-        radial-gradient(circle at 28% 28%, #ffffffcc 0 18%, #ffffff00 30%),
-        radial-gradient(circle at 50% 60%, #00000026 0 60%, #0000 62%),
+        radial-gradient(circle at 30% 30%, #ffffff88 0 20%, #ffffff00 40%),
+        radial-gradient(circle at 70% 70%, #00000033 0 60%, #00000000 70%),
         var(--c);
-      box-shadow:inset 0 0 10px #fff8, 0 10px 22px #0003
+      box-shadow:inset 0 0 15px #fff8, 0 5px 15px #0003;
+      position:relative;
+      z-index:2;
+    }
+    .bub .glow{
+      position:absolute;
+      width:100%;
+      height:100%;
+      border-radius:50%;
+      background:radial-gradient(circle at 50% 50%, #ffffff44 0%, #ffffff00 70%);
+      opacity:0.7;
+      z-index:1;
+    }
+    .bub .shadow{
+      position:absolute;
+      width:100%;
+      height:100%;
+      border-radius:50%;
+      background:radial-gradient(circle at 50% 100%, #00000044 0%, #00000000 70%);
+      opacity:0.5;
+      z-index:0;
     }
     .bub{animation:floatUp var(--dur,4.6s) linear forwards}
     .bub.shake{animation:none;transform:translateX(-50%) scale(.95)}
@@ -207,8 +226,14 @@ export async function start({ stage, game, levelId='L1' }) {
 
   // ====== تشغيل ======
   setTarget();
-  spawnWave(CFG.wave);                         // موجة أولى مضمونة الهدف
-  waveTimer = setInterval(()=> spawnWave(CFG.wave), CFG.waveGapMs); // موجات متتابعة
-  guardTimer= setInterval(()=> ensureTargetPresent(), 1200);        // حارس الهدف
+  spawnWave(CFG.wave);
+  
+  // حارس الهدف المحسن (800ms)
+  guardTimer = setInterval(() => {
+    if (countTargetOnStage() === 0) {
+      addBubble(targetColor);
+    }
+  }, 800);
+
   updateHUD();
 }
