@@ -18,7 +18,7 @@ export async function start({ stage, game, levelId = 'L1' }) {
   const SYMBOLS = [
     { id:'red-circle',     em:'🔴', ar:'دائرة حمراء',     en:'Red circle' },
     { id:'blue-square',    em:'🟦', ar:'مربع أزرق',        en:'Blue square' },
-     { id:'green-triangle', em:'▲', ar:'مثلث أحمر', en:'Green triangle' },
+     { id:'Red-triangle', em:'▲', ar:'مثلث أحمر', en:'Red triangle' },
     { id:'yellow-star',    em:'⭐',  ar:'نجمة صفراء',       en:'Yellow star' },
     { id:'purple-heart',   em:'💜', ar:'قلب بنفسجي',       en:'Purple heart' }
   ];
