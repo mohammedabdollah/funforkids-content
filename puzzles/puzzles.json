@@ -1,309 +1,1696 @@
 {
-  "puzzles": [
-    {
-      "id": "pz-fox-forest",
-      "emoji": "🦊",
-      "iconEmoji": "🦊",
-      "theme": "pink",
-      "title": { "ar": "من يختبئ في الغابة؟", "en": "Who's hiding in the forest?" },
-      "desc":  { "ar": "ألغاز حيوانات ممتعة", "en": "Fun animal riddles" },
-      "age": "5-8",
-      "levels": {
-        "L1": {
-          "items": [
-            { "type":"mcq","emoji":"🦊","text":{"ar":"اختر الحيوان الصحيح","en":"Pick the right animal"},"options":[
-              { "emoji":"🦊","label":{"ar":"ثعلب","en":"Fox"},"color":"pink" },
-              { "emoji":"🐻","label":{"ar":"دب","en":"Bear"},"color":"blue" },
-              { "emoji":"🐰","label":{"ar":"أرنب","en":"Rabbit"},"color":"green" }
-            ],"correctIndex":0,"answer":{"ar":"الثعلب","en":"Fox"} },
-
-            { "type":"question","emoji":"🐻","text":{"ar":"أي حيوان لونه بني؟","en":"Which animal is brown?"},"answer":{"value":"دب","ar":"دب","en":"bear"} },
-
-            { "type":"match","text":{"ar":"طابق الرمز بالكلمة","en":"Match symbol to word"},"pairs":[
-              { "q":"🦊","a":{"ar":"ثعلب","en":"Fox"},"color":"pink" },
-              { "q":"🐶","a":{"ar":"كلب","en":"Dog"},"color":"blue" },
-              { "q":"🐱","a":{"ar":"قط","en":"Cat"},"color":"green" }
-            ],"answer":{"ar":"مطابقة صحيحة","en":"Correct match"} },
-
-            { "type":"mcq","text":{"ar":"صوت من؟","en":"Whose sound?"},"options":[
-              { "emoji":"🐮","label":{"ar":"بقرة","en":"Cow"},"color":"orange" },
-              { "emoji":"🐔","label":{"ar":"دجاجة","en":"Hen"},"color":"purple" },
-              { "emoji":"🐵","label":{"ar":"قرد","en":"Monkey"},"color":"blue" }
-            ],"correctIndex":1,"answer":{"ar":"الدجاجة","en":"Hen"} },
-
-            { "type":"question","emoji":"🐰","text":{"ar":"من يحب الجزر؟","en":"Who loves carrots?"},"answer":{"value":"أرنب","ar":"أرنب","en":"rabbit"} },
-
-            { "type":"mcq","text":{"ar":"أكبر حيوان؟","en":"The largest?"},"options":[
-              { "emoji":"🐘","label":{"ar":"فيل","en":"Elephant"},"color":"green" },
-              { "emoji":"🦊","label":{"ar":"ثعلب","en":"Fox"},"color":"pink" },
-              { "emoji":"🐭","label":{"ar":"فأر","en":"Mouse"},"color":"blue" }
-            ],"correctIndex":0,"answer":{"ar":"الفيل","en":"Elephant"} },
-
-            { "type":"match","text":{"ar":"طابق الصوت بالحيوان","en":"Match sound to animal"},"pairs":[
-              { "q":"🐶","a":{"ar":"كلب","en":"Dog"},"color":"blue" },
-              { "q":"🐱","a":{"ar":"قط","en":"Cat"},"color":"purple" },
-              { "q":"🐴","a":{"ar":"حصان","en":"Horse"},"color":"green" }
-            ],"answer":{"ar":"مطابقة صحيحة","en":"Correct match"} },
-
-            { "type":"question","emoji":"🦁","text":{"ar":"ملك الغابة؟","en":"King of the jungle?"},"answer":{"value":"أسد","ar":"أسد","en":"lion"} },
-
-            { "type":"mcq","text":{"ar":"أين يعيش السمك؟","en":"Where do fish live?"},"options":[
-              { "emoji":"🌳","label":{"ar":"الغابة","en":"Forest"},"color":"pink" },
-              { "emoji":"🌊","label":{"ar":"الماء","en":"Water"},"color":"blue" },
-              { "emoji":"🏜️","label":{"ar":"الصحراء","en":"Desert"},"color":"orange" }
-            ],"correctIndex":1,"answer":{"ar":"في الماء","en":"In water"} },
-
-            { "type":"timed","text":{"ar":"اكتب: ثعلب","en":"Type: fox"},"timer":25,
-              "answer":{"value":"ثعلب","ar":"ثعلب","en":"fox"} }
-          ]
+    "puzzles": [
+        {
+            "id": "pz-fox-forest",
+            "emoji": "🦊",
+            "iconEmoji": "🦊",
+            "theme": "pink",
+            "title": {
+                "ar": "من يختبئ في الغابة؟",
+                "en": "Who's hiding in the forest?"
+            },
+            "desc": {
+                "ar": "ألغاز حيوانات ممتعة",
+                "en": "Fun animal riddles"
+            },
+            "age": "5-8",
+            "levels": {
+                "L1": {
+                    "items": [
+                        {
+                            "type": "mcq",
+                            "emoji": "🦊",
+                            "text": {
+                                "ar": "اختر الحيوان الصحيح",
+                                "en": "Pick the right animal"
+                            },
+                            "options": [
+                                {
+                                    "emoji": "🦊",
+                                    "label": {
+                                        "ar": "ثعلب",
+                                        "en": "Fox"
+                                    },
+                                    "color": "pink"
+                                },
+                                {
+                                    "emoji": "🐻",
+                                    "label": {
+                                        "ar": "دب",
+                                        "en": "Bear"
+                                    },
+                                    "color": "blue"
+                                },
+                                {
+                                    "emoji": "🐰",
+                                    "label": {
+                                        "ar": "أرنب",
+                                        "en": "Rabbit"
+                                    },
+                                    "color": "green"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "الثعلب",
+                                "en": "Fox"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "emoji": "🐻",
+                            "text": {
+                                "ar": "أي حيوان لونه بني؟",
+                                "en": "Which animal is brown?"
+                            },
+                            "answer": {
+                                "value": "دب",
+                                "ar": "دب",
+                                "en": "bear"
+                            }
+                        },
+                        {
+                            "type": "match",
+                            "text": {
+                                "ar": "طابق الرمز بالكلمة",
+                                "en": "Match symbol to word"
+                            },
+                            "pairs": [
+                                {
+                                    "q": "🦊",
+                                    "a": {
+                                        "ar": "ثعلب",
+                                        "en": "Fox"
+                                    },
+                                    "color": "pink"
+                                },
+                                {
+                                    "q": "🐶",
+                                    "a": {
+                                        "ar": "كلب",
+                                        "en": "Dog"
+                                    },
+                                    "color": "blue"
+                                },
+                                {
+                                    "q": "🐱",
+                                    "a": {
+                                        "ar": "قط",
+                                        "en": "Cat"
+                                    },
+                                    "color": "green"
+                                }
+                            ],
+                            "answer": {
+                                "ar": "مطابقة صحيحة",
+                                "en": "Correct match"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "صوت من؟",
+                                "en": "Whose sound?"
+                            },
+                            "options": [
+                                {
+                                    "emoji": "🐮",
+                                    "label": {
+                                        "ar": "بقرة",
+                                        "en": "Cow"
+                                    },
+                                    "color": "orange"
+                                },
+                                {
+                                    "emoji": "🐔",
+                                    "label": {
+                                        "ar": "دجاجة",
+                                        "en": "Hen"
+                                    },
+                                    "color": "purple"
+                                },
+                                {
+                                    "emoji": "🐵",
+                                    "label": {
+                                        "ar": "قرد",
+                                        "en": "Monkey"
+                                    },
+                                    "color": "blue"
+                                }
+                            ],
+                            "correctIndex": 1,
+                            "answer": {
+                                "ar": "الدجاجة",
+                                "en": "Hen"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "emoji": "🐰",
+                            "text": {
+                                "ar": "من يحب الجزر؟",
+                                "en": "Who loves carrots?"
+                            },
+                            "answer": {
+                                "value": "أرنب",
+                                "ar": "أرنب",
+                                "en": "rabbit"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "أكبر حيوان؟",
+                                "en": "The largest?"
+                            },
+                            "options": [
+                                {
+                                    "emoji": "🐘",
+                                    "label": {
+                                        "ar": "فيل",
+                                        "en": "Elephant"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "emoji": "🦊",
+                                    "label": {
+                                        "ar": "ثعلب",
+                                        "en": "Fox"
+                                    },
+                                    "color": "pink"
+                                },
+                                {
+                                    "emoji": "🐭",
+                                    "label": {
+                                        "ar": "فأر",
+                                        "en": "Mouse"
+                                    },
+                                    "color": "blue"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "الفيل",
+                                "en": "Elephant"
+                            }
+                        },
+                        {
+                            "type": "match",
+                            "text": {
+                                "ar": "طابق الصوت بالحيوان",
+                                "en": "Match sound to animal"
+                            },
+                            "pairs": [
+                                {
+                                    "q": "🐶",
+                                    "a": {
+                                        "ar": "كلب",
+                                        "en": "Dog"
+                                    },
+                                    "color": "blue"
+                                },
+                                {
+                                    "q": "🐱",
+                                    "a": {
+                                        "ar": "قط",
+                                        "en": "Cat"
+                                    },
+                                    "color": "purple"
+                                },
+                                {
+                                    "q": "🐴",
+                                    "a": {
+                                        "ar": "حصان",
+                                        "en": "Horse"
+                                    },
+                                    "color": "green"
+                                }
+                            ],
+                            "answer": {
+                                "ar": "مطابقة صحيحة",
+                                "en": "Correct match"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "emoji": "🦁",
+                            "text": {
+                                "ar": "ملك الغابة؟",
+                                "en": "King of the jungle?"
+                            },
+                            "answer": {
+                                "value": "أسد",
+                                "ar": "أسد",
+                                "en": "lion"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "أين يعيش السمك؟",
+                                "en": "Where do fish live?"
+                            },
+                            "options": [
+                                {
+                                    "emoji": "🌳",
+                                    "label": {
+                                        "ar": "الغابة",
+                                        "en": "Forest"
+                                    },
+                                    "color": "pink"
+                                },
+                                {
+                                    "emoji": "🌊",
+                                    "label": {
+                                        "ar": "الماء",
+                                        "en": "Water"
+                                    },
+                                    "color": "blue"
+                                },
+                                {
+                                    "emoji": "🏜️",
+                                    "label": {
+                                        "ar": "الصحراء",
+                                        "en": "Desert"
+                                    },
+                                    "color": "orange"
+                                }
+                            ],
+                            "correctIndex": 1,
+                            "answer": {
+                                "ar": "في الماء",
+                                "en": "In water"
+                            }
+                        },
+                        {
+                            "type": "timed",
+                            "text": {
+                                "ar": "اكتب: ثعلب",
+                                "en": "Type: fox"
+                            },
+                            "timer": 25,
+                            "answer": {
+                                "value": "ثعلب",
+                                "ar": "ثعلب",
+                                "en": "fox"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "pz-shapes-01",
+            "emoji": "🔺",
+            "iconEmoji": "🔺",
+            "theme": "pink",
+            "title": {
+                "ar": "أين المثلث؟",
+                "en": "Where is the triangle?"
+            },
+            "desc": {
+                "ar": "تمارين أشكال أساسية",
+                "en": "Basic shapes practice"
+            },
+            "age": "4-7",
+            "levels": {
+                "L1": {
+                    "items": [
+                        {
+                            "type": "mcq",
+                            "emoji": "🔺",
+                            "text": {
+                                "ar": "اختر الشكل الصحيح",
+                                "en": "Pick the right shape"
+                            },
+                            "options": [
+                                {
+                                    "emoji": "🔺",
+                                    "label": {
+                                        "ar": "مثلث",
+                                        "en": "Triangle"
+                                    },
+                                    "color": "pink"
+                                },
+                                {
+                                    "emoji": "⬛",
+                                    "label": {
+                                        "ar": "مربع",
+                                        "en": "Square"
+                                    },
+                                    "color": "blue"
+                                },
+                                {
+                                    "emoji": "⚪",
+                                    "label": {
+                                        "ar": "دائرة",
+                                        "en": "Circle"
+                                    },
+                                    "color": "green"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "المثلث",
+                                "en": "Triangle"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "emoji": "⬛",
+                            "text": {
+                                "ar": "شكل بأربع زوايا؟",
+                                "en": "Shape with four corners?"
+                            },
+                            "answer": {
+                                "value": "مربع",
+                                "ar": "مربع",
+                                "en": "square"
+                            }
+                        },
+                        {
+                            "type": "match",
+                            "text": {
+                                "ar": "طابق الرمز بالكلمة",
+                                "en": "Match symbol to word"
+                            },
+                            "pairs": [
+                                {
+                                    "q": "🔺",
+                                    "a": {
+                                        "ar": "مثلث",
+                                        "en": "Triangle"
+                                    },
+                                    "color": "pink"
+                                },
+                                {
+                                    "q": "⬛",
+                                    "a": {
+                                        "ar": "مربع",
+                                        "en": "Square"
+                                    },
+                                    "color": "blue"
+                                },
+                                {
+                                    "q": "⚪",
+                                    "a": {
+                                        "ar": "دائرة",
+                                        "en": "Circle"
+                                    },
+                                    "color": "green"
+                                }
+                            ],
+                            "answer": {
+                                "ar": "مطابقة صحيحة",
+                                "en": "Correct match"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "أيهم دائري؟",
+                                "en": "Which one is round?"
+                            },
+                            "options": [
+                                {
+                                    "emoji": "◻️",
+                                    "label": {
+                                        "ar": "مربع",
+                                        "en": "Square"
+                                    },
+                                    "color": "purple"
+                                },
+                                {
+                                    "emoji": "⚪",
+                                    "label": {
+                                        "ar": "دائرة",
+                                        "en": "Circle"
+                                    },
+                                    "color": "orange"
+                                },
+                                {
+                                    "emoji": "🔺",
+                                    "label": {
+                                        "ar": "مثلث",
+                                        "en": "Triangle"
+                                    },
+                                    "color": "blue"
+                                }
+                            ],
+                            "correctIndex": 1,
+                            "answer": {
+                                "ar": "الدائرة",
+                                "en": "Circle"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "emoji": "⬜",
+                            "text": {
+                                "ar": "اكتب: دائرة",
+                                "en": "Type: circle"
+                            },
+                            "answer": {
+                                "value": "دائرة",
+                                "ar": "دائرة",
+                                "en": "circle"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "شكل له ثلاث زوايا؟",
+                                "en": "Has three corners?"
+                            },
+                            "options": [
+                                {
+                                    "emoji": "🔺",
+                                    "label": {
+                                        "ar": "مثلث",
+                                        "en": "Triangle"
+                                    },
+                                    "color": "pink"
+                                },
+                                {
+                                    "emoji": "⬛",
+                                    "label": {
+                                        "ar": "مربع",
+                                        "en": "Square"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "emoji": "🟦",
+                                    "label": {
+                                        "ar": "مستطيل",
+                                        "en": "Rectangle"
+                                    },
+                                    "color": "blue"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "المثلث",
+                                "en": "Triangle"
+                            }
+                        },
+                        {
+                            "type": "match",
+                            "text": {
+                                "ar": "طابق اللون بالاسم",
+                                "en": "Match color to name"
+                            },
+                            "pairs": [
+                                {
+                                    "q": "🟥",
+                                    "a": {
+                                        "ar": "أحمر",
+                                        "en": "Red"
+                                    },
+                                    "color": "pink"
+                                },
+                                {
+                                    "q": "🟩",
+                                    "a": {
+                                        "ar": "أخضر",
+                                        "en": "Green"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "q": "🟦",
+                                    "a": {
+                                        "ar": "أزرق",
+                                        "en": "Blue"
+                                    },
+                                    "color": "blue"
+                                }
+                            ],
+                            "answer": {
+                                "ar": "مطابقة صحيحة",
+                                "en": "Correct match"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "emoji": "⭐",
+                            "text": {
+                                "ar": "شكل له خمس زوايا؟ (نجمة ليست شكل أساسي)",
+                                "en": "Five-corner shape? (star isn’t basic)"
+                            },
+                            "answer": {
+                                "value": "خماسي",
+                                "ar": "خماسي",
+                                "en": "pentagon"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "أطول شكل؟",
+                                "en": "The longest?"
+                            },
+                            "options": [
+                                {
+                                    "emoji": "🟩",
+                                    "label": {
+                                        "ar": "مستطيل",
+                                        "en": "Rectangle"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "emoji": "◻️",
+                                    "label": {
+                                        "ar": "مربع",
+                                        "en": "Square"
+                                    },
+                                    "color": "purple"
+                                },
+                                {
+                                    "emoji": "⚪",
+                                    "label": {
+                                        "ar": "دائرة",
+                                        "en": "Circle"
+                                    },
+                                    "color": "orange"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "المستطيل",
+                                "en": "Rectangle"
+                            }
+                        },
+                        {
+                            "type": "timed",
+                            "text": {
+                                "ar": "اكتب: مثلث",
+                                "en": "Type: triangle"
+                            },
+                            "timer": 25,
+                            "answer": {
+                                "value": "مثلث",
+                                "ar": "مثلث",
+                                "en": "triangle"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "pz-rabbit-dash",
+            "emoji": "🐇",
+            "iconEmoji": "🐇",
+            "theme": "green",
+            "title": {
+                "ar": "سباق الأرنب",
+                "en": "Rabbit Dash"
+            },
+            "desc": {
+                "ar": "ألغاز حركة وسرعة",
+                "en": "Quick & fun riddles"
+            },
+            "age": "5-8",
+            "levels": {
+                "L1": {
+                    "items": [
+                        {
+                            "type": "mcq",
+                            "emoji": "🥕",
+                            "text": {
+                                "ar": "من يحب الجزر؟",
+                                "en": "Who loves carrots?"
+                            },
+                            "options": [
+                                {
+                                    "emoji": "🐇",
+                                    "label": {
+                                        "ar": "أرنب",
+                                        "en": "Rabbit"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "emoji": "🐱",
+                                    "label": {
+                                        "ar": "قط",
+                                        "en": "Cat"
+                                    },
+                                    "color": "blue"
+                                },
+                                {
+                                    "emoji": "🐢",
+                                    "label": {
+                                        "ar": "سلحفاة",
+                                        "en": "Turtle"
+                                    },
+                                    "color": "purple"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "الأرنب",
+                                "en": "Rabbit"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "emoji": "🏁",
+                            "text": {
+                                "ar": "اكتب: أرنب",
+                                "en": "Type: rabbit"
+                            },
+                            "answer": {
+                                "value": "أرنب",
+                                "ar": "أرنب",
+                                "en": "rabbit"
+                            }
+                        },
+                        {
+                            "type": "match",
+                            "text": {
+                                "ar": "طابق الحيوان بالسرعة",
+                                "en": "Match animal to speed"
+                            },
+                            "pairs": [
+                                {
+                                    "q": "🐇",
+                                    "a": {
+                                        "ar": "سريع",
+                                        "en": "Fast"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "q": "🐢",
+                                    "a": {
+                                        "ar": "بطيء",
+                                        "en": "Slow"
+                                    },
+                                    "color": "pink"
+                                },
+                                {
+                                    "q": "🐎",
+                                    "a": {
+                                        "ar": "سريع",
+                                        "en": "Fast"
+                                    },
+                                    "color": "blue"
+                                }
+                            ],
+                            "answer": {
+                                "ar": "مطابقة صحيحة",
+                                "en": "Correct match"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "أين يعيش الأرنب؟",
+                                "en": "Where does a rabbit live?"
+                            },
+                            "options": [
+                                {
+                                    "emoji": "🕳️",
+                                    "label": {
+                                        "ar": "جُحر",
+                                        "en": "Burrow"
+                                    },
+                                    "color": "orange"
+                                },
+                                {
+                                    "emoji": "🌊",
+                                    "label": {
+                                        "ar": "ماء",
+                                        "en": "Water"
+                                    },
+                                    "color": "blue"
+                                },
+                                {
+                                    "emoji": "🏜️",
+                                    "label": {
+                                        "ar": "صحراء",
+                                        "en": "Desert"
+                                    },
+                                    "color": "purple"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "في الجُحر",
+                                "en": "In a burrow"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "emoji": "🥕",
+                            "text": {
+                                "ar": "من طعام الأرنب؟ (اكتب)",
+                                "en": "Rabbit food? (type)"
+                            },
+                            "answer": {
+                                "value": "جزر",
+                                "ar": "جزر",
+                                "en": "carrot"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "الأرنب يقفز أم يزحف؟",
+                                "en": "Rabbit hops or crawls?"
+                            },
+                            "options": [
+                                {
+                                    "emoji": "↗️",
+                                    "label": {
+                                        "ar": "يقفز",
+                                        "en": "Hops"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "emoji": "↘️",
+                                    "label": {
+                                        "ar": "يزحف",
+                                        "en": "Crawls"
+                                    },
+                                    "color": "pink"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "يقفز",
+                                "en": "Hops"
+                            }
+                        },
+                        {
+                            "type": "match",
+                            "text": {
+                                "ar": "طابق الأثر بالحيوان",
+                                "en": "Match track to animal"
+                            },
+                            "pairs": [
+                                {
+                                    "q": "👣",
+                                    "a": {
+                                        "ar": "إنسان",
+                                        "en": "Human"
+                                    },
+                                    "color": "blue"
+                                },
+                                {
+                                    "q": "🐾",
+                                    "a": {
+                                        "ar": "حيوان صغير",
+                                        "en": "Small animal"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "q": "🐎",
+                                    "a": {
+                                        "ar": "حصان",
+                                        "en": "Horse"
+                                    },
+                                    "color": "purple"
+                                }
+                            ],
+                            "answer": {
+                                "ar": "مطابقة صحيحة",
+                                "en": "Correct match"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "صوت الأرنب؟",
+                                "en": "Rabbit’s sound?"
+                            },
+                            "options": [
+                                {
+                                    "emoji": "🔇",
+                                    "label": {
+                                        "ar": "هادئ",
+                                        "en": "Quiet"
+                                    },
+                                    "color": "blue"
+                                },
+                                {
+                                    "emoji": "📣",
+                                    "label": {
+                                        "ar": "عالٍ",
+                                        "en": "Loud"
+                                    },
+                                    "color": "orange"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "هادئ",
+                                "en": "Quiet"
+                            }
+                        },
+                        {
+                            "type": "timed",
+                            "text": {
+                                "ar": "اكتب: جُحر",
+                                "en": "Type: burrow"
+                            },
+                            "timer": 20,
+                            "answer": {
+                                "value": "جحر",
+                                "ar": "جُحر",
+                                "en": "burrow"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "من أسرع؟",
+                                "en": "Who’s faster?"
+                            },
+                            "options": [
+                                {
+                                    "emoji": "🐇",
+                                    "label": {
+                                        "ar": "أرنب",
+                                        "en": "Rabbit"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "emoji": "🐢",
+                                    "label": {
+                                        "ar": "سلحفاة",
+                                        "en": "Turtle"
+                                    },
+                                    "color": "pink"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "الأرنب",
+                                "en": "Rabbit"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "pz-letters-01",
+            "emoji": "🔤",
+            "iconEmoji": "🔤",
+            "theme": "purple",
+            "title": {
+                "ar": "حروف وكلمات",
+                "en": "Letters & Words"
+            },
+            "desc": {
+                "ar": "تعرّف الحروف البسيطة",
+                "en": "Learn simple letters"
+            },
+            "age": "4-7",
+            "levels": {
+                "L1": {
+                    "items": [
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "أول حرف في Apple؟",
+                                "en": "First letter in Apple?"
+                            },
+                            "options": [
+                                {
+                                    "emoji": "🅰️",
+                                    "label": {
+                                        "ar": "A",
+                                        "en": "A"
+                                    },
+                                    "color": "purple"
+                                },
+                                {
+                                    "emoji": "🅱️",
+                                    "label": {
+                                        "ar": "B",
+                                        "en": "B"
+                                    },
+                                    "color": "blue"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "A",
+                                "en": "A"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "emoji": "✍️",
+                            "text": {
+                                "ar": "اكتب: cat",
+                                "en": "Type: cat"
+                            },
+                            "answer": {
+                                "value": "cat",
+                                "ar": "cat",
+                                "en": "cat"
+                            }
+                        },
+                        {
+                            "type": "match",
+                            "text": {
+                                "ar": "طابق الحرف بالكلمة",
+                                "en": "Match letter to word"
+                            },
+                            "pairs": [
+                                {
+                                    "q": "B",
+                                    "a": {
+                                        "ar": "ball",
+                                        "en": "ball"
+                                    },
+                                    "color": "pink"
+                                },
+                                {
+                                    "q": "C",
+                                    "a": {
+                                        "ar": "car",
+                                        "en": "car"
+                                    },
+                                    "color": "orange"
+                                },
+                                {
+                                    "q": "D",
+                                    "a": {
+                                        "ar": "dog",
+                                        "en": "dog"
+                                    },
+                                    "color": "blue"
+                                }
+                            ],
+                            "answer": {
+                                "ar": "مطابقة صحيحة",
+                                "en": "Correct match"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "حرف قبل C؟",
+                                "en": "Letter before C?"
+                            },
+                            "options": [
+                                {
+                                    "label": {
+                                        "ar": "A",
+                                        "en": "A"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "label": {
+                                        "ar": "B",
+                                        "en": "B"
+                                    },
+                                    "color": "purple"
+                                }
+                            ],
+                            "correctIndex": 1,
+                            "answer": {
+                                "ar": "B",
+                                "en": "B"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "text": {
+                                "ar": "كلمة تبدأ بـ D؟ (dog)",
+                                "en": "Word starts with D? (dog)"
+                            },
+                            "answer": {
+                                "value": "dog",
+                                "ar": "dog",
+                                "en": "dog"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "حرف صوتي؟",
+                                "en": "A vowel?"
+                            },
+                            "options": [
+                                {
+                                    "label": {
+                                        "ar": "E",
+                                        "en": "E"
+                                    },
+                                    "color": "blue"
+                                },
+                                {
+                                    "label": {
+                                        "ar": "T",
+                                        "en": "T"
+                                    },
+                                    "color": "orange"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "E",
+                                "en": "E"
+                            }
+                        },
+                        {
+                            "type": "match",
+                            "text": {
+                                "ar": "طابق الحرف والصورة",
+                                "en": "Match letter & picture"
+                            },
+                            "pairs": [
+                                {
+                                    "q": "A",
+                                    "a": {
+                                        "ar": "apple",
+                                        "en": "apple"
+                                    },
+                                    "color": "purple"
+                                },
+                                {
+                                    "q": "B",
+                                    "a": {
+                                        "ar": "banana",
+                                        "en": "banana"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "q": "C",
+                                    "a": {
+                                        "ar": "cake",
+                                        "en": "cake"
+                                    },
+                                    "color": "pink"
+                                }
+                            ],
+                            "answer": {
+                                "ar": "مطابقة صحيحة",
+                                "en": "Correct match"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "text": {
+                                "ar": "اكتب: banana",
+                                "en": "Type: banana"
+                            },
+                            "answer": {
+                                "value": "banana",
+                                "ar": "banana",
+                                "en": "banana"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "آخر حرف في cat؟",
+                                "en": "Last letter in cat?"
+                            },
+                            "options": [
+                                {
+                                    "label": {
+                                        "ar": "t",
+                                        "en": "t"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "label": {
+                                        "ar": "c",
+                                        "en": "c"
+                                    },
+                                    "color": "pink"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "t",
+                                "en": "t"
+                            }
+                        },
+                        {
+                            "type": "timed",
+                            "text": {
+                                "ar": "اكتب: car",
+                                "en": "Type: car"
+                            },
+                            "timer": 20,
+                            "answer": {
+                                "value": "car",
+                                "ar": "car",
+                                "en": "car"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "pz-numbers-01",
+            "emoji": "🔢",
+            "iconEmoji": "🔢",
+            "theme": "orange",
+            "title": {
+                "ar": "أرقام سهلة",
+                "en": "Easy Numbers"
+            },
+            "desc": {
+                "ar": "عدّ ومقارنة بسيطة",
+                "en": "Counting & compare"
+            },
+            "age": "4-7",
+            "levels": {
+                "L1": {
+                    "items": [
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "2 + 1 = ?",
+                                "en": "2 + 1 = ?"
+                            },
+                            "options": [
+                                {
+                                    "label": {
+                                        "ar": "3",
+                                        "en": "3"
+                                    },
+                                    "color": "orange"
+                                },
+                                {
+                                    "label": {
+                                        "ar": "4",
+                                        "en": "4"
+                                    },
+                                    "color": "blue"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "3",
+                                "en": "3"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "emoji": "✍️",
+                            "text": {
+                                "ar": "اكتب: 5",
+                                "en": "Type: 5"
+                            },
+                            "answer": {
+                                "value": "5",
+                                "ar": "5",
+                                "en": "5"
+                            }
+                        },
+                        {
+                            "type": "match",
+                            "text": {
+                                "ar": "طابق الرقم بالكمية",
+                                "en": "Match number to dots"
+                            },
+                            "pairs": [
+                                {
+                                    "q": "3️⃣",
+                                    "a": {
+                                        "ar": "●●●",
+                                        "en": "●●●"
+                                    },
+                                    "color": "pink"
+                                },
+                                {
+                                    "q": "4️⃣",
+                                    "a": {
+                                        "ar": "●●●●",
+                                        "en": "●●●●"
+                                    },
+                                    "color": "blue"
+                                },
+                                {
+                                    "q": "2️⃣",
+                                    "a": {
+                                        "ar": "●●",
+                                        "en": "●●"
+                                    },
+                                    "color": "green"
+                                }
+                            ],
+                            "answer": {
+                                "ar": "مطابقة صحيحة",
+                                "en": "Correct match"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "الأكبر؟",
+                                "en": "Which is bigger?"
+                            },
+                            "options": [
+                                {
+                                    "label": {
+                                        "ar": "7",
+                                        "en": "7"
+                                    },
+                                    "color": "purple"
+                                },
+                                {
+                                    "label": {
+                                        "ar": "5",
+                                        "en": "5"
+                                    },
+                                    "color": "green"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "7",
+                                "en": "7"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "text": {
+                                "ar": "اكتب: 10",
+                                "en": "Type: 10"
+                            },
+                            "answer": {
+                                "value": "10",
+                                "ar": "10",
+                                "en": "10"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "كم عدد التفاح؟ 🍎🍎🍎",
+                                "en": "How many apples? 🍎🍎🍎"
+                            },
+                            "options": [
+                                {
+                                    "label": {
+                                        "ar": "3",
+                                        "en": "3"
+                                    },
+                                    "color": "orange"
+                                },
+                                {
+                                    "label": {
+                                        "ar": "2",
+                                        "en": "2"
+                                    },
+                                    "color": "blue"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "3",
+                                "en": "3"
+                            }
+                        },
+                        {
+                            "type": "match",
+                            "text": {
+                                "ar": "طابق العلامة بالمعنى",
+                                "en": "Match sign to meaning"
+                            },
+                            "pairs": [
+                                {
+                                    "q": "＋",
+                                    "a": {
+                                        "ar": "جمع",
+                                        "en": "Add"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "q": "－",
+                                    "a": {
+                                        "ar": "طرح",
+                                        "en": "Minus"
+                                    },
+                                    "color": "purple"
+                                },
+                                {
+                                    "q": "＝",
+                                    "a": {
+                                        "ar": "يساوي",
+                                        "en": "Equal"
+                                    },
+                                    "color": "orange"
+                                }
+                            ],
+                            "answer": {
+                                "ar": "مطابقة صحيحة",
+                                "en": "Correct match"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": " 4 − 1 = ?",
+                                "en": "4 − 1 = ?"
+                            },
+                            "options": [
+                                {
+                                    "label": {
+                                        "ar": "3",
+                                        "en": "3"
+                                    },
+                                    "color": "pink"
+                                },
+                                {
+                                    "label": {
+                                        "ar": "2",
+                                        "en": "2"
+                                    },
+                                    "color": "blue"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "3",
+                                "en": "3"
+                            }
+                        },
+                        {
+                            "type": "timed",
+                            "text": {
+                                "ar": "اكتب: 8",
+                                "en": "Type: 8"
+                            },
+                            "timer": 20,
+                            "answer": {
+                                "value": "8",
+                                "ar": "8",
+                                "en": "8"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "الأصغر؟",
+                                "en": "Which is smaller?"
+                            },
+                            "options": [
+                                {
+                                    "label": {
+                                        "ar": "2",
+                                        "en": "2"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "label": {
+                                        "ar": "9",
+                                        "en": "9"
+                                    },
+                                    "color": "purple"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "2",
+                                "en": "2"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "pz-colors-01",
+            "emoji": "🎨",
+            "iconEmoji": "🎨",
+            "theme": "blue",
+            "title": {
+                "ar": "أجمل الألوان",
+                "en": "Lovely Colors"
+            },
+            "desc": {
+                "ar": "تعرّف وتمييز الألوان",
+                "en": "Color recognition"
+            },
+            "age": "4-7",
+            "levels": {
+                "L1": {
+                    "items": [
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "لون السماء؟",
+                                "en": "Color of the sky?"
+                            },
+                            "options": [
+                                {
+                                    "label": {
+                                        "ar": "أزرق",
+                                        "en": "Blue"
+                                    },
+                                    "color": "blue"
+                                },
+                                {
+                                    "label": {
+                                        "ar": "أخضر",
+                                        "en": "Green"
+                                    },
+                                    "color": "green"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "أزرق",
+                                "en": "Blue"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "emoji": "🟥",
+                            "text": {
+                                "ar": "اكتب: أحمر",
+                                "en": "Type: red"
+                            },
+                            "answer": {
+                                "value": "أحمر",
+                                "ar": "أحمر",
+                                "en": "red"
+                            }
+                        },
+                        {
+                            "type": "match",
+                            "text": {
+                                "ar": "طابق اللون بالاسم",
+                                "en": "Match swatch to name"
+                            },
+                            "pairs": [
+                                {
+                                    "q": "🟨",
+                                    "a": {
+                                        "ar": "أصفر",
+                                        "en": "Yellow"
+                                    },
+                                    "color": "orange"
+                                },
+                                {
+                                    "q": "🟩",
+                                    "a": {
+                                        "ar": "أخضر",
+                                        "en": "Green"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "q": "🟦",
+                                    "a": {
+                                        "ar": "أزرق",
+                                        "en": "Blue"
+                                    },
+                                    "color": "blue"
+                                }
+                            ],
+                            "answer": {
+                                "ar": "مطابقة صحيحة",
+                                "en": "Correct match"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "لون التفاحة؟",
+                                "en": "Apple color?"
+                            },
+                            "options": [
+                                {
+                                    "label": {
+                                        "ar": "أحمر",
+                                        "en": "Red"
+                                    },
+                                    "color": "pink"
+                                },
+                                {
+                                    "label": {
+                                        "ar": "أزرق",
+                                        "en": "Blue"
+                                    },
+                                    "color": "purple"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "أحمر",
+                                "en": "Red"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "emoji": "🟪",
+                            "text": {
+                                "ar": "اكتب: بنفسجي",
+                                "en": "Type: purple"
+                            },
+                            "answer": {
+                                "value": "بنفسجي",
+                                "ar": "بنفسجي",
+                                "en": "purple"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "لون العشب؟",
+                                "en": "Grass color?"
+                            },
+                            "options": [
+                                {
+                                    "label": {
+                                        "ar": "أخضر",
+                                        "en": "Green"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "label": {
+                                        "ar": "برتقالي",
+                                        "en": "Orange"
+                                    },
+                                    "color": "orange"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "أخضر",
+                                "en": "Green"
+                            }
+                        },
+                        {
+                            "type": "match",
+                            "text": {
+                                "ar": "طابق الشيء واللون",
+                                "en": "Match object to color"
+                            },
+                            "pairs": [
+                                {
+                                    "q": "🌞",
+                                    "a": {
+                                        "ar": "أصفر",
+                                        "en": "Yellow"
+                                    },
+                                    "color": "orange"
+                                },
+                                {
+                                    "q": "🌿",
+                                    "a": {
+                                        "ar": "أخضر",
+                                        "en": "Green"
+                                    },
+                                    "color": "green"
+                                },
+                                {
+                                    "q": "🌊",
+                                    "a": {
+                                        "ar": "أزرق",
+                                        "en": "Blue"
+                                    },
+                                    "color": "blue"
+                                }
+                            ],
+                            "answer": {
+                                "ar": "مطابقة صحيحة",
+                                "en": "Correct match"
+                            }
+                        },
+                        {
+                            "type": "timed",
+                            "text": {
+                                "ar": "اكتب: أزرق",
+                                "en": "Type: blue"
+                            },
+                            "timer": 20,
+                            "answer": {
+                                "value": "أزرق",
+                                "ar": "أزرق",
+                                "en": "blue"
+                            }
+                        },
+                        {
+                            "type": "mcq",
+                            "text": {
+                                "ar": "لون البرتقال؟",
+                                "en": "Orange fruit color?"
+                            },
+                            "options": [
+                                {
+                                    "label": {
+                                        "ar": "برتقالي",
+                                        "en": "Orange"
+                                    },
+                                    "color": "orange"
+                                },
+                                {
+                                    "label": {
+                                        "ar": "بنفسجي",
+                                        "en": "Purple"
+                                    },
+                                    "color": "purple"
+                                }
+                            ],
+                            "correctIndex": 0,
+                            "answer": {
+                                "ar": "برتقالي",
+                                "en": "Orange"
+                            }
+                        },
+                        {
+                            "type": "question",
+                            "emoji": "⬜",
+                            "text": {
+                                "ar": "اكتب: أبيض",
+                                "en": "Type: white"
+                            },
+                            "answer": {
+                                "value": "أبيض",
+                                "ar": "أبيض",
+                                "en": "white"
+                            }
+                        }
+                    ]
+                }
+            }
         }
-      }
-    },
-
-    {
-      "id": "pz-shapes-01",
-      "emoji": "🔺",
-      "iconEmoji": "🔺",
-      "theme": "pink",
-      "title": { "ar": "أين المثلث؟", "en": "Where is the triangle?" },
-      "desc":  { "ar": "تمارين أشكال أساسية", "en": "Basic shapes practice" },
-      "age": "4-7",
-      "levels": {
-        "L1": {
-          "items": [
-            { "type":"mcq","emoji":"🔺","text":{"ar":"اختر الشكل الصحيح","en":"Pick the right shape"},"options":[
-              { "emoji":"🔺","label":{"ar":"مثلث","en":"Triangle"},"color":"pink" },
-              { "emoji":"⬛","label":{"ar":"مربع","en":"Square"},"color":"blue" },
-              { "emoji":"⚪","label":{"ar":"دائرة","en":"Circle"},"color":"green" }
-            ],"correctIndex":0,"answer":{"ar":"المثلث","en":"Triangle"} },
-
-            { "type":"question","emoji":"⬛","text":{"ar":"شكل بأربع زوايا؟","en":"Shape with four corners?"},"answer":{"value":"مربع","ar":"مربع","en":"square"} },
-
-            { "type":"match","text":{"ar":"طابق الرمز بالكلمة","en":"Match symbol to word"},"pairs":[
-              { "q":"🔺","a":{"ar":"مثلث","en":"Triangle"},"color":"pink" },
-              { "q":"⬛","a":{"ar":"مربع","en":"Square"},"color":"blue" },
-              { "q":"⚪","a":{"ar":"دائرة","en":"Circle"},"color":"green" }
-            ],"answer":{"ar":"مطابقة صحيحة","en":"Correct match"} },
-
-            { "type":"mcq","text":{"ar":"أيهم دائري؟","en":"Which one is round?"},"options":[
-              { "emoji":"◻️","label":{"ar":"مربع","en":"Square"},"color":"purple" },
-              { "emoji":"⚪","label":{"ar":"دائرة","en":"Circle"},"color":"orange" },
-              { "emoji":"🔺","label":{"ar":"مثلث","en":"Triangle"},"color":"blue" }
-            ],"correctIndex":1,"answer":{"ar":"الدائرة","en":"Circle"} },
-
-            { "type":"question","emoji":"⬜","text":{"ar":"اكتب: دائرة","en":"Type: circle"},"answer":{"value":"دائرة","ar":"دائرة","en":"circle"} },
-
-            { "type":"mcq","text":{"ar":"شكل له ثلاث زوايا؟","en":"Has three corners?"},"options":[
-              { "emoji":"🔺","label":{"ar":"مثلث","en":"Triangle"},"color":"pink" },
-              { "emoji":"⬛","label":{"ar":"مربع","en":"Square"},"color":"green" },
-              { "emoji":"🟦","label":{"ar":"مستطيل","en":"Rectangle"},"color":"blue" }
-            ],"correctIndex":0,"answer":{"ar":"المثلث","en":"Triangle"} },
-
-            { "type":"match","text":{"ar":"طابق اللون بالاسم","en":"Match color to name"},"pairs":[
-              { "q":"🟥","a":{"ar":"أحمر","en":"Red"},"color":"pink" },
-              { "q":"🟩","a":{"ar":"أخضر","en":"Green"},"color":"green" },
-              { "q":"🟦","a":{"ar":"أزرق","en":"Blue"},"color":"blue" }
-            ],"answer":{"ar":"مطابقة صحيحة","en":"Correct match"} },
-
-            { "type":"question","emoji":"⭐","text":{"ar":"شكل له خمس زوايا؟ (نجمة ليست شكل أساسي)","en":"Five-corner shape? (star isn’t basic)"},"answer":{"value":"خماسي","ar":"خماسي","en":"pentagon"} },
-
-            { "type":"mcq","text":{"ar":"أطول شكل؟","en":"The longest?"},"options":[
-              { "emoji":"🟩","label":{"ar":"مستطيل","en":"Rectangle"},"color":"green" },
-              { "emoji":"◻️","label":{"ar":"مربع","en":"Square"},"color":"purple" },
-              { "emoji":"⚪","label":{"ar":"دائرة","en":"Circle"},"color":"orange" }
-            ],"correctIndex":0,"answer":{"ar":"المستطيل","en":"Rectangle"} },
-
-            { "type":"timed","text":{"ar":"اكتب: مثلث","en":"Type: triangle"},"timer":25,"answer":{"value":"مثلث","ar":"مثلث","en":"triangle"} }
-          ]
-        }
-      }
-    }و
- {
-  "id": "pz-rabbit-dash",
-  "emoji": "🐇",
-  "iconEmoji": "🐇",
-  "theme": "green",
-  "title": { "ar": "سباق الأرنب", "en": "Rabbit Dash" },
-  "desc":  { "ar": "ألغاز حركة وسرعة", "en": "Quick & fun riddles" },
-  "age": "5-8",
-  "levels": {
-    "L1": {
-      "items": [
-        { "type":"mcq","emoji":"🥕","text":{"ar":"من يحب الجزر؟","en":"Who loves carrots?"},"options":[
-          { "emoji":"🐇","label":{"ar":"أرنب","en":"Rabbit"},"color":"green" },
-          { "emoji":"🐱","label":{"ar":"قط","en":"Cat"},"color":"blue" },
-          { "emoji":"🐢","label":{"ar":"سلحفاة","en":"Turtle"},"color":"purple" }
-        ],"correctIndex":0,"answer":{"ar":"الأرنب","en":"Rabbit"} },
-        { "type":"question","emoji":"🏁","text":{"ar":"اكتب: أرنب","en":"Type: rabbit"},"answer":{"value":"أرنب","ar":"أرنب","en":"rabbit"} },
-        { "type":"match","text":{"ar":"طابق الحيوان بالسرعة","en":"Match animal to speed"},"pairs":[
-          { "q":"🐇","a":{"ar":"سريع","en":"Fast"},"color":"green" },
-          { "q":"🐢","a":{"ar":"بطيء","en":"Slow"},"color":"pink" },
-          { "q":"🐎","a":{"ar":"سريع","en":"Fast"},"color":"blue" }
-        ],"answer":{"ar":"مطابقة صحيحة","en":"Correct match"} },
-        { "type":"mcq","text":{"ar":"أين يعيش الأرنب؟","en":"Where does a rabbit live?"},"options":[
-          { "emoji":"🕳️","label":{"ar":"جُحر","en":"Burrow"},"color":"orange" },
-          { "emoji":"🌊","label":{"ar":"ماء","en":"Water"},"color":"blue" },
-          { "emoji":"🏜️","label":{"ar":"صحراء","en":"Desert"},"color":"purple" }
-        ],"correctIndex":0,"answer":{"ar":"في الجُحر","en":"In a burrow"} },
-        { "type":"question","emoji":"🥕","text":{"ar":"من طعام الأرنب؟ (اكتب)","en":"Rabbit food? (type)"},"answer":{"value":"جزر","ar":"جزر","en":"carrot"} },
-        { "type":"mcq","text":{"ar":"الأرنب يقفز أم يزحف؟","en":"Rabbit hops or crawls?"},"options":[
-          { "emoji":"↗️","label":{"ar":"يقفز","en":"Hops"},"color":"green" },
-          { "emoji":"↘️","label":{"ar":"يزحف","en":"Crawls"},"color":"pink" }
-        ],"correctIndex":0,"answer":{"ar":"يقفز","en":"Hops"} },
-        { "type":"match","text":{"ar":"طابق الأثر بالحيوان","en":"Match track to animal"},"pairs":[
-          { "q":"👣","a":{"ar":"إنسان","en":"Human"},"color":"blue" },
-          { "q":"🐾","a":{"ar":"حيوان صغير","en":"Small animal"},"color":"green" },
-          { "q":"🐎","a":{"ar":"حصان","en":"Horse"},"color":"purple" }
-        ],"answer":{"ar":"مطابقة صحيحة","en":"Correct match"} },
-        { "type":"mcq","text":{"ar":"صوت الأرنب؟","en":"Rabbit’s sound?"},"options":[
-          { "emoji":"🔇","label":{"ar":"هادئ","en":"Quiet"},"color":"blue" },
-          { "emoji":"📣","label":{"ar":"عالٍ","en":"Loud"},"color":"orange" }
-        ],"correctIndex":0,"answer":{"ar":"هادئ","en":"Quiet"} },
-        { "type":"timed","text":{"ar":"اكتب: جُحر","en":"Type: burrow"},"timer":20,"answer":{"value":"جحر","ar":"جُحر","en":"burrow"} },
-        { "type":"mcq","text":{"ar":"من أسرع؟","en":"Who’s faster?"},"options":[
-          { "emoji":"🐇","label":{"ar":"أرنب","en":"Rabbit"},"color":"green" },
-          { "emoji":"🐢","label":{"ar":"سلحفاة","en":"Turtle"},"color":"pink" }
-        ],"correctIndex":0,"answer":{"ar":"الأرنب","en":"Rabbit"} }
-      ]
-    }
-  }
-},
-{
-  "id": "pz-letters-01",
-  "emoji": "🔤",
-  "iconEmoji": "🔤",
-  "theme": "purple",
-  "title": { "ar": "حروف وكلمات", "en": "Letters & Words" },
-  "desc":  { "ar": "تعرّف الحروف البسيطة", "en": "Learn simple letters" },
-  "age": "4-7",
-  "levels": {
-    "L1": {
-      "items": [
-        { "type":"mcq","text":{"ar":"أول حرف في Apple؟","en":"First letter in Apple?"},"options":[
-          { "emoji":"🅰️","label":{"ar":"A","en":"A"},"color":"purple" },
-          { "emoji":"🅱️","label":{"ar":"B","en":"B"},"color":"blue" }
-        ],"correctIndex":0,"answer":{"ar":"A","en":"A"} },
-        { "type":"question","emoji":"✍️","text":{"ar":"اكتب: cat","en":"Type: cat"},"answer":{"value":"cat","ar":"cat","en":"cat"} },
-        { "type":"match","text":{"ar":"طابق الحرف بالكلمة","en":"Match letter to word"},"pairs":[
-          { "q":"B","a":{"ar":"ball","en":"ball"},"color":"pink" },
-          { "q":"C","a":{"ar":"car","en":"car"},"color":"orange" },
-          { "q":"D","a":{"ar":"dog","en":"dog"},"color":"blue" }
-        ],"answer":{"ar":"مطابقة صحيحة","en":"Correct match"} },
-        { "type":"mcq","text":{"ar":"حرف قبل C؟","en":"Letter before C?"},"options":[
-          { "label":{"ar":"A","en":"A"},"color":"green" },
-          { "label":{"ar":"B","en":"B"},"color":"purple" }
-        ],"correctIndex":1,"answer":{"ar":"B","en":"B"} },
-        { "type":"question","text":{"ar":"كلمة تبدأ بـ D؟ (dog)","en":"Word starts with D? (dog)"},"answer":{"value":"dog","ar":"dog","en":"dog"} },
-        { "type":"mcq","text":{"ar":"حرف صوتي؟","en":"A vowel?"},"options":[
-          { "label":{"ar":"E","en":"E"},"color":"blue" },
-          { "label":{"ar":"T","en":"T"},"color":"orange" }
-        ],"correctIndex":0,"answer":{"ar":"E","en":"E"} },
-        { "type":"match","text":{"ar":"طابق الحرف والصورة","en":"Match letter & picture"},"pairs":[
-          { "q":"A","a":{"ar":"apple","en":"apple"},"color":"purple" },
-          { "q":"B","a":{"ar":"banana","en":"banana"},"color":"green" },
-          { "q":"C","a":{"ar":"cake","en":"cake"},"color":"pink" }
-        ],"answer":{"ar":"مطابقة صحيحة","en":"Correct match"} },
-        { "type":"question","text":{"ar":"اكتب: banana","en":"Type: banana"},"answer":{"value":"banana","ar":"banana","en":"banana"} },
-        { "type":"mcq","text":{"ar":"آخر حرف في cat؟","en":"Last letter in cat?"},"options":[
-          { "label":{"ar":"t","en":"t"},"color":"green" },
-          { "label":{"ar":"c","en":"c"},"color":"pink" }
-        ],"correctIndex":0,"answer":{"ar":"t","en":"t"} },
-        { "type":"timed","text":{"ar":"اكتب: car","en":"Type: car"},"timer":20,"answer":{"value":"car","ar":"car","en":"car"} }
-      ]
-    }
-  }
-},
-{
-  "id": "pz-numbers-01",
-  "emoji": "🔢",
-  "iconEmoji": "🔢",
-  "theme": "orange",
-  "title": { "ar": "أرقام سهلة", "en": "Easy Numbers" },
-  "desc":  { "ar": "عدّ ومقارنة بسيطة", "en": "Counting & compare" },
-  "age": "4-7",
-  "levels": {
-    "L1": {
-      "items": [
-        { "type":"mcq","text":{"ar":"2 + 1 = ?","en":"2 + 1 = ?"},"options":[
-          { "label":{"ar":"3","en":"3"},"color":"orange" },
-          { "label":{"ar":"4","en":"4"},"color":"blue" }
-        ],"correctIndex":0,"answer":{"ar":"3","en":"3"} },
-        { "type":"question","emoji":"✍️","text":{"ar":"اكتب: 5","en":"Type: 5"},"answer":{"value":"5","ar":"5","en":"5"} },
-        { "type":"match","text":{"ar":"طابق الرقم بالكمية","en":"Match number to dots"},"pairs":[
-          { "q":"3️⃣","a":{"ar":"●●●","en":"●●●"},"color":"pink" },
-          { "q":"4️⃣","a":{"ar":"●●●●","en":"●●●●"},"color":"blue" },
-          { "q":"2️⃣","a":{"ar":"●●","en":"●●"},"color":"green" }
-        ],"answer":{"ar":"مطابقة صحيحة","en":"Correct match"} },
-        { "type":"mcq","text":{"ar":"الأكبر؟","en":"Which is bigger?"},"options":[
-          { "label":{"ar":"7","en":"7"},"color":"purple" },
-          { "label":{"ar":"5","en":"5"},"color":"green" }
-        ],"correctIndex":0,"answer":{"ar":"7","en":"7"} },
-        { "type":"question","text":{"ar":"اكتب: 10","en":"Type: 10"},"answer":{"value":"10","ar":"10","en":"10"} },
-        { "type":"mcq","text":{"ar":"كم عدد التفاح؟ 🍎🍎🍎","en":"How many apples? 🍎🍎🍎"},"options":[
-          { "label":{"ar":"3","en":"3"},"color":"orange" },
-          { "label":{"ar":"2","en":"2"},"color":"blue" }
-        ],"correctIndex":0,"answer":{"ar":"3","en":"3"} },
-        { "type":"match","text":{"ar":"طابق العلامة بالمعنى","en":"Match sign to meaning"},"pairs":[
-          { "q":"＋","a":{"ar":"جمع","en":"Add"},"color":"green" },
-          { "q":"－","a":{"ar":"طرح","en":"Minus"},"color":"purple" },
-          { "q":"＝","a":{"ar":"يساوي","en":"Equal"},"color":"orange" }
-        ],"answer":{"ar":"مطابقة صحيحة","en":"Correct match"} },
-        { "type":"mcq","text":{"ar":" 4 − 1 = ?","en":"4 − 1 = ?"},"options":[
-          { "label":{"ar":"3","en":"3"},"color":"pink" },
-          { "label":{"ar":"2","en":"2"},"color":"blue" }
-        ],"correctIndex":0,"answer":{"ar":"3","en":"3"} },
-        { "type":"timed","text":{"ar":"اكتب: 8","en":"Type: 8"},"timer":20,"answer":{"value":"8","ar":"8","en":"8"} },
-        { "type":"mcq","text":{"ar":"الأصغر؟","en":"Which is smaller?"},"options":[
-          { "label":{"ar":"2","en":"2"},"color":"green" },
-          { "label":{"ar":"9","en":"9"},"color":"purple" }
-        ],"correctIndex":0,"answer":{"ar":"2","en":"2"} }
-      ]
-    }
-  }
-},
-{
-  "id": "pz-colors-01",
-  "emoji": "🎨",
-  "iconEmoji": "🎨",
-  "theme": "blue",
-  "title": { "ar": "أجمل الألوان", "en": "Lovely Colors" },
-  "desc":  { "ar": "تعرّف وتمييز الألوان", "en": "Color recognition" },
-  "age": "4-7",
-  "levels": {
-    "L1": {
-      "items": [
-        { "type":"mcq","text":{"ar":"لون السماء؟","en":"Color of the sky?"},"options":[
-          { "label":{"ar":"أزرق","en":"Blue"},"color":"blue" },
-          { "label":{"ar":"أخضر","en":"Green"},"color":"green" }
-        ],"correctIndex":0,"answer":{"ar":"أزرق","en":"Blue"} },
-        { "type":"question","emoji":"🟥","text":{"ar":"اكتب: أحمر","en":"Type: red"},"answer":{"value":"أحمر","ar":"أحمر","en":"red"} },
-        { "type":"match","text":{"ar":"طابق اللون بالاسم","en":"Match swatch to name"},"pairs":[
-          { "q":"🟨","a":{"ar":"أصفر","en":"Yellow"},"color":"orange" },
-          { "q":"🟩","a":{"ar":"أخضر","en":"Green"},"color":"green" },
-          { "q":"🟦","a":{"ar":"أزرق","en":"Blue"},"color":"blue" }
-        ],"answer":{"ar":"مطابقة صحيحة","en":"Correct match"} },
-        { "type":"mcq","text":{"ar":"لون التفاحة؟","en":"Apple color?"},"options":[
-          { "label":{"ar":"أحمر","en":"Red"},"color":"pink" },
-          { "label":{"ar":"أزرق","en":"Blue"},"color":"purple" }
-        ],"correctIndex":0,"answer":{"ar":"أحمر","en":"Red"} },
-        { "type":"question","emoji":"🟪","text":{"ar":"اكتب: بنفسجي","en":"Type: purple"},"answer":{"value":"بنفسجي","ar":"بنفسجي","en":"purple"} },
-        { "type":"mcq","text":{"ar":"لون العشب؟","en":"Grass color?"},"options":[
-          { "label":{"ar":"أخضر","en":"Green"},"color":"green" },
-          { "label":{"ar":"برتقالي","en":"Orange"},"color":"orange" }
-        ],"correctIndex":0,"answer":{"ar":"أخضر","en":"Green"} },
-        { "type":"match","text":{"ar":"طابق الشيء واللون","en":"Match object to color"},"pairs":[
-          { "q":"🌞","a":{"ar":"أصفر","en":"Yellow"},"color":"orange" },
-          { "q":"🌿","a":{"ar":"أخضر","en":"Green"},"color":"green" },
-          { "q":"🌊","a":{"ar":"أزرق","en":"Blue"},"color":"blue" }
-        ],"answer":{"ar":"مطابقة صحيحة","en":"Correct match"} },
-        { "type":"timed","text":{"ar":"اكتب: أزرق","en":"Type: blue"},"timer":20,"answer":{"value":"أزرق","ar":"أزرق","en":"blue"} },
-        { "type":"mcq","text":{"ar":"لون البرتقال؟","en":"Orange fruit color?"},"options":[
-          { "label":{"ar":"برتقالي","en":"Orange"},"color":"orange" },
-          { "label":{"ar":"بنفسجي","en":"Purple"},"color":"purple" }
-        ],"correctIndex":0,"answer":{"ar":"برتقالي","en":"Orange"} },
-        { "type":"question","emoji":"⬜","text":{"ar":"اكتب: أبيض","en":"Type: white"},"answer":{"value":"أبيض","ar":"أبيض","en":"white"} }
-      ]
-    }
-  }
+    ]
 }
-
