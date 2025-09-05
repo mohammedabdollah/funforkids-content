@@ -2,7 +2,7 @@
   "id": "bubble-pop",
   "title": { "ar": "فرقّع الفُقاعات", "en": "Bubble Pop" },
   "type": "bubblepop",
-  "cover": "",
+  "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/BUBBLE.webp",
   "premium": false,
   "settings": { "tts": true, "confetti": true, "progress": true, "stars": true },
   "levels": [
