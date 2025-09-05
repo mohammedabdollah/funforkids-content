@@ -18,7 +18,7 @@ export async function start({ stage, game, levelId = 'L1' }) {
   const SYMBOLS = [
     { id:'red-circle',     em:'🔴', ar:'دائرة حمراء',     en:'Red circle' },
     { id:'blue-square',    em:'🟦', ar:'مربع أزرق',        en:'Blue square' },
-     { id:'green-triangle', em:'▲', ar:'ممثلث أحمر', en:'Green triangle' },
+     { id:'green-triangle', em:'▲', ar:'مثلث أحمر', en:'Green triangle' },
     { id:'yellow-star',    em:'⭐',  ar:'نجمة صفراء',       en:'Yellow star' },
     { id:'purple-heart',   em:'💜', ar:'قلب بنفسجي',       en:'Purple heart' }
   ];
@@ -288,11 +288,6 @@ export async function start({ stage, game, levelId = 'L1' }) {
       background:rgba(255,255,255,.15); color:#fff; padding:8px 12px; border-radius:14px;
       font-weight:800; text-shadow:0 1px 2px #0007; backdrop-filter:blur(2px)
     }
-    /* تلوين المثلث الأخضر */
-.em.tri-green, .wheel-em.tri-green {
-  color: #10b981; /* أخضر أنيق */
-  text-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
 
     #progress{position:relative;height:10px;background:#ffffff33;border-radius:999px;margin:8px 4px}
     #bar{height:100%;width:0%;background:#22c55e;border-radius:999px;transition:width .25s}
