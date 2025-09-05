@@ -1,31 +1,34 @@
-// /games/engines/spinmatch.js
-export async function start({ stage, game, levelId='L1' }) {
-  // إعدادات عامة
+// Spin & Match — L1/L2/L3 (Text Decoy in L2)
+// (c) Fun For Kids — lightweight, no libs
+
+export async function start({ stage, game, levelId = 'L1' }) {
+  // -------- Settings & Level --------
   const S = Object.assign({ tts:true, confetti:true, progress:true, stars:true }, game.settings||{});
   const LV = game.levels || [];
-  const levelIdx = Math.max(0, LV.findIndex(l => l.id===levelId));
+  const levelIdx = Math.max(0, LV.findIndex(l => l.id === levelId));
   const level = LV[levelIdx] || LV[0];
 
-  // لغة الواجهة
+  // UI language (AR/EN)
   const lang = (localStorage.getItem('ffk_lang') || (document.dir==='rtl'?'ar':'en')).toLowerCase();
   const t = (ar,en)=> lang==='ar'? ar : en;
 
-  // رموز
+  // Symbols (emoji + labels)
   const SYMBOLS = [
-    { id:'purple-heart',  em:'💜', ar:'قلب',    en:'Heart' },
-    { id:'red-circle',    em:'🔴', ar:'دائرة',  en:'Circle' },
-    { id:'green-triangle',em:'🔺', ar:'مثلث',   en:'Triangle' },
-    { id:'blue-square',   em:'🟦', ar:'مربع',   en:'Square' }
+    { id:'red-circle',     em:'🔴', ar:'دائرة حمراء',     en:'Red circle' },
+    { id:'blue-square',    em:'🟦', ar:'مربع أزرق',        en:'Blue square' },
+    { id:'green-triangle', em:'🔺', ar:'مثلث أخضر',        en:'Green triangle' },
+    { id:'yellow-star',    em:'⭐',  ar:'نجمة صفراء',       en:'Yellow star' },
+    { id:'purple-heart',   em:'💜', ar:'قلب بنفسجي',       en:'Purple heart' }
   ];
 
-  // خصائص المستويات
+  // Level config (L2 uses text-only decoy)
   const LCFG = {
-    L1: { choices:3, time: level.time||35, target: level.target||8, decoyText:false },
-    L2: { choices:3, time: level.time||35, target: level.target||10, decoyText:true  },
+    L1: { choices:3, time: level.time||35, target: level.target||8,  decoyText:false },
+    L2: { choices:3, time: level.time||35, target: level.target||10, decoyText:true  }, // TEXT DECOY ✅
     L3: { choices:4, time: level.time||30, target: level.target||12, decoyText:true  }
   }[level.id] || { choices:3, time:35, target:8, decoyText:false };
 
-  // DOM
+  // -------- Layout --------
   stage.innerHTML = `
     <div id="gm-wrap">
       <div id="hud">
@@ -40,8 +43,8 @@ export async function start({ stage, game, levelId='L1' }) {
       </div>
 
       <div id="wheel-zone">
-        <div id="wheel"></div>
-        <button id="btn-spin" class="spin-btn"><span class="die">🎲</span> ${t('Spin اضغط','Spin')}</button>
+        <div id="wheel" aria-live="polite"></div>
+        <button id="btn-spin" class="spin-btn"><span class="die">🎲</span> ${t('ابدأ الدوران','Spin')}</button>
       </div>
 
       <div id="choices"></div>
@@ -49,32 +52,31 @@ export async function start({ stage, game, levelId='L1' }) {
     </div>
   `;
 
-  const root   = document.getElementById('gm-wrap');
-  const wheel  = document.getElementById('wheel');
-  const btn    = document.getElementById('btn-spin');
-  const choices= document.getElementById('choices');
-  const status = document.getElementById('status');
-  const hudTime= document.getElementById('hud-time');
-  const hudScore=document.getElementById('hud-score');
-  const bar    = document.getElementById('bar');
-  const starsEl= Array.from(document.querySelectorAll('#stars .st'));
+  const wheel   = document.getElementById('wheel');
+  const btn     = document.getElementById('btn-spin');
+  const choices = document.getElementById('choices');
+  const status  = document.getElementById('status');
+  const hudTime = document.getElementById('hud-time');
+  const hudScore= document.getElementById('hud-score');
+  const bar     = document.getElementById('bar');
+  const starsEl = Array.from(document.querySelectorAll('#stars .st'));
 
-  // حالات
-  let time = LCFG.time, score = 0, tries = 0, target=null, timer=null, spinning=false;
+  // -------- State --------
+  let time = LCFG.time, score = 0, tries = 0, target = null, timer = null, spinning = false;
   let onFinish = ()=>{};
 
-  // أصوات (WebAudio): tick + chime
+  // -------- Audio (tick) --------
   let actx;
-  function beep(freq=880, dur=0.08, type='sine', vol=0.2){
+  function beep(freq=980, dur=0.075, type='square', vol=0.18){
     try{
       actx ||= new (window.AudioContext||window.webkitAudioContext)();
-      const o = actx.createOscillator(); const g = actx.createGain();
+      const o=actx.createOscillator(), g=actx.createGain();
       o.type=type; o.frequency.value=freq; g.gain.value=vol;
       o.connect(g); g.connect(actx.destination); o.start(); o.stop(actx.currentTime+dur);
     }catch{}
   }
 
-  // نطق
+  // -------- TTS --------
   function speak(msg){
     if(!S.tts) return;
     try{
@@ -84,7 +86,7 @@ export async function start({ stage, game, levelId='L1' }) {
     }catch{}
   }
 
-  // أدوات
+  // -------- Helpers --------
   const rand = a => a[Math.floor(Math.random()*a.length)];
   const shuffle = a => a.sort(()=>Math.random()-0.5);
   function updateHUD(){
@@ -104,30 +106,29 @@ export async function start({ stage, game, levelId='L1' }) {
     }
   }
 
-  // كونفتّي بسيط
+  // Confetti (simple, no libs)
   function confetti(){
     if(!S.confetti) return;
     const layer=document.createElement('div'); layer.className='confetti';
     document.body.appendChild(layer);
     for(let i=0;i<28;i++){
       const p=document.createElement('i');
-      p.style.left=Math.random()*100+'%';
-      p.style.setProperty('--h', (window.innerHeight+80)+'px');
+      p.style.left=(Math.random()*100)+'%';
+      p.style.setProperty('--h', (window.innerHeight+90)+'px');
       p.style.background=['#f59e0b','#10b981','#3b82f6','#ef4444','#a855f7'][i%5];
       layer.appendChild(p);
     }
     setTimeout(()=>layer.remove(),1000);
   }
 
-  // جولة جديدة
+  // -------- Rounds --------
   function nextRound(){
     target = rand(SYMBOLS);
-    wheel.innerHTML = ''; // بدون علامة استفهام
+    wheel.innerHTML = ''; // لا نعرض ؟
     status.textContent = t('اضغط Spin!','Press Spin!');
     choices.innerHTML = '';
   }
 
-  // عرض الخيارات
   function showChoices(){
     const opts = [target];
     while(opts.length < LCFG.choices){
@@ -135,50 +136,59 @@ export async function start({ stage, game, levelId='L1' }) {
     }
     shuffle(opts);
 
-    const lab = (s, txtOnly=false)=>{
+    const label = (s, textOnly=false)=>{
       const txt = (lang==='ar')? s.ar : s.en;
-      return txtOnly ? `<span class="tx-only">${txt}</span>` : `<span class="em">${s.em}</span><span class="tx">${txt}</span>`;
+      return textOnly
+        ? `<span class="tx-only">${txt}</span>`
+        : `<span class="em">${s.em}</span><span class="tx">${txt}</span>`;
     };
 
     choices.innerHTML = opts.map((o,i)=>{
-      const decoy = LCFG.decoyText && i===1;
-      return `<button class="opt" data-id="${o.id}">${lab(o, decoy)}</button>`;
+      const decoy = LCFG.decoyText && i===1; // L2/L3 نص فقط كتشتيت
+      return `<button class="opt" data-id="${o.id}">${label(o, decoy)}</button>`;
     }).join('');
 
     choices.querySelectorAll('.opt').forEach(b=>{
-      b.onclick=()=>{
+      b.onclick = ()=>{
         tries++;
         if(b.dataset.id===target.id){
-          score++; status.textContent=t('✔️ صحيح!','✔️ Correct!');
-          speak(t('أحسنت!','Great!')); confetti();
-          updateHUD();
+          score++; status.textContent = t('✔️ صحيح!','✔️ Correct!');
+          speak(t('أحسنت!','Great!')); confetti(); updateHUD();
           if(score>=LCFG.target) return endGame(true);
         }else{
-          status.textContent=t('❌ خطأ','❌ Wrong'); speak(t('حاول مجددًا','Try again'));
+          status.textContent = t('❌ خطأ','❌ Wrong');
+          speak(t('حاول مجددًا','Try again'));
         }
         nextRound();
       };
     });
   }
 
-  // دوران
-  btn.onclick=()=>{
-    if(spinning) return; spinning=true; btn.disabled=true;
+  // Spin
+  btn.onclick = ()=>{
+    if(spinning) return; spinning = true; btn.disabled = true;
     wheel.classList.add('spinning');
     setTimeout(()=>{
       wheel.classList.remove('spinning');
-      wheel.innerHTML = `<span class="wheel-em">${target.em}</span><span class="wheel-tx">${t(target.ar,target.en)}</span>`;
+
+      // L1: emoji + text   |  L2: text only   |  L3: emoji + text + 4 خيارات
+      const showTextOnly = (level.id==='L2');
+      const txt = t(target.ar, target.en);
+      wheel.innerHTML = showTextOnly
+        ? `<span class="wheel-tx">${txt}</span>`
+        : `<span class="wheel-em">${target.em}</span><span class="wheel-tx">${txt}</span>`;
+
       showChoices();
-      spinning=false; btn.disabled=false;
+      spinning = false; btn.disabled = false;
     }, 900);
   };
 
-  // مؤقت + صوت عدّاد
+  // Timer (with last-5s ticks)
   timer = setInterval(()=>{
     time--; updateHUD();
-    if(time<=5) beep(1000, 0.07, 'square', 0.15); // tick أخير
+    if(time<=5) beep();
     if(time<=0) endGame(false);
-  },1000);
+  }, 1000);
 
   function endGame(win){
     clearInterval(timer);
@@ -190,16 +200,16 @@ export async function start({ stage, game, levelId='L1' }) {
       (score >= Math.ceil(LCFG.target*0.75)) ? 2 :
       (score >= Math.ceil(LCFG.target*0.5))  ? 1 : 0;
 
-    const overlay=document.createElement('div');
-    overlay.className='result-overlay';
-    overlay.innerHTML=`
+    const overlay = document.createElement('div');
+    overlay.className = 'result-overlay';
+    overlay.innerHTML = `
       <div class="result-card">
         <h2>${title}</h2>
         <p>${msg}</p>
         <p style="font-size:22px;margin:8px 0">${'★'.repeat(stars)}${'☆'.repeat(3-stars)}</p>
         <div class="row">
           <button id="btn-retry">🔁 ${t('إعادة','Retry')}</button>
-          ${ (levelIdx < LV.length-1) ? `<button id="btn-next">➡️ ${t('المستوى التالي','Next')}</button>`:'' }
+          ${ (levelIdx < LV.length-1) ? `<button id="btn-next">➡️ ${t('المستوى التالي','Next')}</button>` : '' }
           <a class="home" href="/p/games.html">🏠 ${t('القائمة','Catalog')}</a>
         </div>
       </div>`;
@@ -208,15 +218,15 @@ export async function start({ stage, game, levelId='L1' }) {
     overlay.querySelector('#btn-retry')?.addEventListener('click', ()=>location.reload());
     overlay.querySelector('#btn-next')?.addEventListener('click', ()=>{
       const next = LV[levelIdx+1]?.id || 'L1';
-      const u=new URL(location.href); u.searchParams.set('lvl', next); location.href=u.toString();
+      const u = new URL(location.href); u.searchParams.set('lvl', next); location.href = u.toString();
     });
 
-    onFinish({ level:level.id, score, ms:(LCFG.time-time)*1000, stars });
+    onFinish({ level: level.id, score, ms: (LCFG.time-time)*1000, stars });
   }
 
-  // CSS خاص بالمحرّك
-  const css=document.createElement('style'); css.textContent=`
-    #gm-wrap{ width:min(920px, 96%); margin:auto; }
+  // Component CSS (scoped)
+  const css = document.createElement('style'); css.textContent = `
+    #gm-wrap{ width:min(920px,96%); margin:auto; }
     #hud{
       display:flex; gap:10px; align-items:center; justify-content:center;
       background:rgba(255,255,255,.15); color:#fff; padding:8px 12px; border-radius:14px;
@@ -252,13 +262,13 @@ export async function start({ stage, game, levelId='L1' }) {
     .result-card .row{display:flex;gap:8px;justify-content:center;margin-top:8px}
     .result-card button,.result-card .home{background:#1d4ed8;color:#fff;border:0;border-radius:10px;padding:8px 12px;font-weight:800;cursor:pointer;text-decoration:none}
     .result-card button:hover,.result-card .home:hover{filter:brightness(1.08)}
-    /* كونفتي */
+    /* Confetti */
     .confetti{position:fixed;inset:0;pointer-events:none;z-index:9998}
     .confetti i{position:absolute;width:8px;height:12px;top:-12px;animation:drop .9s linear forwards}
     @keyframes drop{to{transform:translateY(var(--h)) rotate(360deg)}}
   `;
   document.head.appendChild(css);
 
-  // تشغيل
+  // Boot
   updateHUD(); nextRound();
 }
