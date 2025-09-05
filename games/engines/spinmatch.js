@@ -288,6 +288,12 @@ export async function start({ stage, game, levelId = 'L1' }) {
       background:rgba(255,255,255,.15); color:#fff; padding:8px 12px; border-radius:14px;
       font-weight:800; text-shadow:0 1px 2px #0007; backdrop-filter:blur(2px)
     }
+    /* تلوين المثلث الأخضر */
+.em.tri-green, .wheel-em.tri-green {
+  color: #10b981; /* أخضر أنيق */
+  text-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+
     #progress{position:relative;height:10px;background:#ffffff33;border-radius:999px;margin:8px 4px}
     #bar{height:100%;width:0%;background:#22c55e;border-radius:999px;transition:width .25s}
     #stars{position:absolute;inset:0;display:flex;gap:4px;align-items:center;justify-content:center;color:#fff;text-shadow:0 1px 2px #0008;font-weight:900}
@@ -311,6 +317,7 @@ export async function start({ stage, game, levelId = 'L1' }) {
       background:#fff;color:#111;border:1px solid #e5e7eb;border-radius:12px;padding:10px 14px;
       display:flex;align-items:center;gap:8px;font-size:18px;cursor:pointer;box-shadow:0 4px 12px #0001; position:relative
     }
+
     #choices .opt:hover{transform:translateY(-1px);box-shadow:0 10px 18px #0002}
     #choices .opt .em{font-size:24px}
     #choices .opt .tx-only{font-weight:800;opacity:.92}
