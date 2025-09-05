@@ -1,5 +1,7 @@
-// Spin & Match — L1/L2/L3 (Text Decoy in L2)
-// (c) Fun For Kids — lightweight, no libs
+// Spin & Match — Final v1.0
+// L1: emoji+text, L2: text-only wheel + one text decoy, L3: 4 choices (speed)
+// L4: Combo 3-in-a-row = 1 point, L5: Chaos (moving choices)
+// Includes: HUD, Timer w/ tick, TTS (AR/EN), Confetti, Progress + Stars, Smart result screen.
 
 export async function start({ stage, game, levelId = 'L1' }) {
   // -------- Settings & Level --------
@@ -21,12 +23,14 @@ export async function start({ stage, game, levelId = 'L1' }) {
     { id:'purple-heart',   em:'💜', ar:'قلب بنفسجي',       en:'Purple heart' }
   ];
 
-  // Level config (L2 uses text-only decoy)
-  const LCFG = {
-    L1: { choices:3, time: level.time||35, target: level.target||8,  decoyText:false },
-    L2: { choices:3, time: level.time||35, target: level.target||10, decoyText:true  }, // TEXT DECOY ✅
-    L3: { choices:4, time: level.time||30, target: level.target||12, decoyText:true  }
-  }[level.id] || { choices:3, time:35, target:8, decoyText:false };
+  // Level config (per ID)
+  const CFG = {
+    L1: { choices:3, time: level.time||35, target: level.target||8,  decoyText:false, combo:false, chaos:false },
+    L2: { choices:3, time: level.time||35, target: level.target||10, decoyText:true,  combo:false, chaos:false }, // text decoy
+    L3: { choices:4, time: level.time||30, target: level.target||12, decoyText:true,  combo:false, chaos:false }, // 4 choices
+    L4: { choices:3, time: level.time||30, target: level.target||8,  decoyText:false, combo:true,  chaos:false }, // combo 3-in-a-row
+    L5: { choices:4, time: level.time||25, target: level.target||12, decoyText:true,  combo:false, chaos:true }   // moving options
+  }[level.id] || { choices:3, time:35, target:8, decoyText:false, combo:false, chaos:false };
 
   // -------- Layout --------
   stage.innerHTML = `
@@ -47,6 +51,11 @@ export async function start({ stage, game, levelId = 'L1' }) {
         <button id="btn-spin" class="spin-btn"><span class="die">🎲</span> ${t('ابدأ الدوران','Spin')}</button>
       </div>
 
+      <div id="combo" style="display:none">
+        <span class="cb">${t('الكومبو','Combo')}</span>
+        <span id="combo-dots">○○○</span>
+      </div>
+
       <div id="choices"></div>
       <div id="status"></div>
     </div>
@@ -60,10 +69,13 @@ export async function start({ stage, game, levelId = 'L1' }) {
   const hudScore= document.getElementById('hud-score');
   const bar     = document.getElementById('bar');
   const starsEl = Array.from(document.querySelectorAll('#stars .st'));
+  const comboBox= document.getElementById('combo');
+  const comboDots=document.getElementById('combo-dots');
 
   // -------- State --------
-  let time = LCFG.time, score = 0, tries = 0, target = null, timer = null, spinning = false;
+  let time = CFG.time, score = 0, tries = 0, target = null, timer = null, spinning = false;
   let onFinish = ()=>{};
+  let comboNeed = 3, comboProg = 0; // for L4
 
   // -------- Audio (tick) --------
   let actx;
@@ -93,20 +105,20 @@ export async function start({ stage, game, levelId = 'L1' }) {
     hudTime.textContent  = `⏱️ ${time}`;
     hudScore.textContent = `⭐ ${score}`;
     if(S.progress){
-      const pct = Math.max(0, Math.min(100, (score/LCFG.target)*100));
+      const pct = Math.max(0, Math.min(100, (score/CFG.target)*100));
       bar.style.width = pct + '%';
     }
     if(S.stars){
-      const s1 = score >= Math.ceil(LCFG.target*0.5);
-      const s2 = score >= Math.ceil(LCFG.target*0.75);
-      const s3 = score >= LCFG.target;
+      const s1 = score >= Math.ceil(CFG.target*0.5);
+      const s2 = score >= Math.ceil(CFG.target*0.75);
+      const s3 = score >= CFG.target;
       starsEl[0].textContent = s1?'★':'☆';
       starsEl[1].textContent = s2?'★':'☆';
       starsEl[2].textContent = s3?'★':'☆';
     }
   }
 
-  // Confetti (simple, no libs)
+  // Confetti (simple)
   function confetti(){
     if(!S.confetti) return;
     const layer=document.createElement('div'); layer.className='confetti';
@@ -124,14 +136,21 @@ export async function start({ stage, game, levelId = 'L1' }) {
   // -------- Rounds --------
   function nextRound(){
     target = rand(SYMBOLS);
-    wheel.innerHTML = ''; // لا نعرض ؟
+    wheel.innerHTML = '';
     status.textContent = t('اضغط Spin!','Press Spin!');
     choices.innerHTML = '';
+    if(CFG.combo){ comboBox.style.display='grid'; renderCombo(); }
+  }
+
+  function renderCombo(){
+    if(!CFG.combo) return;
+    const full = '●'.repeat(comboProg), empty = '○'.repeat(comboNeed - comboProg);
+    comboDots.textContent = full + empty;
   }
 
   function showChoices(){
     const opts = [target];
-    while(opts.length < LCFG.choices){
+    while(opts.length < CFG.choices){
       const r = rand(SYMBOLS); if(!opts.includes(r)) opts.push(r);
     }
     shuffle(opts);
@@ -144,20 +163,50 @@ export async function start({ stage, game, levelId = 'L1' }) {
     };
 
     choices.innerHTML = opts.map((o,i)=>{
-      const decoy = LCFG.decoyText && i===1; // L2/L3 نص فقط كتشتيت
-      return `<button class="opt" data-id="${o.id}">${label(o, decoy)}</button>`;
+      const decoy = CFG.decoyText && i===1; // L2/L3 نص فقط كتشتيت
+      const klass = CFG.chaos ? 'opt chaos' : 'opt';
+      return `<button class="${klass}" data-id="${o.id}">${label(o, decoy)}</button>`;
     }).join('');
+
+    if(CFG.chaos){
+      // اهتزاز/انزلاق بسيط يزيد الإِثارة (L5)
+      choices.querySelectorAll('.opt.chaos').forEach((b, idx)=>{
+        b.style.setProperty('--delay', `${idx*80}ms`);
+        b.style.setProperty('--shift', `${(Math.random()>0.5?1:-1)*(4+Math.random()*8)}px`);
+      });
+    }
 
     choices.querySelectorAll('.opt').forEach(b=>{
       b.onclick = ()=>{
         tries++;
-        if(b.dataset.id===target.id){
-          score++; status.textContent = t('✔️ صحيح!','✔️ Correct!');
-          speak(t('أحسنت!','Great!')); confetti(); updateHUD();
-          if(score>=LCFG.target) return endGame(true);
+        const correct = (b.dataset.id===target.id);
+        if(CFG.combo){
+          if(correct){
+            comboProg = Math.min(comboNeed, comboProg+1);
+            renderCombo();
+            if(comboProg===comboNeed){
+              score++; comboProg=0; renderCombo();
+              status.textContent = t('✔️ كومبو مكتمل!','✔️ Combo complete!');
+              speak(t('ممتاز، نقطة كاملة!','Excellent, full point!'));
+              confetti(); updateHUD();
+            }else{
+              status.textContent = t('صحيح! تابع الكومبو…','Correct! keep the combo...');
+              speak(t('تابع!','Keep going!'));
+            }
+          }else{
+            comboProg = 0; renderCombo();
+            status.textContent = t('❌ انقطع الكومبو!','❌ Combo broken!');
+            speak(t('حاول مجددًا','Try again'));
+          }
         }else{
-          status.textContent = t('❌ خطأ','❌ Wrong');
-          speak(t('حاول مجددًا','Try again'));
+          if(correct){
+            score++; status.textContent = t('✔️ صحيح!','✔️ Correct!');
+            speak(t('أحسنت!','Great!')); confetti(); updateHUD();
+            if(score>=CFG.target) return endGame(true);
+          }else{
+            status.textContent = t('❌ خطأ','❌ Wrong');
+            speak(t('حاول مجددًا','Try again'));
+          }
         }
         nextRound();
       };
@@ -171,10 +220,10 @@ export async function start({ stage, game, levelId = 'L1' }) {
     setTimeout(()=>{
       wheel.classList.remove('spinning');
 
-      // L1: emoji + text   |  L2: text only   |  L3: emoji + text + 4 خيارات
-      const showTextOnly = (level.id==='L2');
+      // Wheel content per level
+      const textOnly = (level.id==='L2'); // L2 نص فقط
       const txt = t(target.ar, target.en);
-      wheel.innerHTML = showTextOnly
+      wheel.innerHTML = textOnly
         ? `<span class="wheel-tx">${txt}</span>`
         : `<span class="wheel-em">${target.em}</span><span class="wheel-tx">${txt}</span>`;
 
@@ -190,15 +239,22 @@ export async function start({ stage, game, levelId = 'L1' }) {
     if(time<=0) endGame(false);
   }, 1000);
 
+  function verdictText(pct){
+    if(pct >= 1)   return { ar:'ممتاز!',            en:'Excellent!' };
+    if(pct >= .75) return { ar:'قريب جدًا!',        en:'Almost there!' };
+    if(pct >= .5)  return { ar:'محاولة جيدة!',      en:'Good try!' };
+    return           { ar:'حاول مجددًا',            en:'Try again' };
+  }
+
   function endGame(win){
     clearInterval(timer);
-    const title = win ? t('ممتاز!','Great!') : t('انتهى الوقت!','Time is up!');
-    const msg   = t(`النقاط: ${score} من ${LCFG.target}`, `Score: ${score} / ${LCFG.target}`);
-    speak(win ? t('أحسنت، نتيجة رائعة!','Well done!') : t('حاول مجددًا','Try again'));
+    const pct = Math.min(1, score/CFG.target);
+    const titleObj = verdictText(pct);
+    const title = t(titleObj.ar, titleObj.en);
+    const msg   = t(`النقاط: ${score} من ${CFG.target}`, `Score: ${score} / ${CFG.target}`);
+    speak(title);
 
-    const stars = win ? 3 :
-      (score >= Math.ceil(LCFG.target*0.75)) ? 2 :
-      (score >= Math.ceil(LCFG.target*0.5))  ? 1 : 0;
+    const stars = (pct>=1)?3 : (pct>=.75)?2 : (pct>=.5)?1 : 0;
 
     const overlay = document.createElement('div');
     overlay.className = 'result-overlay';
@@ -221,7 +277,7 @@ export async function start({ stage, game, levelId = 'L1' }) {
       const u = new URL(location.href); u.searchParams.set('lvl', next); location.href = u.toString();
     });
 
-    onFinish({ level: level.id, score, ms: (LCFG.time-time)*1000, stars });
+    onFinish({ level: level.id, score, ms: (CFG.time-time)*1000, stars });
   }
 
   // Component CSS (scoped)
@@ -246,14 +302,22 @@ export async function start({ stage, game, levelId = 'L1' }) {
     }
     .spin-btn:disabled{opacity:.65;cursor:not-allowed}
     .die{font-size:20px;filter:drop-shadow(0 2px 2px rgba(0,0,0,.25))}
+    #combo{
+      margin:6px auto 2px; display:grid; place-items:center; color:#fff; font-weight:900;
+      text-shadow:0 1px 2px #0009; background:rgba(255,255,255,.12); padding:6px 10px; border-radius:12px; width:max-content
+    }
     #choices{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:12px}
     #choices .opt{
       background:#fff;color:#111;border:1px solid #e5e7eb;border-radius:12px;padding:10px 14px;
-      display:flex;align-items:center;gap:8px;font-size:18px;cursor:pointer;box-shadow:0 4px 12px #0001
+      display:flex;align-items:center;gap:8px;font-size:18px;cursor:pointer;box-shadow:0 4px 12px #0001; position:relative
     }
     #choices .opt:hover{transform:translateY(-1px);box-shadow:0 10px 18px #0002}
     #choices .opt .em{font-size:24px}
     #choices .opt .tx-only{font-weight:800;opacity:.92}
+    /* Chaos animations (L5) */
+    #choices .opt.chaos{ animation: sway 1.4s var(--delay) infinite ease-in-out alternate; }
+    @keyframes sway{ from{ transform: translateX(0) } to{ transform: translateX(var(--shift,8px)) } }
+
     #status{text-align:center;font-weight:900;color:#fff;text-shadow:0 1px 2px #0009;margin:4px}
     .spinning{animation:spin .9s ease-in-out}
     @keyframes spin{from{transform:rotate(0)}to{transform:rotate(720deg)}}
