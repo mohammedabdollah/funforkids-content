@@ -16,7 +16,8 @@
         { "id": "L5", "desc": { "ar": "فوضى — اختيارات متحركة", "en": "Chaos — moving options" }, "time": 25, "target": 12 }
       ]
     },
-   {
+   
+{
   "id": "bubble-pop",
   "title": { "ar": "فرقّع الفُقاعات", "en": "Bubble Pop" },
   "type": "bubblepop",
@@ -24,14 +25,15 @@
   "premium": false,
   "settings": { "tts": true, "confetti": true, "progress": true, "stars": true },
   "levels": [
-    { "id": "L1", "desc": { "ar": "لون واحد — تمهيدي",     "en": "Single color — Intro" },  "time": 35, "target": 10 },
-    { "id": "L2", "desc": { "ar": "لون واحد — أسرع قليلًا", "en": "Single color — Faster" }, "time": 35, "target": 12 },
-    { "id": "L3", "desc": { "ar": "تحدّي أكثر",              "en": "Getting tougher" },       "time": 30, "target": 14 },
-    { "id": "L4", "desc": { "ar": "وتيرة أعلى",              "en": "Higher pace" },           "time": 30, "target": 16 },
-    { "id": "L5", "desc": { "ar": "سريع",                    "en": "Fast" },                  "time": 25, "target": 18 },
-    { "id": "L6", "desc": { "ar": "سريع جدًا",               "en": "Very fast" },             "time": 25, "target": 20 }
+    { "id": "L1", "desc": { "ar": "تمهيدي",      "en": "Intro"       }, "time": 40, "target": 8,  "wave": 12 },
+    { "id": "L2", "desc": { "ar": "أسرع قليلًا", "en": "Faster"      }, "time": 35, "target": 10, "wave": 13 },
+    { "id": "L3", "desc": { "ar": "ألوان أكثر",  "en": "More colors" }, "time": 35, "target": 12, "wave": 14 },
+    { "id": "L4", "desc": { "ar": "وتيرة أعلى",  "en": "Higher pace" }, "time": 30, "target": 14, "wave": 15 },
+    { "id": "L5", "desc": { "ar": "صعب",         "en": "Hard"        }, "time": 30, "target": 16, "wave": 16 },
+    { "id": "L6", "desc": { "ar": "محترف",       "en": "Pro"         }, "time": 25, "target": 18, "wave": 16 }
   ]
 }
+
 
   ]
 }
