@@ -1,32 +1,29 @@
-// Bubble Pop — Final Lite v1.0
-// ميزات: HUD, Timer, Progress, Stars, Confetti, TTS, Next Level, Local Progress
-// إصلاحات: سحب مستمر للفقاعات + ضمان تواجد لون الهدف + منع لخبطة تغيّر الهدف
-
+// Bubble Pop — Final v1.1 (waves + target guard + next level + pro colors)
 export async function start({ stage, game, levelId='L1' }) {
-  // ------ إعدادات عامة ------
-  const S = Object.assign(
-    { tts:true, confetti:true, progress:true, stars:true },
-    game?.settings || {}
-  );
-  const level = (game.levels||[]).find(l=>l.id===levelId) || game.levels?.[0] || { time: 35, target: 10 };
+  // ====== إعدادات عامة ======
+  const S = Object.assign({ tts:true, confetti:true, progress:true, stars:true }, game?.settings||{});
+  const level = (game.levels||[]).find(l=>l.id===levelId) || game.levels?.[0] || { time:35, target:10, wave:14 };
 
-  // ألوان اللعبة (يمكن تقلل/تزود من JSON لاحقًا)
+  // 🎨 لوحة الألوان (منك)
+  const COLORS = [
+    { id:'green',  hex:'#47C83E', ar:'أخضر',   en:'Green'  },
+    { id:'blue',   hex:'#3BA9F5', ar:'أزرق',    en:'Blue'   },
+    { id:'purple', hex:'#B147F5', ar:'بنفسجي', en:'Purple' },
+    { id:'pink',   hex:'#F54AC9', ar:'وردي',   en:'Pink'   },
+  ];
+
   const CFG = {
-      time:   level.time || 35,
-  target: level.target || 10,
-  colors: ['#47C83E', '#3BA9F5', '#B147F5', '#F54AC9'] 
+    time:   level.time   || 35,
+    target: level.target || 10,
+    wave:   level.wave   || 14,   // 👈 حجم الموجة
+    minTargetPerWave: 3,          // 👈 على الأقل 3 من لون الهدف كل موجة
+    waveGapMs: 4200               // 👈 المدة بين الموجات
   };
 
-  // معايير التدفق (قابلة للتوسيع بالليفلات لاحقًا)
-  const MAX_ON_STAGE = 16;       // أقصى عدد فقاعات على الشاشة
-  const TRICKLE_MS   = 900;      // كل كم ملي ثانية نضيف فقاعة
-  const MIN_TARGET_ON_STAGE = 2; // أقل عدد لازم يكون من لون الهدف على الشاشة دائمًا
+  const lang = (localStorage.getItem('ffk_lang') || (document.dir==='rtl'?'ar':'en')).toLowerCase();
+  const t = (ar,en)=> lang==='ar'? ar : en;
 
-  // لغة الواجهة
-  const lang = (localStorage.getItem('ffk_lang') || (document.dir==='rtl' ? 'ar' : 'en')).toLowerCase();
-  const t = (ar,en)=> lang==='ar' ? ar : en;
-
-  // ------ واجهة اللعب ------
+  // ====== واجهة ======
   stage.innerHTML = `
     <div id="bp-wrap">
       <div id="hud">
@@ -52,93 +49,55 @@ export async function start({ stage, game, levelId='L1' }) {
   const bar     = document.getElementById('bar');
   const starsEl = Array.from(document.querySelectorAll('#stars .st'));
 
-  // ------ الحالة ------
-  let time = CFG.time, score = 0, timer=null, targetColor='red';
-  let trickle=null, targetGuard=null;
+  // ====== state ======
+  let time = CFG.time, score = 0;
+  let targetColor = COLORS[0];       // كائن اللون الحالي
+  let waveTimer=null, guardTimer=null, tickTimer=null;
 
-  const NAME = {
-    red:t('أحمر','Red'), blue:t('أزرق','Blue'), green:t('أخضر','Green'),
-    purple:t('بنفسجي','Purple'), orange:t('برتقالي','Orange')
-  };
+  const NAME = Object.fromEntries(COLORS.map(c=>[c.id, (lang==='ar')?c.ar:c.en]));
 
-  // ------ أدوات ------
-  function speak(msg){ try{
-    if(!S.tts) return; const u=new SpeechSynthesisUtterance(msg);
-    u.lang = (lang==='ar') ? 'ar' : 'en-US';
-    speechSynthesis.cancel(); speechSynthesis.speak(u);
-  }catch{} }
+  // ====== helpers ======
+  function speak(msg){ try{ if(!S.tts) return; const u=new SpeechSynthesisUtterance(msg); u.lang=(lang==='ar')?'ar':'en-US'; speechSynthesis.cancel(); speechSynthesis.speak(u);}catch{} }
+  function confetti(){ if(!S.confetti) return; const layer=document.createElement('div'); layer.className='confetti'; document.body.appendChild(layer); for(let i=0;i<24;i++){ const p=document.createElement('i'); p.style.left=(Math.random()*100)+'%'; p.style.setProperty('--h',(window.innerHeight+80)+'px'); p.style.background=['#f59e0b','#10b981','#3b82f6','#ef4444','#a855f7'][i%5]; layer.appendChild(p);} setTimeout(()=>layer.remove(),900); }
+  function updateHUD(){ hudTime.textContent=`⏱️ ${time}`; hudScore.textContent=`⭐ ${score}`; if(S.progress){ const pct=Math.min(100,(score/CFG.target)*100); bar.style.width=pct+'%'; } if(S.stars){ const s1=score>=Math.ceil(CFG.target*.5), s2=score>=Math.ceil(CFG.target*.75), s3=score>=CFG.target; starsEl[0].textContent=s1?'★':'☆'; starsEl[1].textContent=s2?'★':'☆'; starsEl[2].textContent=s3?'★':'☆'; } }
 
-  function confetti(){
-    if(!S.confetti) return;
-    const layer=document.createElement('div'); layer.className='confetti'; document.body.appendChild(layer);
-    for(let i=0;i<24;i++){
-      const p=document.createElement('i');
-      p.style.left=(Math.random()*100)+'%';
-      p.style.setProperty('--h',(window.innerHeight+80)+'px');
-      p.style.background=['#f59e0b','#10b981','#3b82f6','#ef4444','#a855f7'][i%5];
-      layer.appendChild(p);
-    }
-    setTimeout(()=>layer.remove(),900);
+  // ====== الهدف (Target) ======
+  function setTarget(){
+    targetColor = COLORS[Math.floor(Math.random()*COLORS.length)];
+    targetEl.innerHTML = `
+      <div class="tg" style="--c:${targetColor.hex}">
+        <span class="dot"></span>
+        ${t('اضغط الفُقاعات','Tap the bubbles')}: <b>${NAME[targetColor.id]}</b>
+      </div>`;
   }
 
-  function updateHUD(){
-    hudTime.textContent  = ⏱️ ${time};
-    hudScore.textContent = ⭐ ${score};
-    if(S.progress){ const pct = Math.min(100, (score/CFG.target)*100); bar.style.width = pct + '%'; }
-    if(S.stars){
-      const s1 = score >= Math.ceil(CFG.target*0.5);
-      const s2 = score >= Math.ceil(CFG.target*0.75);
-      const s3 = score >= CFG.target;
-      starsEl[0].textContent = s1 ? '★' : '☆';
-      starsEl[1].textContent = s2 ? '★' : '☆';
-      starsEl[2].textContent = s3 ? '★' : '☆';
-    }
-  }
+  function countTargetOnStage(){ return pf.querySelectorAll(`.bub[data-c="${targetColor.id}"]`).length; }
+  function randColor(){ return COLORS[Math.floor(Math.random()*COLORS.length)]; }
 
-  // ------ الهدف ------
- function setTarget(){
-  targetColor = CFG.colors[Math.floor(Math.random()*CFG.colors.length)];
-  targetEl.innerHTML = `
-    <div class="tg">
-      <span class="dot" style="background:${targetColor}"></span>
-      ${t('اضغط الفُقاعات','Tap the bubbles')}: <b>${NAME[targetColor] || targetColor}</b>
-    </div>`;
-
-  // ضيف على الأقل فقاعة هدف مباشرة بعد التغيير
-  addBubble(targetColor);
-
-  // ------ عدّادات الشاشة ------
-  function countTargetOnStage(){
-    return pf.querySelectorAll(.bub[data-c="${targetColor}"]).length;
-  }
-  function randColor(){ return CFG.colors[Math.floor(Math.random()*CFG.colors.length)]; }
-
-  // ------ إنشاء فقاعة ------
-  function addBubble(color){
-    const c = color || randColor();
+  function addBubble(colorObj){
+    const col = colorObj || randColor();
     const b = document.createElement('button');
-    b.className='bub'; b.dataset.c=c;
+    b.className='bub'; b.dataset.c = col.id; b.style.setProperty('--c', col.hex);
 
-    const left  = Math.random()*80 + 10;     // %
-    const size  = 40 + Math.random()*26;     // px
-    const delay = Math.random()*1000;
+    const left  = Math.random()*80 + 10;
+    const size  = 40 + Math.random()*26;
+    const dur   = 4.6 + Math.random()*0.8; // مدة الطفو
 
-    b.style.left = left+'%'; b.style.width = b.style.height = size+'px';
-    b.style.animationDelay = (-delay)+'ms';
-    b.innerHTML = <span class="core" style="background:${c}"></span>;
+    b.style.left = left+'%';
+    b.style.width = b.style.height = size+'px';
+    b.style.setProperty('--dur', dur+'s');
+    b.innerHTML = `<span class="core"></span>`;
+
+    b.addEventListener('animationend', ()=> b.remove());
 
     b.onclick = ()=>{
-      const clickedColor = b.dataset.c;         // لقطة لون الفقاعة وقت الضغط
-      const isCorrect    = (clickedColor === targetColor);
+      const clicked = b.dataset.c;
+      const isCorrect = (clicked === targetColor.id);
       if(isCorrect){
         score++; confetti(); speak(t('أحسنت!','Great!')); updateHUD();
         b.classList.add('pop'); setTimeout(()=>b.remove(),180);
-        if(score >= CFG.target) return end(true);
-
-        // لتجنّب لخبطة تغيّر الهدف فورًا: بدّل بعد 300ms كل 3 نقاط
-        if(score % 3 === 0){
-          setTimeout(()=> setTarget(), 300);
-        }
+        if(score>=CFG.target) return end(true);
+        if(score%3===0){ setTimeout(()=> setTarget(), 300); } // تأخير بسيط لتفادي لخبطة
       }else{
         speak(t('حاول مجددًا','Try again'));
         b.classList.add('shake'); setTimeout(()=>b.classList.remove('shake'),250);
@@ -148,73 +107,62 @@ export async function start({ stage, game, levelId='L1' }) {
     pf.appendChild(b);
   }
 
-  // ------ دفعة أولى + تدفق مستمر + حارس هدف ------
-  function spawnInitial(n=16){
-    pf.innerHTML='';
-    // ضمن هدفين على الأقل
-    for(let i=0;i<MIN_TARGET_ON_STAGE;i++) addBubble(targetColor);
-    while (pf.querySelectorAll('.bub').length < n) addBubble();
+  // ====== موجات (waves) تضمن الهدف ======
+  function spawnWave(n=CFG.wave){
+    // امسح أي فقاعات باقية قديمة فوق 80 عنصر
+    const all = pf.querySelectorAll('.bub'); if(all.length>80) all.forEach(el=>el.remove());
+
+    // حضّر قائمة الألوان للموجة
+    const list = [];
+    for(let i=0;i<CFG.minTargetPerWave;i++) list.push(targetColor); // نضمن الهدف
+    while(list.length<n){ list.push(randColor()); }
+    list.sort(()=>Math.random()-0.5);
+
+    list.forEach(col => addBubble(col));
   }
 
-  function startTrickle(){
-    trickle = setInterval(()=>{
-      const total = pf.querySelectorAll('.bub').length;
-      if (total < MAX_ON_STAGE) {
-        const needTarget = countTargetOnStage() < MIN_TARGET_ON_STAGE;
-        addBubble(needTarget ? targetColor : undefined);
-      }
-    }, TRICKLE_MS);
-
-    targetGuard = setInterval(()=>{
-      if (countTargetOnStage() === 0) addBubble(targetColor);
-    }, 1200);
+  // حارس: لو اختفى الهدف على الشاشة لأي سبب، احقن واحدة
+  function ensureTargetPresent(){
+    if(countTargetOnStage()===0) addBubble(targetColor);
   }
 
-  // ------ التايمر ------
-  timer = setInterval(()=>{
-    time--; updateHUD();
-    if(time <= 0) end(false);
-  }, 1000);
+  // ====== التايمر ======
+  tickTimer = setInterval(()=>{ time--; updateHUD(); if(time<=0) end(false); }, 1000);
 
-  // ------ نهاية الجولة + Next + تقدم ------
+  // ====== نهاية الجولة + Next + حفظ تقدم ======
   function end(win){
-    try{
-      clearInterval(timer);
-      clearInterval(trickle);
-      clearInterval(targetGuard);
-    }catch{}
-
-    const pct   = Math.min(1, score/CFG.target);
-    const title = win ? t('ممتاز!','Excellent!') : (pct>=.5 ? t('محاولة جيدة!','Good try!') : t('حاول مجددًا','Try again'));
-    const stars = win?3 : (pct>=.75?2 : (pct>=.5?1:0));
+    try{ clearInterval(tickTimer); clearInterval(waveTimer); clearInterval(guardTimer);}catch{}
+    const pct = Math.min(1, score/CFG.target);
+    const title = win? t('ممتاز!','Excellent!') : (pct>=.5? t('محاولة جيدة!','Good try!'): t('حاول مجددًا','Try again'));
+    const stars = win?3:(pct>=.75?2:(pct>=.5?1:0));
     speak(title);
 
-    // حفظ التقدم محليًا عند الفوز
+    // حفظ التقدم (افتح الليفل التالي)
     try{
       if(win){
-        const key = ffk_progress_${game.id}; // مثال: ffk_progress_bubble-pop
+        const key = `ffk_progress_${game.id}`;
         const idx = (game.levels||[]).findIndex(l=>l.id===levelId);
         const next= game.levels?.[idx+1]?.id;
         localStorage.setItem(key, next || levelId);
       }
     }catch{}
 
-    const hasNext = win && ( (game.levels||[]).findIndex(l=>l.id===levelId) < (game.levels||[]).length-1 );
+    const hasNext = win && ((game.levels||[]).findIndex(l=>l.id===levelId) < (game.levels||[]).length-1);
 
-    const ov = document.createElement('div'); ov.className='result-overlay'; ov.innerHTML = `
+    const ov=document.createElement('div'); ov.className='result-overlay'; ov.innerHTML=`
       <div class="result-card">
         <h2>${title}</h2>
         <p>${t('النقاط','Score')}: ${score} / ${CFG.target}</p>
         <p style="font-size:22px;margin:8px 0">${'★'.repeat(stars)}${'☆'.repeat(3-stars)}</p>
         <div class="row">
           <button id="bp-retry">🔁 ${t('إعادة','Retry')}</button>
-          ${hasNext ? <button id="bp-next">➡️ ${t('المستوى التالي','Next')}</button> : ''}
+          ${hasNext? `<button id="bp-next">➡️ ${t('المستوى التالي','Next')}</button>`:''}
           <a class="home" href="/p/games.html">🏠 ${t('القائمة','Catalog')}</a>
         </div>
       </div>`;
     document.body.appendChild(ov);
 
-    ov.querySelector('#bp-retry').onclick = ()=> location.reload();
+    ov.querySelector('#bp-retry').onclick=()=>location.reload();
     ov.querySelector('#bp-next')?.addEventListener('click', ()=>{
       const idx = (game.levels||[]).findIndex(l=>l.id===levelId);
       const next= game.levels?.[idx+1]?.id || 'L1';
@@ -222,7 +170,7 @@ export async function start({ stage, game, levelId='L1' }) {
     });
   }
 
-  // ------ CSS مدمج ------
+  // ====== CSS ======
   const css = document.createElement('style'); css.textContent = `
     #bp-wrap{ width:min(920px,96%); margin:auto; }
     #hud{display:flex;gap:10px;align-items:center;justify-content:center;background:rgba(255,255,255,.15);color:#fff;
@@ -232,14 +180,22 @@ export async function start({ stage, game, levelId='L1' }) {
     #stars{position:absolute;inset:0;display:flex;gap:4px;align-items:center;justify-content:center;color:#fff;text-shadow:0 1px 2px #0008;font-weight:900}
     #target{display:grid;place-items:center;margin:6px}
     .tg{background:#ffffff18;color:#fff;border-radius:12px;padding:6px 10px;font-weight:900;text-shadow:0 1px 2px #0009}
-    .tg .dot{display:inline-block;width:14px;height:14px;border-radius:50%;margin-inline:6px;vertical-align:middle}
+    .tg .dot{display:inline-block;width:14px;height:14px;border-radius:50%;margin-inline:6px;vertical-align:middle;background:var(--c);
+      box-shadow:0 0 0 2px #ffffff80 inset, 0 0 8px #0003}
     #playfield{position:relative;height:360px;border-radius:16px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.05))}
     .bub{position:absolute;bottom:-60px;transform:translateX(-50%);border:0;background:transparent;cursor:pointer;transition:transform .15s}
-    .bub .core{display:block;width:100%;height:100%;border-radius:999px;opacity:.88;box-shadow:inset 0 0 10px #fff8, 0 8px 18px #0002}
-    .bub{animation:float 4.6s linear infinite}
+    .bub .core{
+      display:block;width:100%;height:100%;border-radius:999px;opacity:.95;
+      background:
+        radial-gradient(circle at 28% 28%, #ffffffcc 0 18%, #ffffff00 30%),
+        radial-gradient(circle at 50% 60%, #00000026 0 60%, #0000 62%),
+        var(--c);
+      box-shadow:inset 0 0 10px #fff8, 0 10px 22px #0003
+    }
+    .bub{animation:floatUp var(--dur,4.6s) linear forwards}
     .bub.shake{animation:none;transform:translateX(-50%) scale(.95)}
     .bub.pop{animation:none;transform:translateX(-50%) scale(0);opacity:0;transition:.18s}
-    @keyframes float{ from{bottom:-60px} to{bottom:110%} }
+    @keyframes floatUp{ from{bottom:-60px} to{bottom:110%} }
     .result-overlay{position:fixed;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.35);z-index:9999}
     .result-card{background:#fff;border-radius:18px;padding:18px 22px;width:min(440px,92vw);box-shadow:0 12px 30px #0003;text-align:center}
     .result-card .row{display:flex;gap:8px;justify-content:center;margin-top:8px}
@@ -247,12 +203,12 @@ export async function start({ stage, game, levelId='L1' }) {
     .confetti{position:fixed;inset:0;pointer-events:none;z-index:9998}
     .confetti i{position:absolute;width:8px;height:12px;top:-12px;animation:drop .9s linear forwards}
     @keyframes drop{to{transform:translateY(var(--h)) rotate(360deg)}}
-  `;
-  document.head.appendChild(css);
+  `; document.head.appendChild(css);
 
-  // ------ تشغيل ------
+  // ====== تشغيل ======
   setTarget();
-  spawnInitial(16);
-  startTrickle();
+  spawnWave(CFG.wave);                         // موجة أولى مضمونة الهدف
+  waveTimer = setInterval(()=> spawnWave(CFG.wave), CFG.waveGapMs); // موجات متتابعة
+  guardTimer= setInterval(()=> ensureTargetPresent(), 1200);        // حارس الهدف
   updateHUD();
 }
