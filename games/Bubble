@@ -1,0 +1,11 @@
+{
+  "id": "bubble-pop",
+  "title": { "ar": "فرقّع الفُقاعات", "en": "Bubble Pop" },
+  "type": "bubblepop",
+  "cover": "",
+  "premium": false,
+  "settings": { "tts": true, "confetti": true, "progress": true, "stars": true },
+  "levels": [
+    { "id": "L1", "desc": { "ar": "لون واحد", "en": "Single color" }, "time": 35, "target": 10 }
+  ]
+}
