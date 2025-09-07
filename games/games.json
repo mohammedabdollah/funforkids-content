@@ -1,18 +1,16 @@
 {
-"games": [
-{
-"id": "bubble-pop",
-"title": "Bubble Pop",
-"cover": "https://raw.githubusercontent.com/OWNER/REPO/BRANCH/images/bubble-pop/cover.webp",
-"json": "https://raw.githubusercontent.com/OWNER/REPO/BRANCH/games/bubble-pop/config.json",
-"engine": "https://raw.githubusercontent.com/OWNER/REPO/BRANCH/engines/bubblepop.js"
-},
-{
-"id": "spin-match",
-"title": {"en": "Spin Match", "ar": "تطابق الدوار"},
-"cover": "https://raw.githubusercontent.com/OWNER/REPO/BRANCH/images/spin-match/cover.webp",
-"config": "https://raw.githubusercontent.com/OWNER/REPO/BRANCH/games/spin-match/config.json",
-"script": "https://raw.githubusercontent.com/OWNER/REPO/BRANCH/engines/spin-match.js"
-}
-]
+  "games": [
+    {
+      "id": "spin-match",
+      "title": "Spin Match",
+      "image": "https://raw.githubusercontent.com/username/repo/main/images/spin-match.webp",
+      "url": "game.html?id=spin-match"
+    },
+    {
+      "id": "bubble-pop",
+      "title": "Bubble Pop",
+      "image": "https://raw.githubusercontent.com/username/repo/main/images/bubble-pop.webp",
+      "url": "game.html?id=bubble-pop"
+    }
+  ]
 }
