@@ -1,24 +1,18 @@
 {
-  "games": [
-    {
-      "id": "spin-match",
-      "title": { "ar": "سبين ماتش", "en": "Spin Match" },
-      "type": "spinmatch",
-      "cover": "assets/images/spin-match.jpg",
-      "levels": [
-        { "id": "L1" },
-        { "id": "L2" }
-      ]
-    },
-    {
-      "id": "bubble-pop",
-      "title": { "ar": "فرقّع الفقاعات", "en": "Bubble Pop" },
-      "type": "bubblepop",
-      "cover": "assets/images/bubble-pop.jpg",
-      "levels": [
-        { "id": "L1" },
-        { "id": "L2" }
-      ]
-    }
-  ]
+"games": [
+{
+"id": "bubble-pop",
+"title": "Bubble Pop",
+"cover": "https://raw.githubusercontent.com/OWNER/REPO/BRANCH/images/bubble-pop/cover.webp",
+"json": "https://raw.githubusercontent.com/OWNER/REPO/BRANCH/games/bubble-pop/config.json",
+"engine": "https://raw.githubusercontent.com/OWNER/REPO/BRANCH/engines/bubblepop.js"
+},
+{
+"id": "spin-match",
+"title": {"en": "Spin Match", "ar": "تطابق الدوار"},
+"cover": "https://raw.githubusercontent.com/OWNER/REPO/BRANCH/images/spin-match/cover.webp",
+"config": "https://raw.githubusercontent.com/OWNER/REPO/BRANCH/games/spin-match/config.json",
+"script": "https://raw.githubusercontent.com/OWNER/REPO/BRANCH/engines/spin-match.js"
+}
+]
 }
