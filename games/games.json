@@ -3,29 +3,15 @@
     {
       "id": "spin-match",
       "type": "spinmatch",
-      "title": {
-        "ar": "سبن ماتش",
-        "en": "Spin & Match"
-      },
-      "cover": "https://cdn.jsdelivr.net/gh/mohammedabdollah/funforkids-content@main/images/spin-cover.png",
-      "desc": {
-        "ar": "لعبة مطابقة الرموز الممتعة",
-        "en": "Match the symbols quickly!"
-      }
+      "title": "Spin & Match", 
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/spin-cover.png"
     },
     {
       "id": "bubble-pop",
       "type": "bubblepop",
-      "title": {
-        "ar": "بوبل بوب",
-        "en": "Bubble Pop"
-      },
-      "cover": "https://cdn.jsdelivr.net/gh/mohammedabdollah/funforkids-content@main/images/bubble-cover.png",
-      "desc": {
-        "ar": "فقّع الفقاعات واربح النجوم",
-        "en": "Pop bubbles and collect stars!"
-      },
-      "json": "https://cdn.jsdelivr.net/gh/mohammedabdollah/funforkids-content@main/games/bubble.json?v=16",
+      "title": "Bubble Pop",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/bubble-cover.png",
+      "json": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/games/bubble.json",
       "start": 0
     }
   ]
