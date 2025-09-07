@@ -2,17 +2,34 @@
   "games": [
     {
       "id": "spin-match",
+      "title": { "ar": "سبين & ماتش", "en": "Spin & Match" },
       "type": "spinmatch",
-      "title": "Spin & Match", 
-      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/spin-cover.png"
+      "cover": "",
+      "premium": false,
+      "settings": { "tts": true, "confetti": true, "progress": true, "stars": true },
+      "levels": [
+        { "id": "L1", "desc": { "ar": "تمهيدي", "en": "Intro" },   "time": 40, "target": 7 },
+        { "id": "L2", "desc": { "ar": "أصعب قليلًا", "en": "Harder" }, "time": 35, "target": 9 },
+        { "id": "L3", "desc": { "ar": "تحدٍ أعلى", "en": "Tougher" }, "time": 30, "target": 11 },
+        { "id": "L4", "desc": { "ar": "كومبو", "en": "Combo" },       "time": 30, "target": 7 },
+        { "id": "L5", "desc": { "ar": "كايوس", "en": "Chaos" },       "time": 30, "target": 12 }
+      ]
     },
     {
       "id": "bubble-pop",
+      "title": { "ar": "فرقّع الفُقاعات", "en": "Bubble Pop" },
       "type": "bubblepop",
-      "title": "Bubble Pop",
-      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/bubble-cover.png",
-      "json": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/games/bubble.json",
-      "start": 0
+      "cover": "",
+      "premium": false,
+      "settings": { "tts": true, "confetti": true, "progress": true, "stars": true },
+      "levels": [
+        { "id": "L1", "desc": { "ar": "تمهيدي",      "en": "Intro"       }, "time": 40, "target": 8,  "wave": 12 },
+        { "id": "L2", "desc": { "ar": "أسرع قليلًا", "en": "Faster"      }, "time": 35, "target": 10, "wave": 13 },
+        { "id": "L3", "desc": { "ar": "ألوان أكثر",  "en": "More colors" }, "time": 35, "target": 12, "wave": 14 },
+        { "id": "L4", "desc": { "ar": "وتيرة أعلى",  "en": "Higher pace" }, "time": 30, "target": 14, "wave": 15 },
+        { "id": "L5", "desc": { "ar": "صعب",         "en": "Hard"        }, "time": 30, "target": 16, "wave": 16 },
+        { "id": "L6", "desc": { "ar": "محترف",       "en": "Pro"         }, "time": 25, "target": 18, "wave": 16 }
+      ]
     }
   ]
 }
