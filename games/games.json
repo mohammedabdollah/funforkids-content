@@ -1,21 +1,16 @@
 {
   "games": [
     {
+      "id": "bubble-pop",
+      "title": "مفرقع الفقاعات",
+      "cover": "images/bubble-pop.webp",
+      "file": "games/bubblepop.js"
+    },
+    {
       "id": "spin-match",
-      "title": { "ar": "سبن & ماتش", "en": "Spin & Match" },
-      "type": "spinmatch",
-      "cover": "",
-      "premium": false,
-      "settings": {
-        "tts": true,
-        "confetti": true,
-        "progress": true,
-        "stars": true
-      },
-      "levels": [
-        { "id": "L1", "desc": { "ar": "تجريبي", "en": "Intro" }, "time": 40, "target": 7 },
-        { "id": "L2", "desc": { "ar": "صعب شوية", "en": "Harder" }, "time": 35, "target": 9 }
-      ]
+      "title": "سبين & ماتش",
+      "cover": "images/spin-match.webp",
+      "file": "games/spin-match.js"
     }
   ]
 }
