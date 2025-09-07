@@ -1,19 +1,20 @@
 {
   "games": [
     {
-      "id": "spinmatch",
-      "title": "Spin Match",
+      "id": "spin-match",
+      "title": { "ar": "سبن & ماتش", "en": "Spin & Match" },
       "type": "spinmatch",
-      "cover": "games/spinmatch/cover.webp"
-    },
-    {
-      "id": "bubblepop",
-      "title": "Bubble Pop",
-      "type": "bubblepop",
-      "cover": "games/bubblepop/cover.webp",
+      "cover": "",
+      "premium": false,
+      "settings": {
+        "tts": true,
+        "confetti": true,
+        "progress": true,
+        "stars": true
+      },
       "levels": [
-        {"time": 40, "min_active": 5, "target": 10},
-        {"time": 50, "min_active": 6, "target": 15}
+        { "id": "L1", "desc": { "ar": "تجريبي", "en": "Intro" }, "time": 40, "target": 7 },
+        { "id": "L2", "desc": { "ar": "صعب شوية", "en": "Harder" }, "time": 35, "target": 9 }
       ]
     }
   ]
