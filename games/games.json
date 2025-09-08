@@ -3,15 +3,14 @@
     {
       "id": "bubble-pop",
       "title": "مفرقع الفقاعات",
-      "cover": "",
-       "file": "https://cdn.jsdelivr.net/gh/mohammedabdollah/funforkids-content@main/games/bubblepop.js"
-
+      "cover": "https://cdn.jsdelivr.net/gh/mohammedabdollah/funforkids-content@main/images/bubble.webp",
+      "file": "https://cdn.jsdelivr.net/gh/mohammedabdollah/funforkids-content@main/games/engines/bubblepop.js"
     },
     {
       "id": "spin-match",
       "title": "سبين & ماتش",
       "cover": "https://cdn.jsdelivr.net/gh/mohammedabdollah/funforkids-content@main/images/spin.webp",
-       "file": "https://cdn.jsdelivr.net/gh/mohammedabdollah/funforkids-content@main/games/spin.js"
+      "file": "https://cdn.jsdelivr.net/gh/mohammedabdollah/funforkids-content@main/games/engines/spinmatch.js"
     }
   ]
 }
