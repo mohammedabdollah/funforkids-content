@@ -1,17 +1,16 @@
-
 {
   "games": [
     {
       "id": "bubble-pop",
       "title": "مفرقع الفقاعات",
-      "cover": "images/bubble.webp",
-      "file": "games/bubblepop.js"
+      "cover": "",
+      "file": "https://cdn.jsdelivr.net/gh/mohammedabdollah/funforkids-content/games/bubblepop.js"
     },
     {
       "id": "spin-match",
       "title": "سبين & ماتش",
-      "cover": "images/spin.webp",
-      "file": "games/spinmatch.js"
+      "cover": "https://cdn.jsdelivr.net/gh/mohammedabdollah/funforkids-content/images/spin.webp",
+      "file": "https://cdn.jsdelivr.net/gh/mohammedabdollah/funforkids-content/games/spinmatch.js"
     }
   ]
 }
