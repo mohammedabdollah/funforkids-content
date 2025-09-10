@@ -1,1 +1,14 @@
+@echo off
+REM English: Build the coloring gallery
+REM Arabic: توليد صفحة التلوين تلقائيًا
+python -V >nul 2>&1
+IF ERRORLEVEL 1 (
+  echo Python is not installed. Please install Python 3.x and re-run.
+  pause
+  exit /b 1
+)
+python build_color_pages.py
+echo.
+echo ✅ Build completed. Open index.html in your browser.
+pause
 
