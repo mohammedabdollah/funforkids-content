@@ -996,7 +996,7 @@
     {
       "id": "kind-giant",
       "emoji": "🗻",
-      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/kind-giant/cover.webp",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/refs/heads/main/images/the%20good%20giant.JPG",
       "title": {
         "ar": "العملاق الطيّب",
         "en": "The Kind Giant"
@@ -1327,7 +1327,7 @@
     {
       "id": "forest-adventure",
       "emoji": "🌳",
-      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/forest-adventure/cover.webp",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/refs/heads/main/images/%D9%85%D8%BA%D8%A7%D9%85%D8%B1%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%BA%D8%A7%D8%A8%D8%A9.JPG",
       "title": {
         "ar": "مغامرة في الغابة",
         "en": "Adventure in the Forest"
@@ -1989,7 +1989,7 @@
     {
       "id": "desert-journey",
       "emoji": "🐪",
-      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/desert-journey/cover.webp",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/refs/heads/main/images/desert-journey.JPG",
       "title": {
         "ar": "رحلة في الصحراء",
         "en": "Journey in the Desert"
@@ -2320,7 +2320,7 @@
     {
       "id": "rainy-day",
       "emoji": "🌧️",
-      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/rainy-day/cover.webp",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/refs/heads/main/images/rainy-day.JPG",
       "title": {
         "ar": "يوم ممطر",
         "en": "A Rainy Day"
@@ -2651,7 +2651,7 @@
     {
       "id": "mountain-friends",
       "emoji": "⛰️",
-      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/mountain-friends/cover.webp",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/refs/heads/main/images/mountain-friends.JPG",
       "title": {
         "ar": "أصدقاء الجبل",
         "en": "Friends of the Mountain"
@@ -2982,7 +2982,7 @@
     {
       "id": "robot-helper",
       "emoji": "🤖",
-      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/robot-helper/cover.webp",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/refs/heads/main/images/%D8%A7%D9%84%D8%B1%D9%88%D8%A8%D9%88%D8%AA%20%D8%A7%D9%84%D9%85%D9%8F%D8%B3%D8%A7%D8%B9%D9%90%D8%AF.JPG",
       "title": {
         "ar": "الروبوت المُساعِد",
         "en": "The Helpful Robot"
