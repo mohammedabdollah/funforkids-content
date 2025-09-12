@@ -1,4 +1,5 @@
-{ "puzzles": [
+{
+    "puzzles": [
         {
             "id": "pz-fox-forest",
             "emoji": "🦊",
@@ -1693,4 +1694,3 @@
         }
     ]
 }
-] }
