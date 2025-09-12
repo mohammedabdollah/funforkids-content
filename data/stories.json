@@ -331,106 +331,151 @@
         ]
       },
       "levels": {
+      {
+      "id": "little-star",
+      "emoji": "🌟",
+      "cover": "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/cover.webp",
+      "title": {
+        "ar": "النجمة الصغيرة",
+        "en": "The Little Star"
+      },
+      "desc": {
+        "ar": "كل ضوء صغير يصنع فرقًا كبيرًا.",
+        "en": "Every small light makes a big difference."
+      },
+      "age": "3–13+",
+      "duration_min": 3,
+      "tags": [
+        "space",
+        "kindness"
+      ],
+      "body": {
+        "ar": [
+          "نسخة افتراضية قصيرة."
+        ],
+        "en": [
+          "A very short default version."
+        ]
+      },
+      "levels": {
         "L1": {
-          "label_ar": "👶 المستوى 1 (٣–٥)",
-          "label_en": "Level 1 (3–5)",
-          "age": "3–5",
-          "duration_min": 5,
-          "body": {
-            "ar": [
-              "النجمة الصغيرة — بداية لطيفة. [[img:0]]",
-              "تفاصيل قصيرة مناسبة للصغار.",
-              "[[img:1]] النهاية سعيدة.",
-              "كان المشهدُ أوضحَ قليلًا في كلّ خطوة.",
-              "تبادلَ الأصدقاءُ نظراتٍ تحملُ معنى المشاركة.",
-              "صارَ النفسُ أهدأ، وصارت الخطوةُ أصدق.",
-              "تعلّموا أن الطريقَ يبوحُ لمن يصبر عليه.",
-              "لم تكن السرعةُ كلّ شيء؛ كان المعنى أهم.",
-              "تفتّحت حواسُّهم للأصواتِ والروائحِ من حولهم.",
-              "كان الضوءُ يلمسُ الأشياءَ برفقٍ محبّب.",
-              "ومع كلّ لحظةٍ، نضجَ السؤالُ وصارَ أعمق.",
-              "قال أحدهم: لِنقسّم الهدفَ إلى أجزاءٍ صغيرة."
-            ],
-            "en": [
-              "The Little Star — a gentle start. [[img:0]]",
-              "Short details fit young kids.",
-              "[[img:1]] A happy ending.",
-              "The scene grew a little clearer with every step.",
-              "Friends exchanged looks that carried a sense of sharing.",
-              "Breaths became calmer, and steps more honest.",
-              "They learned the path reveals itself to patient feet.",
-              "Speed wasn’t everything; meaning mattered more.",
-              "Their senses opened to sounds and scents around.",
-              "Light touched things with a friendly gentleness.",
-              "With each moment, the question ripened and deepened.",
-              "They decided to split the goal into smaller parts."
-            ]
-          },
+    "label_ar": "👶 المستوى 1 (٣–٥)",
+    "label_en": "Level 1 (3–5)",
+    "age": "3–5",
+    "duration_min": 10,
+    "body": {
+      "ar": [
+        "النجمة الصغيرة — بداية لطيفة. [[img:0]]",
+        "في السماء العالية، كانت هناك نجمة صغيرة.",
+        "تلمع، وتبتسم، وتغني.",
+        "قالت النجمة: أنا أريد أن ألعب!",
+        "طارت النجمة الصغيرة قريبة من القمر.",
+        "قال لها القمر: مرحبًا أيتها النجمة! هل تريدين اللعب؟",
+        "ضحكت النجمة وقالت: نعم! نلعب نطير، نلعب نغني!",
+        "ثم طارت النجمة إلى الغيمة.",
+        "قالت الغيمة: انتبهي يا نجمة، أنا ماطرة!",
+        "ضحكت النجمة: لا بأس! سأرقص تحت المطر!",
+        "ورقصت النجمة، ونقط المطر ترقص معها.",
+        "ثم نزلت النجمة إلى الأرض.",
+        "رأت شجرة نائمة وقطة تلعب.",
+        "رأت طفلًا ينظر إلى السماء.",
+        "قال الطفل: واو! نجمة! انظري يا ماما، إنها تلمع!",
+        "ابتسمت النجمة ولمعت أكثر.",
+        "قالت: أنا أحب الأطفال! سأعود كل ليلة! [[img:1]]",
+        "ثم طارت النجمة عالية، وعادت إلى السماء.",
+        "ونامت هناك، تبتسم وتحلم.",
+        "النهاية."
+      ],
+      "en": [
+        "The Little Star — a gentle start. [[img:0]]",
+        "High in the sky, there was a little star.",
+        "She was shining, smiling, and singing.",
+        "The star said: I want to play!",
+        "The little star flew close to the moon.",
+        "The moon said: Hello, little star! Do you want to play?",
+        "The star giggled: Yes! Let’s fly and sing!",
+        "Then the star flew to the cloud.",
+        "The cloud said: Careful, little star, I bring rain!",
+        "The star laughed: That’s okay! I’ll dance in the rain!",
+        "And she danced, as raindrops danced too.",
+        "Then the star flew down to Earth.",
+        "She saw a sleeping tree and a playing cat.",
+        "She saw a child looking at the sky.",
+        "The child said: Wow! A star! Look, Mama, it's shining!",
+        "The star smiled and sparkled more.",
+        "She said: I love children! I’ll come back every night! [[img:1]]",
+        "Then the star flew high and returned to the sky.",
+        "She slept there, smiling and dreaming.",
+        "The End."
+      ]
+    },
+
           "images": [
             "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L1/img0.webp",
             "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L1/img1.webp"
           ]
         },
         "L2": {
-          "label_ar": "🧒 المستوى 2 (٦–٨)",
-          "label_en": "Level 2 (6–8)",
-          "age": "6–8",
-          "duration_min": 10,
-          "body": {
-            "ar": [
-              "مشهد تمهيدي مع وصف بسيط. [[img:0]]",
-              "حوار قصير يدعم الحدث.",
-              "موقف وسط القصة يختبر البطل. [[img:1]]",
-              "خاتمة مشوّقة ومفهومة. [[img:2]]",
-              "كان المشهدُ أوضحَ قليلًا في كلّ خطوة.",
-              "تبادلَ الأصدقاءُ نظراتٍ تحملُ معنى المشاركة.",
-              "صارَ النفسُ أهدأ، وصارت الخطوةُ أصدق.",
-              "تعلّموا أن الطريقَ يبوحُ لمن يصبر عليه.",
-              "لم تكن السرعةُ كلّ شيء؛ كان المعنى أهم.",
-              "تفتّحت حواسُّهم للأصواتِ والروائحِ من حولهم.",
-              "كان الضوءُ يلمسُ الأشياءَ برفقٍ محبّب.",
-              "ومع كلّ لحظةٍ، نضجَ السؤالُ وصارَ أعمق.",
-              "قال أحدهم: لِنقسّم الهدفَ إلى أجزاءٍ صغيرة.",
-              "شعروا بقيمةِ التعاونِ حين احتاجَ بعضُهم إلى بعض.",
-              "تذكّروا أن الراحةَ جزءٌ من الرحلة، لا خروجٌ عنها.",
-              "كانت العلاماتُ البسيطةُ على الطريقِ تهديهم.",
-              "أدركوا أنّ الفوزَ الحقيقيَّ هو أن يبقَوا معًا.",
-              "ازدادت الثقةُ مع كلِّ محاولةٍ محسوبة.",
-              "تساوتِ الخطواتُ الصغيرةُ على أرضٍ واسعة.",
-              "تبدّل التعبُ إلى خبرةٍ وطمأنينة.",
-              "حين تشتدُّ الحيرةُ، يعودونَ إلى الوعدِ الأوّل.",
-              "المعنى يكبرُ عندما نتقاسمه."
-            ],
-            "en": [
-              "An opening scene with simple description. [[img:0]]",
-              "Short dialogue to support action.",
-              "A mid-story test for the hero. [[img:1]]",
-              "A clear, exciting ending. [[img:2]]",
-              "The scene grew a little clearer with every step.",
-              "Friends exchanged looks that carried a sense of sharing.",
-              "Breaths became calmer, and steps more honest.",
-              "They learned the path reveals itself to patient feet.",
-              "Speed wasn’t everything; meaning mattered more.",
-              "Their senses opened to sounds and scents around.",
-              "Light touched things with a friendly gentleness.",
-              "With each moment, the question ripened and deepened.",
-              "They decided to split the goal into smaller parts.",
-              "They felt the value of helping one another.",
-              "Rest, they learned, is part of travel, not an exit.",
-              "Simple markers along the way guided them.",
-              "True victory was staying together.",
-              "Confidence grew with every measured attempt.",
-              "Small steps found weight on wide ground.",
-              "Fatigue turned into experience and calm.",
-              "When doubt rose, they returned to their first promise.",
-              "Meaning grows when it is shared."
-            ]
-          },
+    "label_ar": "🧒 المستوى 2 (٦–٨)",
+    "label_en": "Level 2 (6–8)",
+    "age": "6–8",
+    "duration_min": 10,
+    "body": {
+      "ar": [
+        "النجمة الصغيرة — مغامرة في السماء. [[img:0]]",
+        "في أعماق السماء المظلمة، كانت هناك نجمة صغيرة، تلمع بلونٍ ذهبيّ خافت.",
+        "لم تكن مثل باقي النجوم، فقد كانت تحب الحركة واللعب، لا البقاء ساكنة.",
+        "ذات ليلة، قالت النجمة لنفسها: \"أريد أن أزور القمر! أريد أن أعرف ماذا يوجد هناك!\"",
+        "جمعت ضوءها ولمعتها، وبدأت بالطيران عبر السُّحب الخفيفة.",
+        "اقتربت من القمر، وكان نائمًا في هدوء، لكنه استيقظ حين شعر بوميضها.",
+        "قال القمر بلطف: \"من أنتِ؟ ولماذا أتيتِ إلى هنا؟\"",
+        "أجابت النجمة: \"أنا نجمة صغيرة، جئت لأرى العالم من قرب!\"",
+        "ضحك القمر وقال: \"العالم جميل، لكنّه كبير. هل أنتِ مستعدة للمغامرة؟\"",
+        "هزّت النجمة رأسها بحماس، ففتح القمر ذراعيه من نور، ودفعها بلطف نحو الأسفل.",
+        "مرت النجمة على غيمات رمادية، كانت تبكي قطرات مطر ناعمة.",
+        "قالت الغيمة: \"إلى أين تذهبين، أيتها النجمة الشجاعة؟\"",
+        "قالت: \"أزور الأرض، أبحث عن أصدقاء جدد!\"",
+        "ثم حلّقت النجمة الصغيرة نحو الأسفل، وشعرت بالهواء يلمسها للمرة الأولى.",
+        "رأت مدينة نائمة، وشارعًا هادئًا، وحديقة فيها شجرة كبيرة وقطة تتسلل بين الأعشاب.",
+        "ثم رأت طفلة تنظر من نافذتها إلى السماء، تهمس: \"أين أنتِ يا نجمة؟\"",
+        "لمعت النجمة بقوة، لتردّ على السؤال، فأضاءت نافذة الطفلة.",
+        "ابتسمت الطفلة وقالت: \"ها أنتِ! كنت أدعو أن أراك الليلة!\" [[img:1]]",
+        "شعرت النجمة بسعادة غريبة، لم تشعر بها من قبل.",
+        "وعندما اقترب الفجر، عادت النجمة إلى السماء، وهي تحمل في قلبها ذكرى لا تُنسى.",
+        "النهاية."
+      ],
+      "en": [
+        "The Little Star — an adventure in the sky. [[img:0]]",
+        "Deep in the dark sky, there was a little star glowing with a soft golden light.",
+        "She was not like the other stars; she loved to move and play, not stay still.",
+        "One night, the star whispered to herself: \"I want to visit the moon! I want to see what’s out there!\"",
+        "She gathered her glow and sparkle, then began flying through the gentle clouds.",
+        "She came close to the moon, who was peacefully sleeping, but he woke up when he saw her light.",
+        "The moon asked kindly: \"Who are you? And why have you come here?\"",
+        "The star replied: \"I’m a little star, and I came to explore the world!\"",
+        "The moon chuckled and said: \"The world is beautiful, but it’s big. Are you ready for an adventure?\"",
+        "The star nodded excitedly, and the moon opened his arms of light and gently pushed her downward.",
+        "She passed by grey clouds that cried soft drops of rain.",
+        "A cloud asked: \"Where are you going, brave little star?\"",
+        "She answered: \"I’m going to Earth, looking for new friends!\"",
+        "The star flew lower and felt the wind touch her for the very first time.",
+        "She saw a sleeping city, a quiet street, and a park with a big tree and a cat sneaking through the grass.",
+        "Then she saw a little girl looking out her window, whispering: \"Where are you, little star?\"",
+        "The star shone brightly to answer, lighting up the girl's window.",
+        "The girl smiled and said: \"There you are! I was hoping to see you tonight!\" [[img:1]]",
+        "The star felt a strange happiness she had never felt before.",
+        "And as dawn began to rise, the little star returned to the sky, carrying an unforgettable memory in her heart.",
+        "The End."
+      ]
+    },
+
           "images": [
             "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L2/img0.webp",
             "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L2/img1.webp",
             "https://raw.githubusercontent.com/mohammedabdollah/funforkids-content/main/images/stories/little-star/L2/img2.webp"
           ]
+
+
         },
         "L3": {
           "label_ar": "👦👧 المستوى 3 (٩–١٢)",
